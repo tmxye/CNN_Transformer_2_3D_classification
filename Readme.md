@@ -3,7 +3,10 @@
 从而显著提升模型开发全流程（训练/验证/测试）的效率。
 
 
-
+This deep learning framework offers 1,000+ models 
+(including 100+ specialized CNN-Transformer hybrids for 2D/3D multimodal images) 
+with a modular design for fully customizable components: adaptive training optimization, 
+data preprocessing, model restructuring, and visual analytics (heatmap/gradient map generation)
 
 
 
