@@ -1,0 +1,7 @@
+try*
+
+.idea/
+.vscode/
+__pycache__
+dataset/
+runs/

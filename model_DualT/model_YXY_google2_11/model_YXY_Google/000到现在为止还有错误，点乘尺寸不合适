@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/mnt/f/20pytorch_Gitee/05SE_DenseNet_YXY_测试集添加/model_YXY_Google/train_Google_YXY.py", line 109, in <module>
+    logits, aux_logits2, aux_logits1 = model(images.to(device))
+  File "/home/yxy/anaconda3/envs/yxy/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/mnt/f/20pytorch_Gitee/05SE_DenseNet_YXY_测试集添加/model_YXY_Google/Google_YXY.py", line 122, in forward
+    aux1 = self.aux1(x)
+  File "/home/yxy/anaconda3/envs/yxy/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/mnt/f/20pytorch_Gitee/05SE_DenseNet_YXY_测试集添加/model_YXY_Google/Google_YXY.py", line 67, in forward
+    x = F.relu(self.fc1(x), inplace=False)
+  File "/home/yxy/anaconda3/envs/yxy/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/yxy/anaconda3/envs/yxy/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/yxy/anaconda3/envs/yxy/lib/python3.6/site-packages/torch/nn/functional.py", line 1369, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: size mismatch, m1: [64 x 3200], m2: [2048 x 1024] at /pytorch/aten/src/THC/generic/THCTensorMathBlas.cu:273

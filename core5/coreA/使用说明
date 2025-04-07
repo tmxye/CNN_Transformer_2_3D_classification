@@ -1,0 +1,9 @@
+    # elif model_index == 9807:           # ([16, 1008, 7, 7])
+    #     from coreA.regnetLFZ import regnetx_032
+    #     return regnetx_032()
+    # elif model_index == 9808:
+    #     from coreA.repreg import repchoice
+    #     return repchoice(model='OREPA_reg')
+    # elif model_index == 9809:
+    #     from coreA.repreg import repchoice
+    #     return repchoice(model='OREPA_reg2OCA')

@@ -1,0 +1,9 @@
+isort~=5.9
+black
+flake8
+flake8-black
+pytest
+pytest-cov
+flake8
+flake8-black
+timm

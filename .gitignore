@@ -1,0 +1,33 @@
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+*.swp
+*~
+.idea/
+.vscode/
+
+# 依赖目录
+node_modules/
+bower_components/
+
+# 构建输出
+dist/
+build/
+*.exe
+*.dll
+
+# 数据集
+data_4/
+data_8_COVID_CT/
+data_9_COVID2/
+data_9_COVID2(旧)/
+data_10_COVIDGR/
+data_11_CT/
+data_15X/
+
+
+# 数据可视化-训练，热力图
+# visual/
+feature_map_save/

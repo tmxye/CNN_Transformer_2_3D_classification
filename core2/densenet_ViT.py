@@ -1,0 +1,748 @@
+"""添加了senet模块,去除transition的senet模块,仅仅在denseblock中添加senet模块"""
+import sys
+sys.path.append("F:/car_classify_abnormal")
+# 这个和full_in loop ,几乎一样，在171行FUll_loop注释了一行
+#  # Add a SELayer behind each transition block这行也注释了   206行
+
+import re
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.utils.model_zoo as model_zoo
+from collections import OrderedDict
+from core.se_module import SELayer
+
+# Total params: 9,827,908
+# Trainable params: 9,827,908
+# Non-trainable params: 0
+# ----------------------------------------------------------------
+# Input size (MB): 0.57
+# Forward/backward pass size (MB): 375.09
+# Params size (MB): 37.49
+# Estimated Total Size (MB): 413.15
+
+
+__all__ = ['SEDenseNet', 'se_densenet121', 'se_densenet169', 'se_densenet201', 'se_densenet161']
+
+
+model_urls = {
+    'densenet121': 'https://download.pytorch.org/models/densenet121-a639ec97.pth',
+    'densenet169': 'https://download.pytorch.org/models/densenet169-b2777c0a.pth',
+    'densenet201': 'https://download.pytorch.org/models/densenet201-c1103571.pth',
+    'densenet161': 'https://download.pytorch.org/models/densenet161-8d451a50.pth',
+}
+
+
+def se_densenet121(pretrained=False, is_strict=False, num_classes=1000, drop_rate=0.2, **kwargs):
+    r"""Densenet-121 model from
+    `"Densely Connected Convolutional Networks" <https://arxiv.org/pdf/1608.06993.pdf>`_
+
+    Args:
+        pretrained (bool): If True, returns a model pre-trained on ImageNet
+    """
+    model = SEDenseNet(num_init_features=64, growth_rate=32, block_config=(6, 12, 24, 16), num_classes=num_classes, drop_rate=drop_rate,
+                     **kwargs)
+    if pretrained:
+        # '.'s are no longer allowed in module names, but pervious _DenseLayer
+        # has keys 'norm.1', 'relu.1', 'conv.1', 'norm.2', 'relu.2', 'conv.2'.
+        # They are also in the checkpoints in model_urls. This pattern is used
+        # to find such keys.
+        pattern = re.compile(
+            r'^(.*denselayer\d+\.(?:norm|relu|conv))\.((?:[12])\.(?:weight|bias|running_mean|running_var))$')
+        state_dict = model_zoo.load_url(model_urls['densenet121'])
+        for key in list(state_dict.keys()):
+            res = pattern.match(key)
+            if res:
+                new_key = res.group(1) + res.group(2)
+                state_dict[new_key] = state_dict[key]
+                del state_dict[key]
+        print('模型从本地导入成功')
+        model.load_state_dict(state_dict, strict=is_strict)
+    return model
+
+
+def se_densenet169(pretrained=False, **kwargs):
+    r"""Densenet-169 model from
+    `"Densely Connected Convolutional Networks" <https://arxiv.org/pdf/1608.06993.pdf>`_
+
+    Args:
+        pretrained (bool): If True, returns a model pre-trained on ImageNet
+    """
+    model = SEDenseNet(num_init_features=64, growth_rate=32, block_config=(6, 12, 32, 32),
+                     **kwargs)
+    if pretrained:
+        # '.'s are no longer allowed in module names, but pervious _DenseLayer
+        # has keys 'norm.1', 'relu.1', 'conv.1', 'norm.2', 'relu.2', 'conv.2'.
+        # They are also in the checkpoints in model_urls. This pattern is used
+        # to find such keys.
+        pattern = re.compile(
+            r'^(.*denselayer\d+\.(?:norm|relu|conv))\.((?:[12])\.(?:weight|bias|running_mean|running_var))$')
+        state_dict = model_zoo.load_url(model_urls['densenet169'])
+        for key in list(state_dict.keys()):
+            res = pattern.match(key)
+            if res:
+                new_key = res.group(1) + res.group(2)
+                state_dict[new_key] = state_dict[key]
+                del state_dict[key]
+        print('模型从本地导入成功')
+        model.load_state_dict(state_dict, strict=False)
+    return model
+
+
+def se_densenet201(pretrained=False, **kwargs):
+    r"""Densenet-201 model from
+    `"Densely Connected Convolutional Networks" <https://arxiv.org/pdf/1608.06993.pdf>`_
+
+    Args:
+        pretrained (bool): If True, returns a model pre-trained on ImageNet
+    """
+    model = SEDenseNet(num_init_features=64, growth_rate=32, block_config=(6, 12, 48, 32),
+                     **kwargs)
+    if pretrained:
+        # '.'s are no longer allowed in module names, but pervious _DenseLayer
+        # has keys 'norm.1', 'relu.1', 'conv.1', 'norm.2', 'relu.2', 'conv.2'.
+        # They are also in the checkpoints in model_urls. This pattern is used
+        # to find such keys.
+        pattern = re.compile(
+            r'^(.*denselayer\d+\.(?:norm|relu|conv))\.((?:[12])\.(?:weight|bias|running_mean|running_var))$')
+        state_dict = model_zoo.load_url(model_urls['densenet201'])
+        for key in list(state_dict.keys()):
+            res = pattern.match(key)
+            if res:
+                new_key = res.group(1) + res.group(2)
+                state_dict[new_key] = state_dict[key]
+                del state_dict[key]
+        print('模型从本地导入成功')
+        model.load_state_dict(state_dict, strict=False)
+    return model
+
+
+def se_densenet161(pretrained=False, **kwargs):
+    r"""Densenet-161 model from
+    `"Densely Connected Convolutional Networks" <https://arxiv.org/pdf/1608.06993.pdf>`_
+
+    Args:
+        pretrained (bool): If True, returns a model pre-trained on ImageNet
+    """
+    model = SEDenseNet(num_init_features=96, growth_rate=48, block_config=(6, 12, 36, 24),
+                     **kwargs)
+    if pretrained:
+        # '.'s are no longer allowed in module names, but pervious _DenseLayer
+        # has keys 'norm.1', 'relu.1', 'conv.1', 'norm.2', 'relu.2', 'conv.2'.
+        # They are also in the checkpoints in model_urls. This pattern is used
+        # to find such keys.
+        pattern = re.compile(
+            r'^(.*denselayer\d+\.(?:norm|relu|conv))\.((?:[12])\.(?:weight|bias|running_mean|running_var))$')
+        state_dict = model_zoo.load_url(model_urls['densenet161'])
+        for key in list(state_dict.keys()):
+            res = pattern.match(key)
+            if res:
+                new_key = res.group(1) + res.group(2)
+                state_dict[new_key] = state_dict[key]
+                del state_dict[key]
+        print('模型从本地导入成功')
+        model.load_state_dict(state_dict, strict=False)
+    return model
+
+
+class _DenseLayer(nn.Sequential):
+    def __init__(self, num_input_features, growth_rate, bn_size, drop_rate):
+        super(_DenseLayer, self).__init__()
+        # Add SELayer at here, like SE-PRE block in original paper illustrates
+        # self.CA = CoordAtt(num_input_features, num_input_features)
+        # self.SElayer = SELayer(channel=num_input_features)
+        self.bn1 = nn.BatchNorm2d(num_input_features)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.conv1 = nn.Conv2d(num_input_features, bn_size * growth_rate, kernel_size=1, stride=1,bias=False)
+        self.bn3 = nn.BatchNorm2d(bn_size * growth_rate)
+        self.relu3 = nn.ReLU(inplace=True)
+        self.conv3 = nn.Conv2d(bn_size * growth_rate, growth_rate, kernel_size=3, stride=1, padding=1, bias=False)
+        self.drop_rate = drop_rate
+
+    def forward(self, x):
+        # new_features = self.CA(x)
+        new_features = self.bn1(x)
+        new_features = self.relu1(new_features)
+        new_features = self.conv1(new_features)
+        new_features = self.bn3(new_features)
+        new_features = self.relu3(new_features)
+        new_features = self.conv3(new_features)
+        if self.drop_rate > 0:
+            new_features = F.dropout(new_features, p=self.drop_rate, training=self.training)
+        return torch.cat([x, new_features], 1)
+
+'''
+@author: yali
+@time:2021-08-01  16:09
+
+'''
+# (6, 12, 24, 16)
+class _DenseBlockA(nn.Sequential):
+    def __init__(self, num_input_features, growth_rate, bn_size, drop_rate):
+        super(_DenseBlockA, self).__init__()
+        self.DenseLayerA = _DenseLayer(num_input_features + 0 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerB = _DenseLayer(num_input_features + 1 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerC = _DenseLayer(num_input_features + 2 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerD = _DenseLayer(num_input_features + 3 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerE = _DenseLayer(num_input_features + 4 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerF = _DenseLayer(num_input_features + 5 * growth_rate, growth_rate, bn_size, drop_rate)
+
+    def forward(self, x):
+        xA = self.DenseLayerA(x)
+        xB = self.DenseLayerB(xA)
+        xC = self.DenseLayerC(xB)
+        xD = self.DenseLayerD(xC)
+        xE = self.DenseLayerE(xD)
+        xF = self.DenseLayerF(xE)
+        # x = torch.cat([x, xA, xB, xC, xD, xE, xF], 1)
+
+
+class _DenseBlockB(nn.Sequential):
+    def __init__(self, num_input_features, growth_rate, bn_size, drop_rate):
+        super(_DenseBlockB, self).__init__()
+        self.DenseLayerA = _DenseLayer(num_input_features + 0 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerB = _DenseLayer(num_input_features + 1 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerC = _DenseLayer(num_input_features + 2 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerD = _DenseLayer(num_input_features + 3 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerE = _DenseLayer(num_input_features + 4 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerF = _DenseLayer(num_input_features + 5 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerG = _DenseLayer(num_input_features + 6 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerH = _DenseLayer(num_input_features + 7 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerI = _DenseLayer(num_input_features + 8 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerJ = _DenseLayer(num_input_features + 9 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerK = _DenseLayer(num_input_features + 10 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerL = _DenseLayer(num_input_features + 11 * growth_rate, growth_rate, bn_size, drop_rate)
+
+
+    def forward(self, x):
+        xA = self.DenseLayerA(x)
+        xB = self.DenseLayerB(xA)
+        xC = self.DenseLayerC(xB)
+        xD = self.DenseLayerD(xC)
+        xE = self.DenseLayerE(xD)
+        xF = self.DenseLayerF(xE)
+        xG = self.DenseLayerG(xF)
+        xH = self.DenseLayerH(xG)
+        xI = self.DenseLayerI(xH)
+        xJ = self.DenseLayerJ(xI)
+        xK = self.DenseLayerK(xJ)
+        xL = self.DenseLayerL(xK)
+
+        # x = torch.cat([x, xA, xB, xC, xD, xE, xF, xG, xH, xI, xJ, xK, xL], 1)
+        del x, xA, xB, xC, xD, xE, xF, xG, xH, xI, xJ, xK
+        torch.cuda.empty_cache()
+        return xL
+
+
+
+class _DenseBlockC(nn.Sequential):
+    def __init__(self, num_input_features, growth_rate, bn_size, drop_rate):
+        super(_DenseBlockC, self).__init__()
+        self.DenseLayerA = _DenseLayer(num_input_features + 0 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerB = _DenseLayer(num_input_features + 1 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerC = _DenseLayer(num_input_features + 2 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerD = _DenseLayer(num_input_features + 3 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerE = _DenseLayer(num_input_features + 4 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerF = _DenseLayer(num_input_features + 5 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerG = _DenseLayer(num_input_features + 6 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerH = _DenseLayer(num_input_features + 7 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerI = _DenseLayer(num_input_features + 8 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerJ = _DenseLayer(num_input_features + 9 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerK = _DenseLayer(num_input_features + 10 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerL = _DenseLayer(num_input_features + 11 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerM = _DenseLayer(num_input_features + 12 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerN = _DenseLayer(num_input_features + 13 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerO = _DenseLayer(num_input_features + 14 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerP = _DenseLayer(num_input_features + 15 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerQ = _DenseLayer(num_input_features + 16 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerR = _DenseLayer(num_input_features + 17 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerS = _DenseLayer(num_input_features + 18 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerT = _DenseLayer(num_input_features + 19 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerU = _DenseLayer(num_input_features + 20 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerV = _DenseLayer(num_input_features + 21 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerW = _DenseLayer(num_input_features + 22 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerX = _DenseLayer(num_input_features + 23 * growth_rate, growth_rate, bn_size, drop_rate)
+
+    def forward(self, x):
+        xA = self.DenseLayerA(x)
+        xB = self.DenseLayerB(xA)
+        xC = self.DenseLayerC(xB)
+        xD = self.DenseLayerD(xC)
+        xE = self.DenseLayerE(xD)
+        xF = self.DenseLayerF(xE)
+        xG = self.DenseLayerG(xF)
+        xH = self.DenseLayerH(xG)
+        xI = self.DenseLayerI(xH)
+        xJ = self.DenseLayerJ(xI)
+        xK = self.DenseLayerK(xJ)
+        xL = self.DenseLayerL(xK)
+        xM = self.DenseLayerM(xL)
+        xN = self.DenseLayerN(xM)
+        xO = self.DenseLayerO(xN)
+        xP = self.DenseLayerP(xO)
+        xQ = self.DenseLayerQ(xP)
+        xR = self.DenseLayerR(xQ)
+        xS = self.DenseLayerS(xR)
+        xT = self.DenseLayerT(xS)
+        xU = self.DenseLayerU(xT)
+        xV = self.DenseLayerV(xU)
+        xW = self.DenseLayerW(xV)
+        xX = self.DenseLayerX(xW)
+
+        # x = torch.cat([x, xA, xB, xC, xD, xE, xF, xG, xH, xI, xJ, xK, xL, xM, xN, xO, xP, xQ, xR, xS, xT, xU, xV, xW, xX], 1)
+        del x, xA, xB, xC, xD, xE, xF, xG, xH, xI, xJ, xK, xL, xM, xN, xO, xP, xQ, xR, xS, xT, xU, xV, xW
+        torch.cuda.empty_cache()
+        return xX
+
+class _DenseBlockD(nn.Sequential):
+    def __init__(self, num_input_features, growth_rate, bn_size, drop_rate):
+        super(_DenseBlockD, self).__init__()
+        self.DenseLayerA = _DenseLayer(num_input_features + 0 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerB = _DenseLayer(num_input_features + 1 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerC = _DenseLayer(num_input_features + 2 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerD = _DenseLayer(num_input_features + 3 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerE = _DenseLayer(num_input_features + 4 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerF = _DenseLayer(num_input_features + 5 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerG = _DenseLayer(num_input_features + 6 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerH = _DenseLayer(num_input_features + 7 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerI = _DenseLayer(num_input_features + 8 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerJ = _DenseLayer(num_input_features + 9 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerK = _DenseLayer(num_input_features + 10 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerL = _DenseLayer(num_input_features + 11 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerM = _DenseLayer(num_input_features + 12 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerN = _DenseLayer(num_input_features + 13 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerO = _DenseLayer(num_input_features + 14 * growth_rate, growth_rate, bn_size, drop_rate)
+        self.DenseLayerP = _DenseLayer(num_input_features + 15 * growth_rate, growth_rate, bn_size, drop_rate)
+
+
+    def forward(self, x):
+        xA = self.DenseLayerA(x)
+        xB = self.DenseLayerB(xA)
+        xC = self.DenseLayerC(xB)
+        xD = self.DenseLayerD(xC)
+        xE = self.DenseLayerE(xD)
+        xF = self.DenseLayerF(xE)
+        xG = self.DenseLayerG(xF)
+        xH = self.DenseLayerH(xG)
+        xI = self.DenseLayerI(xH)
+        xJ = self.DenseLayerJ(xI)
+        xK = self.DenseLayerK(xJ)
+        xL = self.DenseLayerL(xK)
+        xM = self.DenseLayerM(xL)
+        xN = self.DenseLayerN(xM)
+        xO = self.DenseLayerO(xN)
+        xP = self.DenseLayerP(xO)
+
+        # x = torch.cat([x, xA, xB, xC, xD, xE, xF, xG, xH, xI, xJ, xK, xL, xM, xN, xO, xP], 1)
+        del x, xA, xB, xC, xD, xE, xF, xG, xH, xI, xJ, xK, xL, xM, xN, xO
+        torch.cuda.empty_cache()
+        return xP
+
+class _Transition(nn.Sequential):
+    def __init__(self, num_input_features, num_output_features):
+        super(_Transition, self).__init__()
+        # self.CBAM = CbamModule(num_input_features)
+        # self.CA1 = CoordAtt(num_input_features, num_input_features)
+        self.bn1 = nn.BatchNorm2d(num_input_features)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.conv1 = nn.Conv2d(num_input_features, num_output_features, kernel_size=1, stride=1, bias=False)
+        self.pool1 = nn.AvgPool2d(kernel_size=2, stride=2)
+
+    def forward(self, x):
+        # x = self.CA1(x)
+        x = self.bn1(x)
+        x = self.relu1(x)
+        x = self.conv1(x)
+        x = self.pool1(x)
+        return x
+
+
+from torch.autograd import Function
+# new layer
+class hash(Function):
+    @staticmethod
+    def forward(ctx, input):
+        # ctx.save_for_backward(input)
+        return torch.sign(input)
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        # input,  = ctx.saved_tensors
+        # grad_output = grad_output.data
+        return grad_output
+
+def hash_layer(input):
+    return hash.apply(input)
+
+#
+# from torch.autograd import Function
+# # new layer
+# class hash(Function):
+#     @staticmethod
+#     def forward(ctx, input):
+#         # ctx.save_for_backward(input)
+#         return torch.sign(input)
+#
+#     @staticmethod
+#     def backward(ctx, grad_output):
+#         # input,  = ctx.saved_tensors
+#         # grad_output = grad_output.data
+#         return grad_output
+#
+# def hash_layer(input):
+#     return hash.apply(input)
+#
+
+
+class h_sigmoid(nn.Module):
+    def __init__(self, inplace=True):
+        super(h_sigmoid, self).__init__()
+        self.relu = nn.ReLU6(inplace=inplace)
+
+    def forward(self, x):
+        return self.relu(x + 3) / 6
+
+
+class h_swish(nn.Module):
+    def __init__(self, inplace=True):
+        super(h_swish, self).__init__()
+        self.sigmoid = h_sigmoid(inplace=inplace)
+
+    def forward(self, x):
+        return x * self.sigmoid(x)
+
+
+class swish(nn.Module):
+    def forward(self, x):
+        return x * torch.sigmoid(x)
+
+
+class CoordAtt(nn.Module):
+    def __init__(self, inp, oup, groups=32):
+        super(CoordAtt, self).__init__()
+        self.pool_h = nn.AdaptiveAvgPool2d((None, 1))
+        self.pool_w = nn.AdaptiveAvgPool2d((1, None))
+
+        mip = max(8, inp // groups)
+
+        self.conv1 = nn.Conv2d(inp, mip, kernel_size=1, stride=1, padding=0)
+        self.bn1 = nn.BatchNorm2d(mip)
+        self.conv2 = nn.Conv2d(mip, oup, kernel_size=1, stride=1, padding=0)
+        self.conv3 = nn.Conv2d(mip, oup, kernel_size=1, stride=1, padding=0)
+        self.relu = h_swish()
+
+    def forward(self, x):
+        identity = x
+        n, c, h, w = x.size()
+        x_h = self.pool_h(x)
+        x_w = self.pool_w(x).permute(0, 1, 3, 2)
+
+        y = torch.cat([x_h, x_w], dim=2)
+        y = self.conv1(y)
+        y = self.bn1(y)
+        y = self.relu(y)
+        x_h, x_w = torch.split(y, [h, w], dim=2)
+        x_w = x_w.permute(0, 1, 3, 2)
+
+        x_h = self.conv2(x_h).sigmoid()
+        x_w = self.conv3(x_w).sigmoid()
+        x_h = x_h.expand(-1, -1, h, w)
+        x_w = x_w.expand(-1, -1, h, w)
+
+        y = identity * x_w * x_h
+
+        return y
+
+
+
+
+class Visual_Tokenizer(nn.Module):
+    #
+    def __init__(self, in_dim, static=True, hidden_dim=None):
+        super(Visual_Tokenizer, self).__init__()
+        self.static = static
+        if self.static:
+            assert (hidden_dim is not None)
+            self.token_weight = nn.Linear(in_dim, hidden_dim, bias=False)
+        else:
+            self.token_weight = nn.Linear(in_dim, in_dim, bias=False)
+
+    def forward(self, x, t=None):
+        n = x.shape[0]
+        c = x.shape[-1]
+        x = x.reshape(n, -1, c)  # [N, HW, C]
+        if not self.static:
+            assert (t is not None)
+            token_map = self.token_weight(t)  # [N, L, C]
+            token_map = token_map.permute(0, 2, 1)  # [N, C, L]
+            attention_weight = torch.bmm(x, token_map)  # [N, HW, L]
+            attention_weight = attention_weight.permute(0, 2, 1).softmax(dim=-1)  # [N, L, HW]
+        else:
+            attention_weight = self.token_weight(x)  # [N, HW, L]
+            attention_weight = attention_weight.permute(0, 2, 1).softmax(dim=-1)  # [N, L, HW]
+        t_out = torch.bmm(attention_weight, x)
+        return t_out
+
+
+class Attention_layer(nn.Module):
+    # the original transformer layer in arxiv:2006.03677
+    def __init__(self, in_dim, static, num_tokens, hidden_dim, dropout=0):
+        super(Attention_layer, self).__init__()
+        self.static = static
+        self.tokenizer = Visual_Tokenizer(in_dim, static, num_tokens)
+        self.in_Q = nn.Linear(hidden_dim, hidden_dim, bias=False)
+        self.in_K = nn.Linear(hidden_dim, hidden_dim, bias=False)
+        self.mlp = nn.Sequential(OrderedDict([
+            ("c_fc", nn.Linear(hidden_dim, hidden_dim)),
+            ("relu", nn.ReLU()),
+            ('dropout', nn.Dropout(dropout)),
+            ("c_proj", nn.Linear(hidden_dim, hidden_dim))
+        ]))
+        self.out_Q = nn.Linear(hidden_dim, hidden_dim, bias=False)
+        self.out_K = nn.Linear(hidden_dim, hidden_dim, bias=False)
+
+    def forward(self, x, t=None):
+        t_in = self.tokenizer(x, t)  # [N, L, C]
+
+        in_query = self.in_Q(t_in)  # [N, L, C]
+        in_key = self.in_K(t_in)  # [N, L, C]
+        attn_weight1 = torch.bmm(in_query, in_key.permute(0, 2, 1))  # [N, L, L]
+        attn_weight1 = attn_weight1.softmax(dim=-1)
+        t_out_p = t_in + torch.bmm(attn_weight1, t_in)  # [N, L, C]
+        t_out = t_out_p + self.mlp(t_out_p)  # [N, L, C]
+
+        out_query = self.out_Q(x)  # [N, HW, C]
+        out_key = self.out_K(t_out)  # [N, L, C]
+        attn_weight2 = torch.bmm(out_query, out_key.permute(0, 2, 1))
+        attn_weight2 = attn_weight2.softmax(dim=-1)
+        x_out = x + torch.bmm(attn_weight2, t_out)
+
+        return x_out, t_out
+
+
+
+class LayerNorm(nn.LayerNorm):
+    """Subclass torch's LayerNorm to handle fp16."""
+
+    def forward(self, x: torch.Tensor):
+        orig_type = x.dtype
+        ret = super().forward(x.type(torch.float32))
+        return ret.type(orig_type)
+
+class QuickGELU(nn.Module):
+    def forward(self, x: torch.Tensor):
+        return x * torch.sigmoid(1.702 * x)
+
+class ResidualAttentionBlock(nn.Module):
+    #
+    def __init__(self, d_model: int, n_head: int, attn_mask: torch.Tensor = None, dropout: float = 0):
+        super().__init__()
+
+        self.attn = nn.MultiheadAttention(d_model, n_head)
+        self.ln_1 = LayerNorm(d_model)
+        self.mlp = nn.Sequential(OrderedDict([
+            ("c_fc", nn.Linear(d_model, d_model * 4)),
+            ("gelu", QuickGELU()),
+            ('dropout', nn.Dropout(dropout)),
+            ("c_proj", nn.Linear(d_model * 4, d_model))
+        ]))
+        self.ln_2 = LayerNorm(d_model)
+        self.attn_mask = attn_mask
+        self.dropout1 = nn.Dropout(dropout)
+        self.dropout2 = nn.Dropout(dropout)
+
+    def attention(self, x: torch.Tensor, key_pad_mask: torch.Tensor = None):
+        self.attn_mask = self.attn_mask.to(dtype=x.dtype, device=x.device) if self.attn_mask is not None else None
+        return self.attn(x, x, x, need_weights=False, attn_mask=self.attn_mask, key_padding_mask=key_pad_mask)[0]
+
+    def forward(self, input_s):
+        if type(input_s) == tuple:
+            x, key_pad_mask = input_s
+        else:
+            x = input_s
+            key_pad_mask = None
+        x = x + self.dropout1(self.attention(self.ln_1(x), key_pad_mask))
+        x = x + self.dropout2(self.mlp(self.ln_2(x)))
+        return x
+
+
+class MHAttention_layer(nn.Module):
+    # the multi-head transformer layer in arxiv:2006.03677
+    def __init__(self, in_dim, static, num_tokens, hidden_dim, num_heads=4, dropout=0):
+        super(MHAttention_layer, self).__init__()
+        self.static = static
+        self.tokenizer = Visual_Tokenizer(in_dim, static, num_tokens)
+        self.attn = ResidualAttentionBlock(hidden_dim, num_heads)
+        self.out_Q = nn.Linear(hidden_dim, hidden_dim, bias=False)
+        self.out_K = nn.Linear(hidden_dim, hidden_dim, bias=False)
+
+    def forward(self, x, t=None):
+        t_in = self.tokenizer(x, t)  # [N, L, C]
+        t_out = self.attn(t_in)  # [N, L, C]
+
+        out_query = self.out_Q(x)  # [N, HW, C]
+        out_key = self.out_K(t_out)  # [N, L, C]
+        attn_weight2 = torch.bmm(out_query, out_key.permute(0, 2, 1))
+        attn_weight2 = attn_weight2.softmax(dim=-1)
+        x_out = x + torch.bmm(attn_weight2, t_out)
+
+        return x_out, t_out
+
+
+class SEDenseNet(nn.Module):
+    r"""Densenet-BC model class, based on
+    `"Densely Connected Convolutional Networks" <https://arxiv.org/pdf/1608.06993.pdf>`_
+
+    Args:
+        growth_rate (int) - how many filters to add each layer (`k` in paper)
+        block_config (list of 4 ints) - how many layers in each pooling block
+        num_init_features (int) - the number of filters to learn in the first convolution layer
+        bn_size (int) - multiplicative factor for number of bottle neck layers
+          (i.e. bn_size * k features in the bottleneck layer)
+        drop_rate (float) - dropout rate after each dense layer
+        num_classes (int) - number of classification classes
+    """
+
+    def __init__(self, growth_rate=32, block_config=(6, 12, 24, 16),
+                 num_init_features=64, bn_size=4, drop_rate=0, num_classes=1000):
+
+        super(SEDenseNet, self).__init__()
+
+        # First convolution
+        self.First = nn.Sequential(OrderedDict([
+        # self.features = nn.Sequential(OrderedDict([
+            ('conv0', nn.Conv2d(3, num_init_features, kernel_size=7, stride=2, padding=3, bias=False)),
+            ('norm0', nn.BatchNorm2d(num_init_features)),
+            ('relu0', nn.ReLU(inplace=True)),
+            ('pool0', nn.MaxPool2d(kernel_size=3, stride=2, padding=1)),
+        ]))
+
+        # Add SELayer at first convolution
+        # self.features.add_module("SELayer_0a", SELayer(channel=num_init_features))
+
+        # Each denseblock
+        num_features = num_init_features
+        self._DenseBlockA = _DenseBlockA(num_input_features=num_features, growth_rate=growth_rate, bn_size=bn_size, drop_rate=drop_rate)
+        num_features = num_features + 6 * growth_rate
+        # num_features = 256
+        self._TransitionA = _Transition(num_input_features=num_features, num_output_features=num_features // 2)
+        num_features = num_features // 2
+
+        self._DenseBlockB = _DenseBlockB(num_input_features=num_features, growth_rate=growth_rate, bn_size=bn_size, drop_rate=drop_rate)
+        num_features = num_features + 12 * growth_rate
+        # num_features = 512
+        self._TransitionB = _Transition(num_input_features=num_features, num_output_features=num_features // 2)
+        num_features = num_features // 2
+
+        self._DenseBlockC = _DenseBlockC(num_input_features=num_features, growth_rate=growth_rate, bn_size=bn_size, drop_rate=drop_rate)
+        num_features = num_features + 24 * growth_rate
+        # num_features = 1024
+        self._TransitionC = _Transition(num_input_features=num_features, num_output_features=num_features // 2)
+        num_features = num_features // 2
+
+        self._DenseBlockD = _DenseBlockD(num_input_features=num_features, growth_rate=growth_rate, bn_size=bn_size, drop_rate=drop_rate)
+        num_features = num_features + 16 * growth_rate
+        # num_features = 1024
+
+        # Final batch norm
+        self.Final_bn = nn.BatchNorm2d(num_features)
+
+        n_token = 16        # 默认是4
+        multi_head = False
+        hidden_dim = 512
+        dropout = 0       # 默认是0
+        num_heads = 6       # 默认是None
+        output_dim = num_classes     # 默认是10，因为代码是cifar10
+        # The first attn layer is always static since no previous information available
+        if not multi_head:
+            self.attn_layer1 = Attention_layer(hidden_dim, True, n_token, hidden_dim, dropout)
+            self.attn_layer2 = Attention_layer(hidden_dim, False, n_token, hidden_dim, dropout)
+        else:
+            assert(num_heads is not None)
+            self.attn_layer1 = MHAttention_layer(hidden_dim, True, n_token, hidden_dim, num_heads, dropout)
+            self.attn_layer2 = MHAttention_layer(hidden_dim, False, n_token, hidden_dim, num_heads, dropout)
+
+        self.attn_layer3 = None             # 实际没使用
+
+        self.fc = nn.Linear(hidden_dim, output_dim)
+
+
+
+        # Linear layer
+        self.classifier = nn.Linear(num_features, num_classes)
+
+        # Official init from torch repo.
+        for m in self.modules():
+            # 如果使用SeparableConv2d会出现错误AttributeError: 'SeparableConv2d' object has no attribute 'weight'
+            # https://blog.csdn.net/qq_37297763/article/details/116430049       Pytorch对声明的网络结构进行初始化
+            if isinstance(m, nn.Conv2d):
+            # if isinstance(m, SeparableConv2d):      # 阅读代码以后只是里面有一个weight，但是改起来还是挺复杂的，又报一个错误，这个需要修改挺多初始化参数的
+                # 修改SeparableConv2d里面，添加weight后报错误是TypeError: __init__() missing 1 required positional argument: 'weight'
+                nn.init.kaiming_normal_(m.weight)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
+        #     elif isinstance(m, nn.Linear):
+        #         nn.init.constant_(m.bias, 0)
+
+        # self.fc_encode = nn.Linear(num_features, encode_length)
+        self.fc_encode = nn.Linear(num_features, 32)
+
+
+    def forward(self, x):
+        First = self.First(x)
+        DenseBlockA = self._DenseBlockA(First)
+        TransitionA = self._TransitionA(DenseBlockA)
+        DenseBlockB = self._DenseBlockB(TransitionA)
+        TransitionB = self._TransitionB(DenseBlockB)
+        DenseBlockC = self._DenseBlockC(TransitionB)
+        TransitionC = self._TransitionC(DenseBlockC)
+        DenseBlockD = self._DenseBlockD(TransitionC)
+        DenseBlockD = self.Final_bn(DenseBlockD)
+        # out = F.relu(DenseBlockD, inplace=True)
+
+        x = DenseBlockD
+        n = x.shape[0]
+        c = x.shape[1]
+        x = x.reshape(n, c, -1).permute(0, 2, 1)
+
+        # VT part
+        x, t = self.attn_layer1(x)
+        x, t = self.attn_layer2(x, t)
+        if self.attn_layer3 is not None:
+            x, t = self.attn_layer3(x, t)
+
+        # predict head
+        logits = self.fc(t.mean(dim=1))
+        return logits
+
+        # out = F.relu(DenseBlockD, inplace=True)
+        # out = F.avg_pool2d(out, kernel_size=7, stride=1).view(DenseBlockD.size(0), -1)     # 这个是原始代码里的
+        # #         model = VisT.T_ViT(hidden_size, n_tokens, multihead, heads, 10, 0)
+        #
+        # out = self.classifier(out)
+        # return out
+
+
+def test_se_densenet(pretrained=False):
+    X = torch.Tensor(32, 3, 224, 224)
+
+    if pretrained:
+        model = se_densenet121(pretrained=pretrained)
+        net_state_dict = {key: value for key, value in model_zoo.load_url("https://download.pytorch.org/models/densenet121-a639ec97.pth").items()}
+        model.load_state_dict(net_state_dict, strict=False)
+
+    else:
+        model = se_densenet121(pretrained=pretrained)
+
+    print(model)
+    if torch.cuda.is_available():
+        X = X.cuda()
+        model = model.cuda()
+    model.eval()
+    with torch.no_grad():
+        output = model(X)
+        print(output.shape)
+
+if __name__ == "__main__":
+    test_se_densenet()
