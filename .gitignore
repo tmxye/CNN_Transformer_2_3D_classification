@@ -31,3 +31,4 @@ data_15X/
 # 数据可视化-训练，热力图
 # visual/
 feature_map_save/
+Grad_CAM/figure_原始/
