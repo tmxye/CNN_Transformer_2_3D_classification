@@ -57,13 +57,13 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 ##  Figures Section  图表部分  
 <div align="center">  
 
-  ![光学学报文章1图1](./Grad_CAM/figure/光学学报文章1图1.png)  
-  * 1 LDTransformer 整体框架结构图
-  * Fig. 1 Overall frame structure of LDTransformer  
+![光学学报文章1图1](./Grad_CAM/figure/光学学报文章1图1.png)  
+*图1 LDTransformer 整体框架结构图*  
+*Fig. 1 Overall frame structure of LDTransformer*  
 
-  ![光学学报文章1图2](./Grad_CAM/figure/光学学报文章1图2.png)  
-  * 图 4　消融模型在肺炎 X 光片上的热力图
-  * Fig. 4 Thermograms of ablation model on pneumonia Xray
+![光学学报文章1图2](./Grad_CAM/figure/光学学报文章1图2.png)  
+*图 4　消融模型在肺炎 X 光片上的热力图*  
+*Fig. 4 Thermograms of ablation model on pneumonia Xray*  
 
 </div>  
 
@@ -104,6 +104,7 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvltC-dZmTVC8htxD9To8c0sXLmWMpKarHkucOfBIuleG9FTdHkp-iwk3BbP6hn5Fob5S5M_QLnPdg1HZHh-m3d9m7W9Gri9jup7ExBDJZlSmNY4NGNLZJFb9qexQ2U-9dUFXkrfXnBI6kkQeEcCOFofI8JhXLv2NM=&uniplatform=NZKPT
+
 ---
 
 ## 中文摘要 Abstract
@@ -120,7 +121,7 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 
 ---
 
-## Figures Section  
+##  Figures Section  图表部分  
 <div align="center">
 
 ![跨模态Light-3Dformer整体结构图](./Grad_CAM/figure/电子学报图1.png)  
@@ -131,7 +132,10 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 *图2 Light-3Dformer结构*  
 *Fig. 2 Structure of Light-3Dformer*  
 
-![Light-3Dformer结构](./Grad_CAM/figure/电子学报图3.png)  
+![Light-3Dformer结构](./Grad_CAM/figure/电子学报图3.png)   
+*图4 热力图*  
+*Fig. 4 heatmap*  
+
 </div>
 
 ---
@@ -184,26 +188,27 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 
 ---
 
-##  Figures Section  图表部分  
+## Figures Section 图表部分  
 
-<div align="center">  
+<div align="center">
 
-[//]: # (  ![图1]&#40;图片路径.png&#41;  )
-  *图1 3D-CConvFormer 模型结构图*  
-  *Fig. 1 Architecture of 3D-CConvFormer model*  
+![3D-CConvFormer模型结构图](图片路径.png)  
+*图1 3D-CConvFormer 模型结构图*  
+*Fig. 1 Architecture of 3D-CConvFormer model*  
 
-  ![图3](./Grad_CAM/figure/计算机辅助设计与图形学学报图2.png)  
-  *图3 跨模态特征交互模块的结构图*  
-  *Fig. 3 Structure of cross-modal feature interaction module*  
+![跨模态特征交互模块的结构图](./Grad_CAM/figure/计算机辅助设计与图形学学报图2.png)  
+*图3 跨模态特征交互模块的结构图*  
+*Fig. 3 Structure of cross-modal feature interaction module*  
 
-  ![图5](./Grad_CAM/figure/计算机辅助设计与图形学学报图3.png)  
-  *图5 消融模型在肺部肿瘤影像上的热力图*  
-  *Fig. 5 Heatmaps of ablation model on lung tumor images*  
+![消融模型在肺部肿瘤影像上的热力图](./Grad_CAM/figure/计算机辅助设计与图形学学报图3.png)  
+*图5 消融模型在肺部肿瘤影像上的热力图*  
+*Fig. 5 Heatmaps of ablation model on lung tumor images*  
 
-  ![11种模型在肺部肿瘤PET/CT多模态三维数据集上的曲线对比](./Grad_CAM/figure/计算机辅助设计与图形学学报图4.png)  
-  *图7 11种模型在肺部肿瘤PET/CT多模态三维数据集上的曲线对比*  
-  *Fig. 7 Performance curves of 11 models on 3D PET/CT multimodal lung tumor dataset*  
-</div>  
+![11种模型在肺部肿瘤PET/CT多模态三维数据集上的曲线对比](./Grad_CAM/figure/计算机辅助设计与图形学学报图4.png)  
+*图7 11种模型在肺部肿瘤PET/CT多模态三维数据集上的曲线对比*  
+*Fig. 7 Performance curves of 11 models on 3D PET/CT multimodal lung tumor dataset*
+
+</div>
 
 ---
 
@@ -324,7 +329,7 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 
 ---
 
-## Figures Section  
+##  Figures Section  图表部分  
 <div align="center">
 
 ![MADenseNet整体框架图](./Grad_CAM/figure/模式识别与人工智能图1.png)  
@@ -393,7 +398,7 @@ X-ray images play an important role in the diagnosis of pneumonia disease, but t
 
 ---
 
-## Figures Section  
+##  Figures Section  图表部分  
 <div align="center">
 
 ![DDSF-Net整体框架](./Grad_CAM/figure/光学精密工程图1.png)  
@@ -407,6 +412,7 @@ X-ray images play an important role in the diagnosis of pneumonia disease, but t
 ![ROC曲线对比](./Grad_CAM/figure/光学精密工程图3.png)  
 *图5 肺炎X光片数据集中各模型的ROC曲线*  
 *Fig. 5 ROC curves of each model in pneumonia X-ray dataset*  
+
 </div>
 
 ---
