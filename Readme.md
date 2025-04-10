@@ -33,6 +33,7 @@ The dataset will be made publicly available according to our laboratory's data r
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=uXGtp3S0eCBwJKFvuEmxJyCd0_TyBYqZv0O1e70-kN3spTL2sxnDm7O0oM1WwC3ektnmV_RgzyISNNTSsLDz894j9HIXz5OJ83Nnp2tAv8l3zWlES-a89deV6n8oDrGj8YrjIRABHyNPYo0jIf4Fv9B1oS6CqrmBsMIeEjVvD7w=&uniplatform=NZKPT
+
 ---
 
 ## 中文摘要 Abstract
@@ -168,6 +169,7 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=uXGtp3S0eCAxlLnqB5w_1b0e-ChGSMQ5vIfM_QbSPRHrl0dBCMXSX_C3GHgKReOqJHnEZGm9DDsOVzFDR3OjknvIwTvI_ObzYx-0afvlFA5R3kY7QI77QrUpq1igofXboX-PiYccJVwdo0KwOA--yzMvBiA_HiNKXE28jIDf3ng=&uniplatform=NZKPT
+
 ---
 
 ## 中文摘要 Abstract
@@ -239,6 +241,7 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvv2GL4frWiAufAyuCF9PzCXNBohb82rk9mtk3FbOLkXtHvNFv2SAxHnwtTg0CjnZMeYiK6R0kqZq9dQ7iDFuamoV7bIBLHImhf_3npSg79s7Gz5pW2mY4oFrCqu0dUz7GSJK8XlBlnFD41HM6xYkXsYxunks2nL5Y=&uniplatform=NZKPT
+
 ---
 
 ## 中文摘要 Abstract
@@ -304,6 +307,7 @@ COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep le
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIuiv4-LuB9ehEovhUdRg3gYk8bVEu1Zy6n9lhpIMbtpojTqtfysj8Do3Rk-1BM436j5rORJLaj1hvnK05G30suN8bQLkvufzDF2GNWpmJgUQ0aKu1J9f7L4bdgEd4Rnq3WorY6rJfSm6ApTX3JDNqUVUfJHczfZqC0=&uniplatform=NZKPT
+
 ---
 
 ## 中文摘要 Abstract
@@ -372,6 +376,7 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIu71EmD6DnATA8L7SOOW2IQaq2rQM08iAwADGACjnOgLHj03QdNV0cIIq75Y9uHZdXKLDxog-E7uNKkR-jRQOpzaW51u6dakH0bopAnz3jQFIB9ceumHTzbNbgxlCv43tVzk-jfnB4XYbhyrbgl21nruYFjKE1bLQ0=&uniplatform=NZKPT
+
 ---
 
 ## 中文摘要 Abstract
