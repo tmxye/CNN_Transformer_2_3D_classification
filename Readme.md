@@ -97,8 +97,10 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 
 
 
-# Acta Electronica Sinica  
-<span style="font-size:30px">电子学报</span>
+# Acta Electronica Sinica 电子学报  
+
+<span style="font-size:26px">电子学报</span>
+
 ## Cross-modal Light-3Dformer Model for Lung tumor classification  
 <span style="font-size:20px">面向肺部肿瘤分类的跨模态Light-3Dformer模型</span>
 
@@ -167,7 +169,9 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 
 
 # Journal of Computer-Aided Design & Computer Graphics  
-<span style="font-size:30px">计算机辅助设计与图形学学报</span>
+
+<span style="font-size:26px">计算机辅助设计与图形学学报</span>
+
 ## 3D Cross-Modal ConvFormer for Lung Cancer Recognition
 <span style="font-size:20px">基于三维跨模态 ConvFormer 的肺部肿瘤识别 </span>  
 
@@ -240,9 +244,11 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 
 
 # Journal of Electronics & Information Technology  
-<span style="font-size:30px">电子与信息学报</span>
+
+<span style="font-size:26px">电子与信息学报</span>
+
 ## Dense Heavy Parameter Lightweight Transformer Model for CT Image Recognition of COVID-19
-<span style="font-size:30px">面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型</span>  
+<span style="font-size:26px">面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型</span>  
 
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvv2GL4frWiAufAyuCF9PzCXNBohb82rk9mtk3FbOLkXtHvNFv2SAxHnwtTg0CjnZMeYiK6R0kqZq9dQ7iDFuamoV7bIBLHImhf_3npSg79s7Gz5pW2mY4oFrCqu0dUz7GSJK8XlBlnFD41HM6xYkXsYxunks2nL5Y=&uniplatform=NZKPT
@@ -306,7 +312,9 @@ COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep le
 
 
 # Pattern Recognition and Artificial Intelligence  
-<span style="font-size:30px">模式识别与人工智能</span>
+
+<span style="font-size:26px">模式识别与人工智能</span>
+
 ## Pneumonia Classification and Recognition Method Based on Multi-resolution Attention Dense Network  
 <span style="font-size:20px">基于多分辨率注意密集网络的肺炎分类识别方法</span>  
 
@@ -375,7 +383,9 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 
 
 # Optics and Precision Engineering  
-<span style="font-size:30px">光学精密工程</span>
+
+<span style="font-size:26px">光学精密工程</span>
+
 ## Pneumonia aided diagnosis model based on dense dual-stream focused network  
 <span style="font-size:20px">基于密集双流聚焦网络的肺炎辅助诊断模型</span>  
 
