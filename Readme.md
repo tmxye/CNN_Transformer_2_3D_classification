@@ -1,31 +1,18 @@
-# Transformer-CNN-2D-3D-classification
----
+# Transformer-CNN-2D-3D-classification  
 Framework Features：  
-This deep learning framework offers 1,000+ models (including 100+ specialized CNN-Transformer hybrids for 2D/3D multimodal images) with a modular design for fully customizable components: adaptive training optimization, data preprocessing, model restructuring, and visual analytics (heatmap/gradient map generation)
----
+This deep learning framework offers 1,000+ models (including 100+ specialized CNN-Transformer hybrids for 2D/3D multimodal images) with a modular design for fully customizable components: adaptive training optimization, data preprocessing, model restructuring, and visual analytics (heatmap/gradient map generation)  
 框架特点：  
 本深度学习框架集成了1000+模型（包含100+原创的CNN-Transformer混合架构，适用于2D/3D多模态图像处理）。 该框架采用模块化设计，各功能组件可独立配置：训练策略优化、数据预处理、模块结构重组以及可视化分析（支持热力图与梯度图生成）， 从而显著提升模型开发全流程（训练/验证/测试）的效率。
 
 ---
-
----
 # Contact Information (YXY联系方式)
-[//]: # (&&  Code Developer &#40;代码开发者&#41;: xinyu.ye &#40;叶鑫宇&#41;)
-<span style="font-size:20px">Code Developer (代码开发者): xinyu.ye (叶鑫宇)</span>
-
-<span style="font-size:20px">Email (邮箱):  3303626778@qq.com, yexinyubmd@163.com  </span>
-
-<span style="font-size:20px">WeChat/Phone (微信/手机号):   +86 186-0940-7358  </span>
-
+Code Developer (代码开发者): xinyu.ye (叶鑫宇)  
+Email (邮箱):  3303626778@qq.com, yexinyubmd@163.com  
+WeChat/Phone (微信/手机号):   +86 186-0940-7358  
 Note: The complete code package is 60GB in size (including ~55GB dataset), which exceeds GitHub's 1GB repository limit. We have therefore created a reduced version for GitHub. Please note this current Git version has not yet been fully debugged.  
 The dataset will be made publicly available according to our laboratory's data release policy. For updates, please follow our lab's forthcoming publications. Thank you for your interest in our work.  
-
 说明：完整代码包大小为60GB（包含约55GB数据集），超出GitHub的1GB仓库限制。因此我们提供了适用于GitHub的精简版本。请注意当前Git版本尚未完成完整调试。  
 数据集将根据实验室数据发布政策进行公开。更新信息请关注我们实验室的后续发表文章。感谢您对我们工作的关注。
-
-
-
----
 
 ---
 # 光学学报 Acta Photonica Sinica
@@ -58,6 +45,8 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 
 </div>  
 
+[//]: # (&&  Code Developer &#40;代码开发者&#41;: xinyu.ye &#40;叶鑫宇&#41;)
+[//]: # (<span style="font-size:20px">Code Developer &#40;代码开发者&#41;: xinyu.ye &#40;叶鑫宇&#41;</span>)
 &&  Table 2 Comparison of evaluation indices with different loss functions  
 <span style="font-size:20px">&&  表 2　使用不同损失函数时的评价指标对比</span>  
 
