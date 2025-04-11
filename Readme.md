@@ -16,9 +16,9 @@ The dataset will be made publicly available according to our laboratory's data r
 
 ---
 # 光学学报 Acta Photonica Sinica
-## 基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断
-## Lightweight Directional Transformer for X-Ray-Aided Pneumonia Diagnosis
-[//]: # (<span style="font-size:20px">基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断</span>)
+## Lightweight Directional Transformer
+**基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断**  
+**Lightweight Directional Transformer for X-Ray-Aided Pneumonia Diagnosis**  
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=uXGtp3S0eCBwJKFvuEmxJyCd0_TyBYqZv0O1e70-kN3spTL2sxnDm7O0oM1WwC3ektnmV_RgzyISNNTSsLDz894j9HIXz5OJ83Nnp2tAv8l3zWlES-a89deV6n8oDrGj8YrjIRABHyNPYo0jIf4Fv9B1oS6CqrmBsMIeEjVvD7w=&uniplatform=NZKPT
 
@@ -76,9 +76,9 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 
 # 电子学报 Acta Electronica Sinica
 [//]: # (<span style="font-size:26px">电子学报</span>)
-## 面向肺部肿瘤分类的跨模态Light-3Dformer模型
-## Cross-modal Light-3Dformer Model for Lung tumor classification
-[//]: # (<span style="font-size:20px">面向肺部肿瘤分类的跨模态Light-3Dformer模型</span>)
+## Cross-modal Light-3Dformer Model
+**面向肺部肿瘤分类的跨模态Light-3Dformer模型**   
+**Cross-modal Light-3Dformer Model for Lung tumor classification**  
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvltC-dZmTVC8htxD9To8c0sXLmWMpKarHkucOfBIuleG9FTdHkp-iwk3BbP6hn5Fob5S5M_QLnPdg1HZHh-m3d9m7W9Gri9jup7ExBDJZlSmNY4NGNLZJFb9qexQ2U-9dUFXkrfXnBI6kkQeEcCOFofI8JhXLv2NM=&uniplatform=NZKPT
 
@@ -130,11 +130,11 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 ---
 
 ---
-# 计算机辅助设计与图形学学报 Journal of Computer-Aided Design & Computer Graphics
-[//]: # (<span style="font-size:26px">计算机辅助设计与图形学学报</span>)
-## 基于三维跨模态 ConvFormer 的肺部肿瘤识别
-## 3D Cross-Modal ConvFormer for Lung Cancer Recognition
-[//]: # (<span style="font-size:20px">基于三维跨模态 ConvFormer 的肺部肿瘤识别 </span>  )
+# 计算机辅助设计与图形学学报
+**Journal of Computer-Aided Design & Computer Graphics**
+## 3D Cross-Modal ConvFormer
+**基于三维跨模态 ConvFormer 的肺部肿瘤识别**  
+**3D Cross-Modal ConvFormer for Lung Cancer Recognition**  
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=uXGtp3S0eCAxlLnqB5w_1b0e-ChGSMQ5vIfM_QbSPRHrl0dBCMXSX_C3GHgKReOqJHnEZGm9DDsOVzFDR3OjknvIwTvI_ObzYx-0afvlFA5R3kY7QI77QrUpq1igofXboX-PiYccJVwdo0KwOA--yzMvBiA_HiNKXE28jIDf3ng=&uniplatform=NZKPT
 
@@ -149,9 +149,6 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 ## Figures Section 图表部分  
 <div align="center">
 
-![3D-CConvFormer模型结构图](./Grad_CAM/figure/计算机辅助设计与图形学学报图1.png)  
-*图1 3D-CConvFormer 模型结构图*  
-*Fig. 1 Architecture of 3D-CConvFormer model*  
 ![跨模态特征交互模块的结构图](./Grad_CAM/figure/计算机辅助设计与图形学学报图2.png)  
 *图3 跨模态特征交互模块的结构图*  
 *Fig. 3 Structure of cross-modal feature interaction module*  
@@ -189,11 +186,11 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 
 ---
 
-# 电子与信息学报 Journal of Electronics & Information Technology  
-[//]: # (<span style="font-size:26px">电子与信息学报</span>)
-## 面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型
-## Dense Heavy Parameter Lightweight Transformer Model for CT Image Recognition of COVID-19
-[//]: # (<span style="font-size:26px">面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型</span>  )
+# 电子与信息学报 
+**Journal of Electronics & Information Technology**  
+## Dense Heavy Parameter Lightweight Transformer
+**面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型**  
+**Dense Heavy Parameter Lightweight Transformer Model for CT Image Recognition of COVID-19**  
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvv2GL4frWiAufAyuCF9PzCXNBohb82rk9mtk3FbOLkXtHvNFv2SAxHnwtTg0CjnZMeYiK6R0kqZq9dQ7iDFuamoV7bIBLHImhf_3npSg79s7Gz5pW2mY4oFrCqu0dUz7GSJK8XlBlnFD41HM6xYkXsYxunks2nL5Y=&uniplatform=NZKPT
 
@@ -242,11 +239,11 @@ COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep le
 ---
 
 ---
-# 模式识别与人工智能 Pattern Recognition and Artificial Intelligence  
-[//]: # (<span style="font-size:26px">模式识别与人工智能</span>)
-## 基于多分辨率注意密集网络的肺炎分类识别方法  
-## Pneumonia Classification and Recognition Method Based on Multi-resolution Attention Dense Network  
-[//]: # (<span style="font-size:20px">基于多分辨率注意密集网络的肺炎分类识别方法</span>  )
+# 模式识别与人工智能
+**Pattern Recognition and Artificial Intelligence**
+## Multi-resolution Attention Dense Network
+**基于多分辨率注意密集网络的肺炎分类识别方法**  
+**Pneumonia Classification and Recognition Method Based on Multi-resolution Attention Dense Network**   
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIuiv4-LuB9ehEovhUdRg3gYk8bVEu1Zy6n9lhpIMbtpojTqtfysj8Do3Rk-1BM436j5rORJLaj1hvnK05G30suN8bQLkvufzDF2GNWpmJgUQ0aKu1J9f7L4bdgEd4Rnq3WorY6rJfSm6ApTX3JDNqUVUfJHczfZqC0=&uniplatform=NZKPT
 
@@ -296,10 +293,9 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 
 ---
 # 光学精密工程 Optics and Precision Engineering  
-[//]: # (<span style="font-size:26px">光学精密工程</span>)
-## 基于密集双流聚焦网络的肺炎辅助诊断模型  
-## Pneumonia aided diagnosis model based on dense dual-stream focused network  
-[//]: # (<span style="font-size:20px">基于密集双流聚焦网络的肺炎辅助诊断模型</span>  )
+## dense dual-stream focused network
+**基于密集双流聚焦网络的肺炎辅助诊断模型**   
+**Pneumonia aided diagnosis model based on dense dual-stream focused network**     
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIu71EmD6DnATA8L7SOOW2IQaq2rQM08iAwADGACjnOgLHj03QdNV0cIIq75Y9uHZdXKLDxog-E7uNKkR-jRQOpzaW51u6dakH0bopAnz3jQFIB9ceumHTzbNbgxlCv43tVzk-jfnB4XYbhyrbgl21nruYFjKE1bLQ0=&uniplatform=NZKPT
 
