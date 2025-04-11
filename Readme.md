@@ -1,17 +1,16 @@
-# Transformer-CNN-2D-3D-classification  
 Framework Features：  
 This deep learning framework offers 1,000+ models (including 100+ specialized CNN-Transformer hybrids for 2D/3D multimodal images) with a modular design for fully customizable components: adaptive training optimization, data preprocessing, model restructuring, and visual analytics (heatmap/gradient map generation)  
 框架特点：  
 本深度学习框架集成了1000+模型（包含100+原创的CNN-Transformer混合架构，适用于2D/3D多模态图像处理）。 该框架采用模块化设计，各功能组件可独立配置：训练策略优化、数据预处理、模块结构重组以及可视化分析（支持热力图与梯度图生成）， 从而显著提升模型开发全流程（训练/验证/测试）的效率。
 
 ---
-# Contact Information (YXY联系方式)
+# Contact
 Code Developer (代码开发者): xinyu.ye (叶鑫宇)  
 Email (邮箱):  3303626778@qq.com, yexinyubmd@163.com  
-WeChat/Phone (微信/手机号):   +86 186-0940-7358  
-Note: The complete code package is 60GB in size (including ~55GB dataset), which exceeds GitHub's 1GB repository limit. We have therefore created a reduced version for GitHub. Please note this current Git version has not yet been fully debugged.  
+WeChat/Phone (YXY联系方式):   +86 186-0940-7358  
+Note: The complete code package is 60GB in size (including ~55GB dataset), which exceeds GitHub's 1GB repository limit. We have therefore created a reduced version for GitHub.   
 The dataset will be made publicly available according to our laboratory's data release policy. For updates, please follow our lab's forthcoming publications. Thank you for your interest in our work.  
-说明：完整代码包大小为60GB（包含约55GB数据集），超出GitHub的1GB仓库限制。因此我们提供了适用于GitHub的精简版本。请注意当前Git版本尚未完成完整调试。  
+说明：完整代码包大小为60GB（包含约55GB数据集），超出GitHub的1GB仓库限制。因此我们提供了适用于GitHub的精简版本。  
 数据集将根据实验室数据发布政策进行公开。更新信息请关注我们实验室的后续发表文章。感谢您对我们工作的关注。
 
 ---
@@ -76,7 +75,7 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 
 # 电子学报 Acta Electronica Sinica
 [//]: # (<span style="font-size:26px">电子学报</span>)
-## Cross-modal Light-3Dformer Model
+## Cross-modal Light-3Dformer
 **面向肺部肿瘤分类的跨模态Light-3Dformer模型**   
 **Cross-modal Light-3Dformer Model for Lung tumor classification**  
 <span style="font-size:14px">Article Link (文章链接)：</span>  
@@ -131,7 +130,7 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 
 ---
 # 计算机辅助设计与图形学学报
-**Journal of Computer-Aided Design & Computer Graphics**
+**计算机辅助设计与图形学学报 Journal of Computer-Aided Design & Computer Graphics**
 ## 3D Cross-Modal ConvFormer
 **基于三维跨模态 ConvFormer 的肺部肿瘤识别**  
 **3D Cross-Modal ConvFormer for Lung Cancer Recognition**  
@@ -187,8 +186,8 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 ---
 
 # 电子与信息学报 
-**Journal of Electronics & Information Technology**  
-## Dense Heavy Parameter Lightweight Transformer
+**电子与信息学报 Journal of Electronics & Information Technology**  
+## Dense Reparameter Lightweight Transformer
 **面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型**  
 **Dense Heavy Parameter Lightweight Transformer Model for CT Image Recognition of COVID-19**  
 <span style="font-size:14px">Article Link (文章链接)：</span>  
@@ -240,8 +239,8 @@ COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep le
 
 ---
 # 模式识别与人工智能
-**Pattern Recognition and Artificial Intelligence**
-## Multi-resolution Attention Dense Network
+**模式识别与人工智能 Pattern Recognition and Artificial Intelligence**
+## Multi-resolution Attention DenseNet
 **基于多分辨率注意密集网络的肺炎分类识别方法**  
 **Pneumonia Classification and Recognition Method Based on Multi-resolution Attention Dense Network**   
 <span style="font-size:14px">Article Link (文章链接)：</span>  
@@ -292,7 +291,8 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 ---
 
 ---
-# 光学精密工程 Optics and Precision Engineering  
+# 光学精密工程
+**光学精密工程 Optics and Precision Engineering**  
 ## dense dual-stream focused network
 **基于密集双流聚焦网络的肺炎辅助诊断模型**   
 **Pneumonia aided diagnosis model based on dense dual-stream focused network**     
