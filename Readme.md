@@ -10,16 +10,12 @@ This deep learning framework offers 1,000+ models (including 100+ specialized CN
 ---
 # Contact Information (YXY联系方式)
 ## Code Developer (代码开发者): xinyu.ye (叶鑫宇)
-<span style="font-size:20px">Email (邮箱):  3303626778@qq.com, yexinyubmd@163.com  </span>
+<span style="font-size:20px">Email (邮箱):  3303626778@qq.com, yexinyubmd@163.com  </span>  
+<span style="font-size:20px">WeChat/Phone (微信/手机号):   +86 186-0940-7358  </span>   
+Note: The complete code package is 60GB in size (including ~55GB dataset), which exceeds GitHub's 1GB repository limit. We have therefore created a reduced version for GitHub. Please note this current Git version has not yet been fully debugged.  
+The dataset will be made publicly available according to our laboratory's data release policy. For updates, please follow our lab's forthcoming publications. Thank you for your interest in our work.  
 
-<span style="font-size:20px">WeChat/Phone (微信/手机号):   +86 186-0940-7358  </span>
-
-Note: The complete code package is 60GB in size (including ~55GB dataset), which exceeds GitHub's 1GB repository limit. We have therefore created a reduced version for GitHub. Please note this current Git version has not yet been fully debugged.
-
-The dataset will be made publicly available according to our laboratory's data release policy. For updates, please follow our lab's forthcoming publications. Thank you for your interest in our work.
-
-说明：完整代码包大小为60GB（包含约55GB数据集），超出GitHub的1GB仓库限制。因此我们提供了适用于GitHub的精简版本。请注意当前Git版本尚未完成完整调试。
-
+说明：完整代码包大小为60GB（包含约55GB数据集），超出GitHub的1GB仓库限制。因此我们提供了适用于GitHub的精简版本。请注意当前Git版本尚未完成完整调试。  
 数据集将根据实验室数据发布政策进行公开。更新信息请关注我们实验室的后续发表文章。感谢您对我们工作的关注。
 
 
@@ -27,32 +23,23 @@ The dataset will be made publicly available according to our laboratory's data r
 
 ---
 
-# Acta Photonica Sinica 光学学报  
-## Lightweight Directional Transformer for X-Ray-Aided Pneumonia Diagnosis  
-<span style="font-size:20px">基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断</span>
-
+# 光学学报 Acta Photonica Sinica
+## 基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断
+## Lightweight Directional Transformer for X-Ray-Aided Pneumonia Diagnosis
+[//]: # (<span style="font-size:20px">基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断</span>)
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=uXGtp3S0eCBwJKFvuEmxJyCd0_TyBYqZv0O1e70-kN3spTL2sxnDm7O0oM1WwC3ektnmV_RgzyISNNTSsLDz894j9HIXz5OJ83Nnp2tAv8l3zWlES-a89deV6n8oDrGj8YrjIRABHyNPYo0jIf4Fv9B1oS6CqrmBsMIeEjVvD7w=&uniplatform=NZKPT
 
----
-
 ## 中文摘要 Abstract
-为满足轻量化卷积神经网络（CNN）对肺炎X光片中方向和语义信息提取的需求，提出一种基于轻量化方向Transformer的肺炎X光片辅助诊断模型。首先，构造CNN结合Transformer的密集连接架构，实现深浅层中局部和全局信息的结合；其次，设计方向卷积捕获不同大小、形状特征的空间和方向信息，并降低Transformer学习全局特征的计算复杂度；然后，为每个样本特征采用专门的卷积核，降低方向卷积参数量，并保持高效计算；最后，通过构造均衡聚焦损失函数来提高模型肺炎识别能力。在肺炎X光片数据集中，所提出模型以较低的模型参数量、计算量，以及较短的运行时间，获得了98.87%准确率和98.85%AUC值的最佳性能，在3个公共肺炎相关数据集中均获得较强的鲁棒性和较优的泛化能力。
-
+为满足轻量化卷积神经网络（CNN）对肺炎X光片中方向和语义信息提取的需求，提出一种基于轻量化方向Transformer的肺炎X光片辅助诊断模型。首先，构造CNN结合Transformer的密集连接架构，实现深浅层中局部和全局信息的结合；其次，设计方向卷积捕获不同大小、形状特征的空间和方向信息，并降低Transformer学习全局特征的计算复杂度；然后，为每个样本特征采用专门的卷积核，降低方向卷积参数量，并保持高效计算；最后，通过构造均衡聚焦损失函数来提高模型肺炎识别能力。在肺炎X光片数据集中，所提出模型以较低的模型参数量、计算量，以及较短的运行时间，获得了98.87%准确率和98.85%AUC值的最佳性能，在3个公共肺炎相关数据集中均获得较强的鲁棒性和较优的泛化能力。  
 **关键词**：图像处理；密集局部和全局特征；方向Transformer；轻量化卷积；肺炎X光片
 
 ## English Abstract
-Objective: Computer-aided pneumonia diagnosis with chest X-rays based on convolutional neural networks (CNNs) is an important research direction. The presence of factors such as patient positions and inspiratory depth in chest X-rays images can lead to confusion with other diseases, and existing methods ignore the directional and spatial features of images in chest X-rays, such as the common onset of pneumonia in the middle and lower lobes of the lung. However, it is difficult to extract the directional information and global semantic information of pneumonia X-rays by a CNN. Additionally, the model is not sufficiently lightweight, and the time and space complexity is high. Hence, this paper proposes a lightweight directional Transformer (LDTransformer) model for pneumonia X-rays to assist in diagnosis.
-
-Methods: The densely connected architecture of CNN combined with the Transformer is constructed. It is composed of cross-stacking local feature extraction and global feature extraction, and its dense connections are used to achieve the combination of local and global information in deep and shallow layers. Next, lateral, vertical, and dilated convolutions in parallel with the directional convolution are designed to capture spatial and directional information of different shape sizes. The directional convolution is used to compress feature scales in the Transformer and learn global features and directional features of images with low computational complexity. After that, the lightweight convolution in CNN is designed. It employs a dedicated convolution kernel for each sample feature, learns features in chunks, and fuses them by a channel-noted blender to reduce the number of model parameters and maintain efficient computation while effectively increasing the feature extraction capability of the network. Finally, a balanced focal loss function is constructed to increase the weight of small and misclassified samples and decrease the weight of over-classified samples.
-
-Results and Discussions: The LDTransformer model achieves high recognition accuracy with good robustness and generalization in all three X-ray datasets of number, category, and difficulty. Smaller datasets make it difficult for the high-performance CNN and Transformer models to learn sufficiently, while the lightweight model using a combination of both can obtain high recognition accuracy (Table 6). Compared with various lightweight models of CNN and Transformer (Table 4), the model in this paper has advantages in terms of the number of parameters, computation, and training time. In particular, its lightweight design with a dedicated convolution kernel for each sample feature makes the operation efficiency significantly better than that of existing models. Finally, the performance of each component of the model in this paper is tested separately by ablation experiments and loss function comparison experiments, and the region of interest and accuracy of the model are visualized by the heat map visualization in the ablation experiments (Fig. 4).
-
-Conclusions: Considering the inadequate feature extraction and insufficient model lightweight, this paper proposes a model for X-ray-aided pneumonia diagnosis to combine local and global information in deep and shallow layers. The directional convolution learns spatial and directional information of different shape sizes. The lightweight convolution with a dedicated convolution kernel for each sample feature is designed to reduce resource consumption, and a balanced focal loss function is constructed to optimize training. The proposed model achieves the accuracy of 98.87% and an AUC value of 98.85% under a small number of model parameters (2.53×10^5), the lowest model computation (3.98×10^7), and the fastest total speed (12647 s) in the pneumonia X-ray dataset. It effectively extracts the directional features and global features of pneumonia X-ray images with a high degree of lightweight.
-
+Objective: Computer-aided pneumonia diagnosis with chest X-rays based on convolutional neural networks (CNNs) is an important research direction. The presence of factors such as patient positions and inspiratory depth in chest X-rays images can lead to confusion with other diseases, and existing methods ignore the directional and spatial features of images in chest X-rays, such as the common onset of pneumonia in the middle and lower lobes of the lung. However, it is difficult to extract the directional information and global semantic information of pneumonia X-rays by a CNN. Additionally, the model is not sufficiently lightweight, and the time and space complexity is high. Hence, this paper proposes a lightweight directional Transformer (LDTransformer) model for pneumonia X-rays to assist in diagnosis.  
+Methods: The densely connected architecture of CNN combined with the Transformer is constructed. It is composed of cross-stacking local feature extraction and global feature extraction, and its dense connections are used to achieve the combination of local and global information in deep and shallow layers. Next, lateral, vertical, and dilated convolutions in parallel with the directional convolution are designed to capture spatial and directional information of different shape sizes. The directional convolution is used to compress feature scales in the Transformer and learn global features and directional features of images with low computational complexity. After that, the lightweight convolution in CNN is designed. It employs a dedicated convolution kernel for each sample feature, learns features in chunks, and fuses them by a channel-noted blender to reduce the number of model parameters and maintain efficient computation while effectively increasing the feature extraction capability of the network. Finally, a balanced focal loss function is constructed to increase the weight of small and misclassified samples and decrease the weight of over-classified samples.  
+Results and Discussions: The LDTransformer model achieves high recognition accuracy with good robustness and generalization in all three X-ray datasets of number, category, and difficulty. Smaller datasets make it difficult for the high-performance CNN and Transformer models to learn sufficiently, while the lightweight model using a combination of both can obtain high recognition accuracy (Table 6). Compared with various lightweight models of CNN and Transformer (Table 4), the model in this paper has advantages in terms of the number of parameters, computation, and training time. In particular, its lightweight design with a dedicated convolution kernel for each sample feature makes the operation efficiency significantly better than that of existing models. Finally, the performance of each component of the model in this paper is tested separately by ablation experiments and loss function comparison experiments, and the region of interest and accuracy of the model are visualized by the heat map visualization in the ablation experiments (Fig. 4).  
+Conclusions: Considering the inadequate feature extraction and insufficient model lightweight, this paper proposes a model for X-ray-aided pneumonia diagnosis to combine local and global information in deep and shallow layers. The directional convolution learns spatial and directional information of different shape sizes. The lightweight convolution with a dedicated convolution kernel for each sample feature is designed to reduce resource consumption, and a balanced focal loss function is constructed to optimize training. The proposed model achieves the accuracy of 98.87% and an AUC value of 98.85% under a small number of model parameters (2.53×10^5), the lowest model computation (3.98×10^7), and the fastest total speed (12647 s) in the pneumonia X-ray dataset. It effectively extracts the directional features and global features of pneumonia X-ray images with a high degree of lightweight.  
 **Key words**: image processing; densely local and global features; directional Transformer; lightweight convolution; pneumonia X-ray
-
----
 
 ##  Figures Section  图表部分  
 <div align="center">  
@@ -60,17 +47,14 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 ![光学学报文章1图1](./Grad_CAM/figure/光学学报文章1图1.png)  
 *图1 LDTransformer 整体框架结构图*  
 *Fig. 1 Overall frame structure of LDTransformer*  
-
 ![光学学报文章1图2](./Grad_CAM/figure/光学学报文章1图2.png)  
 *图 4　消融模型在肺炎 X 光片上的热力图*  
 *Fig. 4 Thermograms of ablation model on pneumonia Xray*  
 
 </div>  
 
----
-
 ## Table 2 Comparison of evaluation indices with different loss functions
-<span style="font-size:20px">表 2　使用不同损失函数时的评价指标对比</span>
+<span style="font-size:20px">表 2　使用不同损失函数时的评价指标对比</span>  
 
 | Model               | Parameter amount | Calculation amount | Total time /s | A /%          | AUC /%        | R /%          | F1 /%         | P /%          |  
 |---------------------|------------------|--------------------|---------------|---------------|---------------|---------------|---------------|---------------|  
@@ -97,31 +81,21 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 
 
 
-# Acta Electronica Sinica 电子学报  
-
-<span style="font-size:26px">电子学报</span>
-
-## Cross-modal Light-3Dformer Model for Lung tumor classification  
-<span style="font-size:20px">面向肺部肿瘤分类的跨模态Light-3Dformer模型</span>
-
+# 电子学报 Acta Electronica Sinica
+[//]: # (<span style="font-size:26px">电子学报</span>)
+## 面向肺部肿瘤分类的跨模态Light-3Dformer模型
+## Cross-modal Light-3Dformer Model for Lung tumor classification
+[//]: # (<span style="font-size:20px">面向肺部肿瘤分类的跨模态Light-3Dformer模型</span>)
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvltC-dZmTVC8htxD9To8c0sXLmWMpKarHkucOfBIuleG9FTdHkp-iwk3BbP6hn5Fob5S5M_QLnPdg1HZHh-m3d9m7W9Gri9jup7ExBDJZlSmNY4NGNLZJFb9qexQ2U-9dUFXkrfXnBI6kkQeEcCOFofI8JhXLv2NM=&uniplatform=NZKPT
 
----
-
 ## 中文摘要 Abstract
-基于深度学习的三维多模态正电子发射型断层扫描/计算机断层扫描（PET/CT）肺部肿瘤识别是一个重要的研究方向。肺部肿瘤病灶的空间形状不规则、与周围组织边界模糊，导致模型难以充分提取肿瘤特征，且模型在三维任务中需要较高的计算复杂度。针对上述问题，本文提出一种跨模态Light-3Dformer的三维肺部肿瘤识别模型。主要创新工作包括：1）采用主、辅网络结构实现多模态特征增强和交互式学习；2）设计Light-3Dformer模块，通过线性元素乘法操作和级联结构实现轻量化；3）提出无参数注意力机制增强三维特征提取；4）设计轻量化跨模态协同注意力模块（LCCAM）。实验结果表明，在自建数据集中模型准确率达90.19%，AUC值89.81%，与3D-SwinTransformer-S相比参数量降低117倍，计算量降低400倍。
-
+基于深度学习的三维多模态正电子发射型断层扫描/计算机断层扫描（PET/CT）肺部肿瘤识别是一个重要的研究方向。肺部肿瘤病灶的空间形状不规则、与周围组织边界模糊，导致模型难以充分提取肿瘤特征，且模型在三维任务中需要较高的计算复杂度。针对上述问题，本文提出一种跨模态Light-3Dformer的三维肺部肿瘤识别模型。主要创新工作包括：1）采用主、辅网络结构实现多模态特征增强和交互式学习；2）设计Light-3Dformer模块，通过线性元素乘法操作和级联结构实现轻量化；3）提出无参数注意力机制增强三维特征提取；4）设计轻量化跨模态协同注意力模块（LCCAM）。实验结果表明，在自建数据集中模型准确率达90.19%，AUC值89.81%，与3D-SwinTransformer-S相比参数量降低117倍，计算量降低400倍。  
 **关键词**：肺部肿瘤；多模态图像；Transformer；Light-3Dformer；轻量化跨模态协同注意力
 
----
-
 ## English Abstract  
-Recognition of 3D multimodal PET/CT lung tumors using deep learning is an important research area. This paper proposes a cross-modal Light-3Dformer model to address challenges including irregular lesion shapes and high computational complexity. Key contributions include: 1) A dual-network architecture for multimodal feature enhancement, 2) Light-3Dformer module with linear element-wise operations, 3) Parameter-free attention mechanism for 3D feature extraction, and 4) Lightweight Cross-modal Collaborative Attention Module (LCCAM). Experiments show 90.19% accuracy and 89.81% AUC on our dataset, with 117× fewer parameters and 400× lower computation than 3D-SwinTransformer-S.
-
+Recognition of 3D multimodal PET/CT lung tumors using deep learning is an important research area. This paper proposes a cross-modal Light-3Dformer model to address challenges including irregular lesion shapes and high computational complexity. Key contributions include: 1) A dual-network architecture for multimodal feature enhancement, 2) Light-3Dformer module with linear element-wise operations, 3) Parameter-free attention mechanism for 3D feature extraction, and 4) Lightweight Cross-modal Collaborative Attention Module (LCCAM). Experiments show 90.19% accuracy and 89.81% AUC on our dataset, with 117× fewer parameters and 400× lower computation than 3D-SwinTransformer-S.  
 **Key words**: lung tumor; multimodal images; Transformer; Light-3Dformer; light cross-modal collaborative attention
-
----
 
 ##  Figures Section  图表部分  
 <div align="center">
@@ -129,18 +103,14 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 ![跨模态Light-3Dformer整体结构图](./Grad_CAM/figure/电子学报图1.png)  
 *图1 跨模态Light-3Dformer整体结构图*  
 *Fig. 1 Architecture of cross-modal Light-3Dformer*  
-
 ![Light-3Dformer结构](./Grad_CAM/figure/电子学报图2.png)  
 *图2 Light-3Dformer结构*  
 *Fig. 2 Structure of Light-3Dformer*  
-
 ![Light-3Dformer结构](./Grad_CAM/figure/电子学报图3.png)   
 *图4 热力图*  
 *Fig. 4 heatmap*  
 
 </div>
-
----
 
 ## Table 2. Performance comparison on 3D PET/CT dataset  
 <span style="font-size:20px">表2 不同模型在肺部肿瘤PET/CT多模态三维数据集上的实验结果</span>
@@ -168,10 +138,8 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 
 
 
-# Journal of Computer-Aided Design & Computer Graphics  
-
-<span style="font-size:26px">计算机辅助设计与图形学学报</span>
-
+# 计算机辅助设计与图形学学报 Journal of Computer-Aided Design & Computer Graphics
+[//]: # (<span style="font-size:26px">计算机辅助设计与图形学学报</span>)
 ## 3D Cross-Modal ConvFormer for Lung Cancer Recognition
 <span style="font-size:20px">基于三维跨模态 ConvFormer 的肺部肿瘤识别 </span>  
 
