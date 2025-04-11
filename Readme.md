@@ -196,7 +196,7 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 
 <div align="center">
 
-![3D-CConvFormer模型结构图](图片路径.png)  
+![3D-CConvFormer模型结构图](./Grad_CAM/figure/计算机辅助设计与图形学学报图1.png)  
 *图1 3D-CConvFormer 模型结构图*  
 *Fig. 1 Architecture of 3D-CConvFormer model*  
 

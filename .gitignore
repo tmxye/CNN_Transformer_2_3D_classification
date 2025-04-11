@@ -19,6 +19,7 @@ build/
 *.dll
 
 # 数据集
+data/
 data_4/
 data_8_COVID_CT/
 data_9_COVID2/
@@ -29,6 +30,7 @@ data_15X/
 
 
 # 数据可视化-训练，热力图
-# visual/
+visual/
+weights/
 feature_map_save/
 Grad_CAM/figure_原始/
