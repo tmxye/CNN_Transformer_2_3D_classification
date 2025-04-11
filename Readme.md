@@ -19,10 +19,14 @@ The dataset will be made publicly available according to our laboratory's data r
 数据集将根据实验室数据发布政策进行公开。更新信息请关注我们实验室的后续发表文章。感谢您对我们工作的关注。
 
 
----
+
+
+
+
 
 ---
 
+---
 # 光学学报 Acta Photonica Sinica
 ## 基于轻量化方向 Transformer 模型的肺炎 X 光片辅助诊断
 ## Lightweight Directional Transformer for X-Ray-Aided Pneumonia Diagnosis
@@ -71,15 +75,14 @@ Conclusions: Considering the inadequate feature extraction and insufficient mode
 | NextVitS［22］      | 3.18×10⁷         | 5.79×10⁹           | 20136         | 96.75±2.1     | 96.63±2.0     | 97.30±2.2     | 97.25±2.1     | 97.19±2.0     |  
 | **LDTransformer**   | **2.53×10⁵**     | **3.98×10⁷**       | **11783**     | **98.87±0.8** | **98.85±1.0** | **98.99±0.9** | **99.04±0.9** | **99.10±0.8** |  
 
+
+
+
+
+
 ---
 
 ---
-
-
-
-
-
-
 
 # 电子学报 Acta Electronica Sinica
 [//]: # (<span style="font-size:26px">电子学报</span>)
@@ -112,17 +115,22 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 
 </div>
 
-## Table 2. Performance comparison on 3D PET/CT dataset  
+## Table 2. Experimental results of different models on 3D PET/CT multimodal lung tumor dataset  
 <span style="font-size:20px">表2 不同模型在肺部肿瘤PET/CT多模态三维数据集上的实验结果</span>
 
-| 对比模型            | 参数量   | 计算量   | 准确率(%) | AUC值(%) | 训练时间(s) |
-|---------------------|----------|----------|------------|----------|-------------|
-| 3D-SwinTransformer-S| 48.751M  | 68.210G  | 83.64      | 83.09    | 38,589      |
-| Light-3Dformer      | 417.090K | 170.550M | 90.19      | 89.81    | 28,749      |
-| 3D-ResNet50         | 46.203M  | 39.981G  | 81.07      | 79.47    | 36,256      |
-| 3D-EfficientNet-b3  | 1.624M   | 205.719M | 82.59      | 80.53    | 34,271      |
-
-
+| 对比模型                     | 参数量 | 计算量 | 准确率(%) | AUC值(%) | 召回率(%) | F1分数(%) | 精确率(%) | 训练时间(s) |
+|--------------------------|--------|--------|-----------|----------|-----------|-----------|-----------|-------------|
+| 3D-ResNet50[22]          | 46.203 M | 39.981 G | 81.07 | 79.47 | 71.55 | 75.08 | 78.96 | 36,256 |
+| 3D-EfficientNet-b3[20]   | 1.624 M | 205.719 M | 82.59 | 80.53 | 70.38 | 76.31 | 83.33 | 34,271 |
+| 3D-SwinTransformer-S[17] | 48.751 M | 68.210 G | 83.64 | 83.09 | 80.35 | 72.25 | 76.64 | 38,589 |
+| 3D-PoolFormer-S24[25]    | 31.687 M | 32.020 G | 85.75 | 85.43 | 83.87 | 82.42 | 81.02 | 37,486 |
+| 3D-BEVT[17]              | 86.628 M | 121.158 G | 86.09 | 85.62 | 83.28 | 82.68 | 82.08 | 41,718 |
+| 3D-Mobile-ViT[18]        | 2.028 M | 1.082 G | 84.23 | 83.47 | 79.77 | 80.12 | 80.47 | 32,457 |
+| 3D-EdgeNeXt-S[26]        | 6.461 M | 2.024 G | 85.39 | 84.39 | 79.47 | 81.26 | 83.13 | 34,012 |
+| 3D-CVT-13[27]            | 21.430 M | 26.657 G | 84.69 | 84.01 | 80.65 | 80.76 | 80.88 | 36,422 |
+| 3D-CMT-S[27]             | 27.278 M | 23.048 G | 86.09 | 85.38 | 81.82 | 82.42 | 83.04 | 35,874 |
+| 3D-NextVit-S[28]         | 19.900 M | 34.610 G | 86.92 | 86.20 | 82.69 | 83.43 | 84.18 | 34,891 |
+| **Light-3Dformer**       | **417.090 K** | **170.550 M** | **90.19** | **89.81** | **87.98** | **87.72** | **90.19** | **28,749** |
 
 
 
@@ -132,57 +140,39 @@ Recognition of 3D multimodal PET/CT lung tumors using deep learning is an import
 ---
 
 ---
-
-
-
-
-
-
 # 计算机辅助设计与图形学学报 Journal of Computer-Aided Design & Computer Graphics
 [//]: # (<span style="font-size:26px">计算机辅助设计与图形学学报</span>)
+## 基于三维跨模态 ConvFormer 的肺部肿瘤识别
 ## 3D Cross-Modal ConvFormer for Lung Cancer Recognition
-<span style="font-size:20px">基于三维跨模态 ConvFormer 的肺部肿瘤识别 </span>  
-
+[//]: # (<span style="font-size:20px">基于三维跨模态 ConvFormer 的肺部肿瘤识别 </span>  )
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=uXGtp3S0eCAxlLnqB5w_1b0e-ChGSMQ5vIfM_QbSPRHrl0dBCMXSX_C3GHgKReOqJHnEZGm9DDsOVzFDR3OjknvIwTvI_ObzYx-0afvlFA5R3kY7QI77QrUpq1igofXboX-PiYccJVwdo0KwOA--yzMvBiA_HiNKXE28jIDf3ng=&uniplatform=NZKPT
 
----
-
 ## 中文摘要 Abstract
-针对三维医学影像因肺部肿瘤形状不规则、差异性大, 导致特征提取不充分和识别不准确的问题, 提出一种基于 CNN 和 Transformer 的三维跨模态肺部肿瘤识别模型 3D-CConvFormer. 首先, 利用三分支网络学习三维 PET, CT 和 PET/CT 影像中病灶的特征; 其次, 设计全局特征与浅层局部特征融合的高效 ConvFormer 模块, 并利用自校正卷积对感受野进行有效扩展, 提高每个模态中对病灶信息的提取能力; 最后, 设计双分支不同分辨率的跨模态特征交互块, 利用 2 个全局注意力机制交叉学习不同模态、全局和局部信息, 交互式地增强跨模态特征提取能力. 实验采用的肺部肿瘤 3D 多模态数据集, 该数据集共有 3 173 例患者, 3D-CConvFormer 模型在参数量和运行时间较优的前提下, 获得了 89.25%的准确率和 88.74%的 AUC 值的最优性能, 为三维多模态肺部肿瘤疾病诊断提供可靠的计算机辅助.  
-
+针对三维医学影像因肺部肿瘤形状不规则、差异性大, 导致特征提取不充分和识别不准确的问题, 提出一种基于 CNN 和 Transformer 的三维跨模态肺部肿瘤识别模型 3D-CConvFormer. 首先, 利用三分支网络学习三维 PET, CT 和 PET/CT 影像中病灶的特征; 其次, 设计全局特征与浅层局部特征融合的高效 ConvFormer 模块, 并利用自校正卷积对感受野进行有效扩展, 提高每个模态中对病灶信息的提取能力; 最后, 设计双分支不同分辨率的跨模态特征交互块, 利用 2 个全局注意力机制交叉学习不同模态、全局和局部信息, 交互式地增强跨模态特征提取能力. 实验采用的肺部肿瘤 3D 多模态数据集, 该数据集共有 3 173 例患者, 3D-CConvFormer 模型在参数量和运行时间较优的前提下, 获得了 89.25%的准确率和 88.74%的 AUC 值的最优性能, 为三维多模态肺部肿瘤疾病诊断提供可靠的计算机辅助.    
 **关键词**: 肺部肿瘤; ConvFormer; 跨模态特征交互; 三维 PET/CT 多模态影像  
 
 ## English Abstract  
-Due to the irregular shape and large difference of lung tumors in 3D medical images, the feature extraction of lesions is insufficient, and the recognition accuracy is not high, a 3D Cross-Modal ConvFormer is proposed. Firstly, three networks are utilized to learn the 3D PET, CT and PET/CT medical images. Secondly, a ConvFormer model is designed to fuse global and shallow local features, while self-correcting convolution expands the receptive field for better lesion extraction. Finally, a dual-branch cross-modal feature interaction block is designed to enhance cross-modal features and capture 3D multimodal details. This module uses two global attention mechanisms to improve the extraction of cross-modal and global-local information. The experiments use a 3D multimodal lung tumor dataset with 3 173 patients. With optimized parameters and computation time, the 3D-CConvFormer achieves an accuracy of 89.25% and an AUC of 88.74%, providing reliable computer-aided diagnosis for 3D multimodal lung tumor.  
-
+Due to the irregular shape and large difference of lung tumors in 3D medical images, the feature extraction of lesions is insufficient, and the recognition accuracy is not high, a 3D Cross-Modal ConvFormer is proposed. Firstly, three networks are utilized to learn the 3D PET, CT and PET/CT medical images. Secondly, a ConvFormer model is designed to fuse global and shallow local features, while self-correcting convolution expands the receptive field for better lesion extraction. Finally, a dual-branch cross-modal feature interaction block is designed to enhance cross-modal features and capture 3D multimodal details. This module uses two global attention mechanisms to improve the extraction of cross-modal and global-local information. The experiments use a 3D multimodal lung tumor dataset with 3 173 patients. With optimized parameters and computation time, the 3D-CConvFormer achieves an accuracy of 89.25% and an AUC of 88.74%, providing reliable computer-aided diagnosis for 3D multimodal lung tumor.    
 **Key words**: lung cancer; ConvFormer; cross-modal feature interaction; 3D PET/CT multimodal images  
 
----
-
 ## Figures Section 图表部分  
-
 <div align="center">
 
 ![3D-CConvFormer模型结构图](./Grad_CAM/figure/计算机辅助设计与图形学学报图1.png)  
 *图1 3D-CConvFormer 模型结构图*  
 *Fig. 1 Architecture of 3D-CConvFormer model*  
-
 ![跨模态特征交互模块的结构图](./Grad_CAM/figure/计算机辅助设计与图形学学报图2.png)  
 *图3 跨模态特征交互模块的结构图*  
 *Fig. 3 Structure of cross-modal feature interaction module*  
-
 ![消融模型在肺部肿瘤影像上的热力图](./Grad_CAM/figure/计算机辅助设计与图形学学报图3.png)  
 *图5 消融模型在肺部肿瘤影像上的热力图*  
 *Fig. 5 Heatmaps of ablation model on lung tumor images*  
-
 ![11种模型在肺部肿瘤PET/CT多模态三维数据集上的曲线对比](./Grad_CAM/figure/计算机辅助设计与图形学学报图4.png)  
 *图7 11种模型在肺部肿瘤PET/CT多模态三维数据集上的曲线对比*  
 *Fig. 7 Performance curves of 11 models on 3D PET/CT multimodal lung tumor dataset*
 
 </div>
-
----
 
 ## Table 3. Performance comparison on 3D PET/CT multimodal lung tumor dataset 
 <span style="font-size:20px">表3 对比模型在肺部肿瘤PET/CT多模态三维数据集上的具体结果</span>
@@ -201,41 +191,29 @@ Due to the irregular shape and large difference of lung tumors in 3D medical ima
 | 3D-NextVit-S[15]    | 19.900M  | 86.92    | 86.20  | 82.69    | 83.43  | 84.18    | 34 891     |  
 | **3D-CConvFormer**  | **11.199M** | **89.25** | **88.74** | **86.22** | **86.47** | **86.73** | **32 153** |  
 
+
+
+
+
 ---
 
 ---
 
-
-
-
-
-
-
-# Journal of Electronics & Information Technology  
-
-<span style="font-size:26px">电子与信息学报</span>
-
+# 电子与信息学报 Journal of Electronics & Information Technology  
+[//]: # (<span style="font-size:26px">电子与信息学报</span>)
+## 面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型
 ## Dense Heavy Parameter Lightweight Transformer Model for CT Image Recognition of COVID-19
-<span style="font-size:26px">面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型</span>  
-
+[//]: # (<span style="font-size:26px">面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型</span>  )
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIvv2GL4frWiAufAyuCF9PzCXNBohb82rk9mtk3FbOLkXtHvNFv2SAxHnwtTg0CjnZMeYiK6R0kqZq9dQ7iDFuamoV7bIBLHImhf_3npSg79s7Gz5pW2mY4oFrCqu0dUz7GSJK8XlBlnFD41HM6xYkXsYxunks2nL5Y=&uniplatform=NZKPT
 
----
-
 ## 中文摘要 Abstract
-新冠(COVID-19)肺炎严重威胁人类健康，基于深度学习的计算机辅助诊断方法能有效提高新冠肺炎的诊断效率。但是深度学习模型结构复杂、参数量和计算量大，在保持模型性能的前提下提高网络轻量化的程度具有重要研究意义，因此，该文提出一种面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型(DRL-Transformer)。首先，为提高模型的轻量化程度，构造了重参密集块和层次化Transformer，在保持模型精度的同时提高计算速度，降低模型参数量；然后，为充分提取新冠肺炎病灶的全局与局部信息，设计层次化Transformer增强全局注意力对局部特征相关性的关注程度，其中采用分组提取全局特征，在不同组之间进行融合获得多层次信息，并且进行信息融合，进一步提高组内和组间特征的交互能力，此外对所有全局特征进行聚合，实现深浅层特征深度融合。最后，在新冠肺炎CT数据集中进行对比实验，结果表明该模型参数量和计算量分别为1.47 M和81.232 M，相比密集网络(DenseNet)参数量降低29倍、计算量降低23倍，该模型对新冠肺炎计算机辅助诊断具有积极的意义，为深度学习模型轻量化提供了新思路。
-
-**关键词**：新冠肺炎；DenseNet；重参密集块；层次化Transformer；轻量化
-
----
+新冠(COVID-19)肺炎严重威胁人类健康，基于深度学习的计算机辅助诊断方法能有效提高新冠肺炎的诊断效率。但是深度学习模型结构复杂、参数量和计算量大，在保持模型性能的前提下提高网络轻量化的程度具有重要研究意义，因此，该文提出一种面向CT图像新冠肺炎识别的密集重参轻量化Transformer模型(DRL-Transformer)。首先，为提高模型的轻量化程度，构造了重参密集块和层次化Transformer，在保持模型精度的同时提高计算速度，降低模型参数量；然后，为充分提取新冠肺炎病灶的全局与局部信息，设计层次化Transformer增强全局注意力对局部特征相关性的关注程度，其中采用分组提取全局特征，在不同组之间进行融合获得多层次信息，并且进行信息融合，进一步提高组内和组间特征的交互能力，此外对所有全局特征进行聚合，实现深浅层特征深度融合。最后，在新冠肺炎CT数据集中进行对比实验，结果表明该模型参数量和计算量分别为1.47 M和81.232 M，相比密集网络(DenseNet)参数量降低29倍、计算量降低23倍，该模型对新冠肺炎计算机辅助诊断具有积极的意义，为深度学习模型轻量化提供了新思路。  
+**关键词**：新冠肺炎；DenseNet；重参密集块；层次化Transformer；轻量化  
 
 ## English Abstract  
-COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep learning computer aided diagnosis method can effectively improve the diagnosis efficiency. But deep learning models have usually complex structure which have large number of parameters and computations, therefore, a Dense Reparameter Lightweight Transformer(DRLTransformer) for COVID-19 CT recognition is proposed. Firstly, reparameter dense block and hierarchical Transformer are proposed to improve lightweight degree of model, which can improve computation speed and reduce parameters without losing model performance. Secondly, in order to fully extract global and local information of lesions, using hierarchical Transformer enhance global attention on local feature relevance, which use grouping to extract global features and fused between different groups to obtain multi-level information, and then information fusion is used to further improve interaction of intra group and inter group features. In addition, all global features are aggregated to achieve deep fusion of deep and shallow features. Finally, comparative experiments in COVID-19 CT dataset, the results show that the parameters and computations of DRLTransformer are 1.47 M and 81.232 M. Compared to Dense Convolutional Network(DenseNet), parameters are reduced by 29 times and computations are reduced by 23 times. The model proposed in this paper has positive implications for computer aided diagnosis of COVID-19 and provides a new idea for lightweight deep learning model.
-
+COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep learning computer aided diagnosis method can effectively improve the diagnosis efficiency. But deep learning models have usually complex structure which have large number of parameters and computations, therefore, a Dense Reparameter Lightweight Transformer(DRLTransformer) for COVID-19 CT recognition is proposed. Firstly, reparameter dense block and hierarchical Transformer are proposed to improve lightweight degree of model, which can improve computation speed and reduce parameters without losing model performance. Secondly, in order to fully extract global and local information of lesions, using hierarchical Transformer enhance global attention on local feature relevance, which use grouping to extract global features and fused between different groups to obtain multi-level information, and then information fusion is used to further improve interaction of intra group and inter group features. In addition, all global features are aggregated to achieve deep fusion of deep and shallow features. Finally, comparative experiments in COVID-19 CT dataset, the results show that the parameters and computations of DRLTransformer are 1.47 M and 81.232 M. Compared to Dense Convolutional Network(DenseNet), parameters are reduced by 29 times and computations are reduced by 23 times. The model proposed in this paper has positive implications for computer aided diagnosis of COVID-19 and provides a new idea for lightweight deep learning model.  
 **Key words**: COVID-19; DenseNet; Reparameter dense block; Hierarchical Transformer; Lightweight
-
----
 
 ##  Figures Section  图表部分  
 <div align="center">
@@ -243,16 +221,10 @@ COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep le
 ![DRLTransformer模型结构图](./Grad_CAM/figure/电子与信息学报文章1图1.png)  
 *图1 DRLTransformer模型结构图*  
 *Fig. 1 Architecture of DRLTransformer model*  
-
 ![3×3重参卷积](./Grad_CAM/figure/电子与信息学报文章1图2.png)  
 *图3 3×3重参卷积结构*  
 *Fig. 3 Structure of 3×3 reparameter convolution*  
 </div>
-
----
-
-## Table 2. Performance comparison on COVID-19 CT dataset  
-<span style="font-size:20px">表2 不同模型在新冠肺炎CT数据集上的具体结果</span>
 
 ## Table 2. Performance comparison on COVID-19 CT dataset  
 <span style="font-size:20px">表2 不同模型在新冠肺炎CT数据集上的具体结果</span>
@@ -273,37 +245,28 @@ COrona VIrus Disease 2019(COVID-19) is a serious threat to human health, deep le
 | DRLTransformer | 1.47         | 81.232M    | 7,558       | 0.9814 | 0.9786 | 0.9846 | 0.9816 | 0.9814|
 
 
----
+
+
+
 
 ---
 
-
-
-# Pattern Recognition and Artificial Intelligence  
-
-<span style="font-size:26px">模式识别与人工智能</span>
-
+---
+# 模式识别与人工智能 Pattern Recognition and Artificial Intelligence  
+[//]: # (<span style="font-size:26px">模式识别与人工智能</span>)
+## 基于多分辨率注意密集网络的肺炎分类识别方法  
 ## Pneumonia Classification and Recognition Method Based on Multi-resolution Attention Dense Network  
-<span style="font-size:20px">基于多分辨率注意密集网络的肺炎分类识别方法</span>  
-
+[//]: # (<span style="font-size:20px">基于多分辨率注意密集网络的肺炎分类识别方法</span>  )
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIuiv4-LuB9ehEovhUdRg3gYk8bVEu1Zy6n9lhpIMbtpojTqtfysj8Do3Rk-1BM436j5rORJLaj1hvnK05G30suN8bQLkvufzDF2GNWpmJgUQ0aKu1J9f7L4bdgEd4Rnq3WorY6rJfSm6ApTX3JDNqUVUfJHczfZqC0=&uniplatform=NZKPT
 
----
-
 ## 中文摘要 Abstract
-X光片中肺炎存在影像学特征不明显、病灶与周围组织对比不明显、边缘模糊等问题，因此，文中提出基于多分辨率注意密集网络的肺炎分类识别方法。深度融合浅层定位信息与深层语义信息，并构造多分辨率空间注意力门，对不同分辨率的深层信息与浅层信息进行语义式交互增强，在深浅层信息中建立病灶信息的相互依赖关系。此外，设计坐标频率注意力，以方向和位置互补的方式自适应地增强肺炎特征的表达。在ChestXRay2017等5份肺炎X光片数据集上的实验表明，文中网络在肺炎分类识别任务上性能较优，同时还具有公共肺炎数据集上的鲁棒性。
-
+X光片中肺炎存在影像学特征不明显、病灶与周围组织对比不明显、边缘模糊等问题，因此，文中提出基于多分辨率注意密集网络的肺炎分类识别方法。深度融合浅层定位信息与深层语义信息，并构造多分辨率空间注意力门，对不同分辨率的深层信息与浅层信息进行语义式交互增强，在深浅层信息中建立病灶信息的相互依赖关系。此外，设计坐标频率注意力，以方向和位置互补的方式自适应地增强肺炎特征的表达。在ChestXRay2017等5份肺炎X光片数据集上的实验表明，文中网络在肺炎分类识别任务上性能较优，同时还具有公共肺炎数据集上的鲁棒性。  
 **关键词**：肺炎识别，多分辨率密集连接，空间注意力门，坐标频率注意力
 
----
-
 ## English Abstract  
-X-ray film of pneumonia suffers from inconspicuous imaging features, low contrast between lesions and surrounding tissues, and blurred edges. Therefore, a pneumonia classification and recognition method based on multi-resolution attention dense network is proposed. Shallow localization information and deep semantic information are deeply fused. A multi-resolution spatial attention gate is constructed to enhance semantic interaction between deep and shallow information at different resolutions, establishing interdependency for lesion information in deep and shallow information. In addition, the coordinate frequency attention is designed to adaptively enhance the representation of pneumonia features in a complementary manner of orientation and location. Experiments on five pneumonia X-ray datasets including ChestXRay2017 show that the proposed method achieves better performance in pneumonia classification and recognition task with robustness on the public pneumonia dataset.
-
-**Key Words**: Pneumonia Recognition, Multi-resolution Dense Connection, Spatial Attention Gate, Coordinate Frequency Attention
-
----
+X-ray film of pneumonia suffers from inconspicuous imaging features, low contrast between lesions and surrounding tissues, and blurred edges. Therefore, a pneumonia classification and recognition method based on multi-resolution attention dense network is proposed. Shallow localization information and deep semantic information are deeply fused. A multi-resolution spatial attention gate is constructed to enhance semantic interaction between deep and shallow information at different resolutions, establishing interdependency for lesion information in deep and shallow information. In addition, the coordinate frequency attention is designed to adaptively enhance the representation of pneumonia features in a complementary manner of orientation and location. Experiments on five pneumonia X-ray datasets including ChestXRay2017 show that the proposed method achieves better performance in pneumonia classification and recognition task with robustness on the public pneumonia dataset.  
+**Key Words**: Pneumonia Recognition, Multi-resolution Dense Connection, Spatial Attention Gate, Coordinate Frequency Attention  
 
 ##  Figures Section  图表部分  
 <div align="center">
@@ -311,17 +274,13 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 ![MADenseNet整体框架图](./Grad_CAM/figure/模式识别与人工智能图1.png)  
 *图1 MADenseNet整体框架图*  
 *Fig. 1 Overall structure of MADenseNet*  
-
 ![CFA框架图](./Grad_CAM/figure/模式识别与人工智能图2.png)  
 *图2 CFA框架图*  
 *Fig. 2 Structure of CFA*  
-
 ![各网络在8例图像上的热力图](./Grad_CAM/figure/模式识别与人工智能图3.png)  
 *图9 各网络在8例图像上的热力图*  
 *Fig. 9 Heat maps of different networks for 8 example images*  
 </div>
-
----
 
 ## Table 3. Result comparison on ChestXRay2017 dataset  
 <span style="font-size:20px">表3 各网络在ChestXRay2017数据集上的对比结果</span>
@@ -341,40 +300,26 @@ X-ray film of pneumonia suffers from inconspicuous imaging features, low contras
 
 
 
+
+
 ---
 
 ---
-
-
-
-
-
-
-# Optics and Precision Engineering  
-
-<span style="font-size:26px">光学精密工程</span>
-
+# 光学精密工程 Optics and Precision Engineering  
+[//]: # (<span style="font-size:26px">光学精密工程</span>)
+## 基于密集双流聚焦网络的肺炎辅助诊断模型  
 ## Pneumonia aided diagnosis model based on dense dual-stream focused network  
-<span style="font-size:20px">基于密集双流聚焦网络的肺炎辅助诊断模型</span>  
-
+[//]: # (<span style="font-size:20px">基于密集双流聚焦网络的肺炎辅助诊断模型</span>  )
 <span style="font-size:14px">Article Link (文章链接)：</span>  
 https://kns.cnki.net/kcms2/article/abstract?v=X0pQrW14MIu71EmD6DnATA8L7SOOW2IQaq2rQM08iAwADGACjnOgLHj03QdNV0cIIq75Y9uHZdXKLDxog-E7uNKkR-jRQOpzaW51u6dakH0bopAnz3jQFIB9ceumHTzbNbgxlCv43tVzk-jfnB4XYbhyrbgl21nruYFjKE1bLQ0=&uniplatform=NZKPT
 
----
-
 ## 中文摘要 Abstract
-X光片对肺炎疾病的诊断具有重要作用，但其成像时易受噪声污染，导致肺炎疾病的影像学特征不明显和病灶特征提取不充分。针对上述问题，提出密集双流聚焦网络DDSF-Net的肺炎辅助诊断模型。首先设计残差多尺度块，利用多尺度策略提高网络对医学影像中不同尺寸肺炎病灶的适应性，采用残差连接提高网络参数的传递效率；然后设计双流密集块，采用全局信息流和局部信息流并行结构的密集单元，其中Transformer对全局上下文语义信息进行学习，卷积层进行局部特征提取，利用密集连接方式实现两种信息流的深浅层特征融合；最后，设计具有中心注意操作和邻近插值操作的聚焦块，利用裁剪医学影像尺寸来过滤背景噪声信息，利用插值对医学图像进行放大，增强病灶的细节特征。在肺炎X光片数据集中与典型模型进行对比，本文模型的准确率、精确率、召回率、F1，AUC值和训练时间分别为98.12%，98.83%，99.29%，98.71%，97.71%和15,729 s，准确率和AUC值较密集网络分别提升了4.89%和4.69%。DDSF-Net能够有效缓解肺炎影像学特征不明显和病灶特征提取不充分的问题，通过热力图和三份公共数据集进一步验证了本文模型的有效性和鲁棒性。
-
-**关键词**：医学图像处理；肺炎X光片；密集网络；残差多尺度块；全局和局部信息流；聚焦块
-
----
+X光片对肺炎疾病的诊断具有重要作用，但其成像时易受噪声污染，导致肺炎疾病的影像学特征不明显和病灶特征提取不充分。针对上述问题，提出密集双流聚焦网络DDSF-Net的肺炎辅助诊断模型。首先设计残差多尺度块，利用多尺度策略提高网络对医学影像中不同尺寸肺炎病灶的适应性，采用残差连接提高网络参数的传递效率；然后设计双流密集块，采用全局信息流和局部信息流并行结构的密集单元，其中Transformer对全局上下文语义信息进行学习，卷积层进行局部特征提取，利用密集连接方式实现两种信息流的深浅层特征融合；最后，设计具有中心注意操作和邻近插值操作的聚焦块，利用裁剪医学影像尺寸来过滤背景噪声信息，利用插值对医学图像进行放大，增强病灶的细节特征。在肺炎X光片数据集中与典型模型进行对比，本文模型的准确率、精确率、召回率、F1，AUC值和训练时间分别为98.12%，98.83%，99.29%，98.71%，97.71%和15,729 s，准确率和AUC值较密集网络分别提升了4.89%和4.69%。DDSF-Net能够有效缓解肺炎影像学特征不明显和病灶特征提取不充分的问题，通过热力图和三份公共数据集进一步验证了本文模型的有效性和鲁棒性。  
+**关键词**：医学图像处理；肺炎X光片；密集网络；残差多尺度块；全局和局部信息流；聚焦块  
 
 ## English Abstract  
-X-ray images play an important role in the diagnosis of pneumonia disease, but they are susceptible to noise pollution during imaging, resulting in the imaging features of pneumonia being inconspicuous and an insufficient extraction of lesion features. A dense dual-stream focused network DDSF-Net is proposed for the development of an aided diagnosis model for pneumonia to address the above-mentioned problems. First, a residual multi-scale block is designed, a multi-scale strategy is used to improve the adaptability of the network to different sizes of pneumonia lesions in medical images, and a residual connection is used to improve the efficiency of the network parameter transfer. Secondly, a dual-stream dense block is designed, a dense unit with a parallel structure for the global information stream and the local information stream is used, whereby the transformer learns global contextual semantic information. The convolutional layer performs local feature extraction, and a deep and shallow feature fusion of the two information streams is achieved using a dense connection. Finally, focus blocks with central attention operation and neighborhood interpolation operation are designed, background noise information is filtered by cropping the medical image size, and detailed features of lesions are enhanced by interpolating the medical images with magnification. The model obtained 98.12% accuracy, 98.83% precision, 99.29% recall, 98.71% F1, 97.71% AUC and 15,729 s training time, with ACC and AUC improved by 4.89% and 4.69% respectively compared with DenseNet. DDSF-Net effectively alleviates the problems of inconspicuous pneumonia imaging features and insufficient extraction of lesion features. The validity and robustness of this model are further verified by a heat map and three public datasets.
-
+X-ray images play an important role in the diagnosis of pneumonia disease, but they are susceptible to noise pollution during imaging, resulting in the imaging features of pneumonia being inconspicuous and an insufficient extraction of lesion features. A dense dual-stream focused network DDSF-Net is proposed for the development of an aided diagnosis model for pneumonia to address the above-mentioned problems. First, a residual multi-scale block is designed, a multi-scale strategy is used to improve the adaptability of the network to different sizes of pneumonia lesions in medical images, and a residual connection is used to improve the efficiency of the network parameter transfer. Secondly, a dual-stream dense block is designed, a dense unit with a parallel structure for the global information stream and the local information stream is used, whereby the transformer learns global contextual semantic information. The convolutional layer performs local feature extraction, and a deep and shallow feature fusion of the two information streams is achieved using a dense connection. Finally, focus blocks with central attention operation and neighborhood interpolation operation are designed, background noise information is filtered by cropping the medical image size, and detailed features of lesions are enhanced by interpolating the medical images with magnification. The model obtained 98.12% accuracy, 98.83% precision, 99.29% recall, 98.71% F1, 97.71% AUC and 15,729 s training time, with ACC and AUC improved by 4.89% and 4.69% respectively compared with DenseNet. DDSF-Net effectively alleviates the problems of inconspicuous pneumonia imaging features and insufficient extraction of lesion features. The validity and robustness of this model are further verified by a heat map and three public datasets.  
 **Key words**: medical image processing; pneumonia X-ray images; dense network; residual multi-scale block; global and local information flow; focus block
-
----
 
 ##  Figures Section  图表部分  
 <div align="center">
@@ -382,18 +327,13 @@ X-ray images play an important role in the diagnosis of pneumonia disease, but t
 ![DDSF-Net整体框架](./Grad_CAM/figure/光学精密工程图1.png)  
 *图1 DDSF-Net整体框架*  
 *Fig. 1 Overall framework of DDSF-Net*  
-
 ![双流密集块](./Grad_CAM/figure/光学精密工程图2.png)  
 *图2 双流密集块（单层结构）*  
 *Fig. 2 Dual-stream dense block (single layer structure)*  
-
 ![ROC曲线对比](./Grad_CAM/figure/光学精密工程图3.png)  
 *图5 肺炎X光片数据集中各模型的ROC曲线*  
 *Fig. 5 ROC curves of each model in pneumonia X-ray dataset*  
-
 </div>
-
----
 
 ## Table 2. Performance comparison on pneumonia X-ray dataset  
 <span style="font-size:20px">表2 肺炎X光片数据集中各模型的具体结果</span>
@@ -417,9 +357,7 @@ X-ray images play an important role in the diagnosis of pneumonia disease, but t
 ---
 
 ---
-
-
-# use case
+# py调用代码 use case
 Running the script to view network parameters and save the results to a file
 ```bash
 python 14classification_YXY_查看网络参数量.py >>visual/model_visual.txt
@@ -507,10 +445,11 @@ python Grad_CAM/02Grad_CAM_pytorch/main.py --model-index 114 --weight-path /home
 These commands run the Grad-CAM script with the specified image path, model index, and weight path. The second command uses the default image, which is assumed to be an image of a person with COVID-19.  
 这些命令运行 Grad-CAM 脚本，指定图像路径、模型索引和权重路径。第二个命令使用默认图像，假设该图像是一张新冠肺炎患者的图像。
 
----
+
+
+
 
 ---
-
 
 ---
 
