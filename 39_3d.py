@@ -113,6 +113,8 @@ import torch.nn as nn
 import os
 # def main(batch_size, baseline, reduction):  #原始的
 def main(batch_size, reduction, gpu):
+    from utils_tool.create_folder import initialize_folders
+    success = initialize_folders()
 #     文件内容删除
     with open(r"./visual/state_time.txt", "a+", encoding="utf-8") as txt:
         txt.truncate(0)        #   清空文件内容      注意：仅当以 "r+" "rb+" "w" "wb" "wb+"等以可写模式打开的文件才可以执行该功能。

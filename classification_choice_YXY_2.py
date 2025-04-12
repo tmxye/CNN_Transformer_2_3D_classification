@@ -1,17 +1,17 @@
-from .core import baseline, se_densenet, se_densenet_full, densenet_w_block_ce_1_1_res_e_trans_resInce_pool2_2M_Nres_Crop_YXY, densenet_w_block_ce_1_1_Crop_YXY, densenet_w_block_ce_1_1_resInce_pool2_2M_Nres_YXY, densenet_w_block_ce_pool2_2M_Nres_YXY, se_densenet_w_block56
-from .core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_B, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXY_A, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXY_B, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_C, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_D, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_E, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_F
-from .core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_DA, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_G, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_H, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_I, densenet_w_block_ce_1_1_InceA1_e_trans_resInce_2_2pool_Nres_Crop_YXYA, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXYC, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_56_56_YXY, densenet_w_block56
-from .core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_J, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInceno_pool_Nres_Crop_YXY_B, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_K, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_L, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_M, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_N, densenet_w_block_ce_1_1_InceA1_e_trans_resInce_2_2pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_InceA2_e_trans_resInce_Nres_Crop_YXY
-from .core import se_densenet_w_block_b_Inception, se_densenet_w_block_c_Inception_YXY, se_densenet_w_block_ab, se_densenet_w_block_ac, se_densenet_w_block_d_residual, se_densenet_w_block_e_residual_YXY, se_densenet_w_block_f_LeakyReLU, se_densenet_w_block_acegh, se_densenet_w_block_g_dynamicReLU_YXY, se_densenet_w_block_h_SN_Switchable_N, se_densenet_w_block_acegh_a, se_densenet_w_block_ce, se_densenet_w_block_c56_Inception_YXY, se_densenet_w_block_ce56_Inception_res_YXY, se_densenet_w_block_ce56_Inception_3_3_res_YXY
-from .core import densenet_ce56_Inception_3_3_res_YXY, densenet_w_block_ce_3_3_res_InceA1_YXY, densenet_w_block_ce_1_1_res_Crop_trans_Ince_YXY, se_efficient_densenet, se_densenet_w_block_a, se_densenet_w_block_a_n_1__1_nconv, densenet_ce56_Inception_3_3_res_onlyconv_YXY, densenet_w_block_ce_3_3_res, densenet_w_block, densenet_w_block_ce_1_1_res, densenet_w_block_ce_1_1_res_InceA1_YXY, densenet_w_block_ce_1_1_res_InceA1_n1_1n_YXY, densenet_w_block_ce_1_1_res_InceA2_a_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_YXY
-from .core import densenet_w_block_ce_1_1_res_Crop_Pool_trans_Ince_YXY, densenet_w_block_ce_1_1_res_InceA2_b_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_a_YXY, densenet_w_block_ce_1_1_res_InceA2_c_YXY, densenet_w_block_ce_1_1_res_InceA2_stride2_3113_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_b_YXY, densenet_w_block_ce_1_1_res_InceA1a_YXY, densenet_w_block_ce_1_1_res_InceA1b_YXY, densenet_w_block_ce_1_1_res_InceA2_d_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_c_YXY, densenet_w_block_ce_1_1_InceA2_e_trans_resInce_Nres_Crop_YXYA
-from .core import se_densenet_full_in_loop, se_densenet_w_block, densenet_w_block_ce_1_1_res_InceA2_e_YXY, densenet_w_block_ce_1_1_res_InceA1c_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_d_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_Ince_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_bujia_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_bujia_cancha_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_bujia_cancha_denseblock_also_YXY
-from .core import densenet_w_block_e_residual_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_yuReLU_YXY, densenet_w_block_e_new_residual_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_Ince_pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nrespool_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInceV3_pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_A
-from .core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXY,densenet_w_block_ce_1_1_res_InceA2_e_trans_resInceno_pool_Nres_Crop_YXY_A
-from .core2 import se_densenet_base, se_densenet_DWSC, SAse_densenet_DWSC, se_densenet_base_YXY, SA2_4_se_densenet, SA1_SA2_4_se_densenet, SE_SA2_4_se_densenet, SA2_4_se_densenet_A, SA2_4_se_densenet_B, SE_SA2_4_se_densenet_B, SE_SA2_4_se_densenet_C, SE_SA2_4_se_densenet_D, se_densenet_ACB_YXY, se_FCA_YXY, se_CA, se_CA_FCA, se_conv_CAM, se_conv_CAM_FCA, se_CASE, se_CA_SE, se_CA_SE_S, se_CA_S_FCA, SE_SA2_4_se_densenet01, SE_SA2_4_se_densenet10, SE_SA2_4_se_densenet11
-from .core2 import densenet_hash, densenet_CA, densenet_CBAM, densenet_CBAM2, densenet_PSA, densenet_PSA_CA, densenet_Res2Net, densenet_PSA_A, densenet_ViT, densenet_ViTA, densenet_ResNext, densenet_ResNext_PSA, densenet_ResNext_PSAA, densenet_ResNext_PSAB, densenet_ResNext_PSAC, densenet_ResNext_PSAD, densenet_ResNext_PSAE, densenet_ResNext_PSAF, densenet_ResNext_PSAH, densenet_ResNext_PSAG, densenet_ResNext_PSAI, densenet_MHSA
-from .core2 import densenet_ResNext_PSAJ, densenet_ResNext_PSAK, densenet_ResNext_PSAL, densenet_ResNext_PSAM, densenet_ResNext_PSAN, densenet_ResNext_PSAO, densenet_ResNext_PSAP, densenet_ResNext_PSAQ, densenet_ResNext_PSAR, densenet_Res2Net_PSAA, densenet_Res2Net_PSAB, densenet_ResNext_PSAS, densenet_ResNext_PSAT, densenet_ResNext_PSAU, densenet_ResNext_PSAV, densenet_ResNext_PSAW, densenet_ResNext_PSAX
-from .core3 import resnet, densenet_Group1X1_4, densenet_DWSC, densenet_Group, densenet_resblock, densenet_Group_PSA, \
+from core import baseline, se_densenet, se_densenet_full, densenet_w_block_ce_1_1_res_e_trans_resInce_pool2_2M_Nres_Crop_YXY, densenet_w_block_ce_1_1_Crop_YXY, densenet_w_block_ce_1_1_resInce_pool2_2M_Nres_YXY, densenet_w_block_ce_pool2_2M_Nres_YXY, se_densenet_w_block56
+from core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_B, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXY_A, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXY_B, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_C, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_D, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_E, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_F
+from core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_DA, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_G, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_H, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_I, densenet_w_block_ce_1_1_InceA1_e_trans_resInce_2_2pool_Nres_Crop_YXYA, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXYC, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_56_56_YXY, densenet_w_block56
+from core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_J, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInceno_pool_Nres_Crop_YXY_B, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_K, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_L, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_M, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_N, densenet_w_block_ce_1_1_InceA1_e_trans_resInce_2_2pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_InceA2_e_trans_resInce_Nres_Crop_YXY
+from core import se_densenet_w_block_b_Inception, se_densenet_w_block_c_Inception_YXY, se_densenet_w_block_ab, se_densenet_w_block_ac, se_densenet_w_block_d_residual, se_densenet_w_block_e_residual_YXY, se_densenet_w_block_f_LeakyReLU, se_densenet_w_block_acegh, se_densenet_w_block_g_dynamicReLU_YXY, se_densenet_w_block_h_SN_Switchable_N, se_densenet_w_block_acegh_a, se_densenet_w_block_ce, se_densenet_w_block_c56_Inception_YXY, se_densenet_w_block_ce56_Inception_res_YXY, se_densenet_w_block_ce56_Inception_3_3_res_YXY
+from core import densenet_ce56_Inception_3_3_res_YXY, densenet_w_block_ce_3_3_res_InceA1_YXY, densenet_w_block_ce_1_1_res_Crop_trans_Ince_YXY, se_efficient_densenet, se_densenet_w_block_a, se_densenet_w_block_a_n_1__1_nconv, densenet_ce56_Inception_3_3_res_onlyconv_YXY, densenet_w_block_ce_3_3_res, densenet_w_block, densenet_w_block_ce_1_1_res, densenet_w_block_ce_1_1_res_InceA1_YXY, densenet_w_block_ce_1_1_res_InceA1_n1_1n_YXY, densenet_w_block_ce_1_1_res_InceA2_a_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_YXY
+from core import densenet_w_block_ce_1_1_res_Crop_Pool_trans_Ince_YXY, densenet_w_block_ce_1_1_res_InceA2_b_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_a_YXY, densenet_w_block_ce_1_1_res_InceA2_c_YXY, densenet_w_block_ce_1_1_res_InceA2_stride2_3113_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_b_YXY, densenet_w_block_ce_1_1_res_InceA1a_YXY, densenet_w_block_ce_1_1_res_InceA1b_YXY, densenet_w_block_ce_1_1_res_InceA2_d_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_c_YXY, densenet_w_block_ce_1_1_InceA2_e_trans_resInce_Nres_Crop_YXYA
+from core import se_densenet_full_in_loop, se_densenet_w_block, densenet_w_block_ce_1_1_res_InceA2_e_YXY, densenet_w_block_ce_1_1_res_InceA1c_YXY, densenet_w_block_ce_1_1_res_InceA1_trans_Ince_d_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_Ince_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_bujia_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_bujia_cancha_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_bujia_cancha_denseblock_also_YXY
+from core import densenet_w_block_e_residual_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_Crop_yuReLU_YXY, densenet_w_block_e_new_residual_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_Ince_pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nrespool_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInceV3_pool_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool_Nres_Crop_YXY_A
+from core import densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2_Nres_Crop_YXY, densenet_w_block_ce_1_1_res_InceA2_e_trans_resInce_pool2_2M_Nres_Crop_YXY,densenet_w_block_ce_1_1_res_InceA2_e_trans_resInceno_pool_Nres_Crop_YXY_A
+from core2 import se_densenet_base, se_densenet_DWSC, SAse_densenet_DWSC, se_densenet_base_YXY, SA2_4_se_densenet, SA1_SA2_4_se_densenet, SE_SA2_4_se_densenet, SA2_4_se_densenet_A, SA2_4_se_densenet_B, SE_SA2_4_se_densenet_B, SE_SA2_4_se_densenet_C, SE_SA2_4_se_densenet_D, se_densenet_ACB_YXY, se_FCA_YXY, se_CA, se_CA_FCA, se_conv_CAM, se_conv_CAM_FCA, se_CASE, se_CA_SE, se_CA_SE_S, se_CA_S_FCA, SE_SA2_4_se_densenet01, SE_SA2_4_se_densenet10, SE_SA2_4_se_densenet11
+from core2 import densenet_hash, densenet_CA, densenet_CBAM, densenet_CBAM2, densenet_PSA, densenet_PSA_CA, densenet_Res2Net, densenet_PSA_A, densenet_ViT, densenet_ViTA, densenet_ResNext, densenet_ResNext_PSA, densenet_ResNext_PSAA, densenet_ResNext_PSAB, densenet_ResNext_PSAC, densenet_ResNext_PSAD, densenet_ResNext_PSAE, densenet_ResNext_PSAF, densenet_ResNext_PSAH, densenet_ResNext_PSAG, densenet_ResNext_PSAI, densenet_MHSA
+from core2 import densenet_ResNext_PSAJ, densenet_ResNext_PSAK, densenet_ResNext_PSAL, densenet_ResNext_PSAM, densenet_ResNext_PSAN, densenet_ResNext_PSAO, densenet_ResNext_PSAP, densenet_ResNext_PSAQ, densenet_ResNext_PSAR, densenet_Res2Net_PSAA, densenet_Res2Net_PSAB, densenet_ResNext_PSAS, densenet_ResNext_PSAT, densenet_ResNext_PSAU, densenet_ResNext_PSAV, densenet_ResNext_PSAW, densenet_ResNext_PSAX
+from core3 import resnet, densenet_Group1X1_4, densenet_DWSC, densenet_Group, densenet_resblock, densenet_Group_PSA, \
     densenet_PSA_4488, densenet_Group_PSA_All8, densenet_Group_NPSA, densenet_Group_35, densenet_ACB, densenet_ACB_35, \
     densenet_GroupA, densenet_ACB_3_5, densenet_ACB_3_5_VIT, densenet_ACB_3_5_VIT_Ares, densenet_ACB_3_5_VIT_res, \
     densenet_ACB_3_5_res, densenet_ACBG, densenet_3_5, densenet_LACB, densenet_MHSA_G, densenet_ACB_VIT_G, \
@@ -19,8 +19,8 @@ from .core3 import resnet, densenet_Group1X1_4, densenet_DWSC, densenet_Group, d
     densenet_ACB_VIT_G_TBCB, Trans_TBC_Cond, Trans_down, Trans_Diret, Trans_dense, Trans_den, Trans_dend, Trans_dens2, \
     Trans_dend_g, Trans_dend_TBC, Trans_dend_TBC_Cond, Trans_dend_TBC_Cond1, Trans_dend_TBC_CondT, Trans_dend_TBC_Cond2, \
     Trans_dend_TBC_Cond3
-from .core3 import densenet_ACB_VIT_GA, densenet_ACB_VIT_GB, densenet_ACB_VIT_G_TBCC, densenet_ACB_VIT_G_TBCT, densenet_ACB_VIT_G_TBCTA, Trans_TBC
-from .core4 import densenetVit_XCA, denVit, denVit_Sim, denVit_GAM, denVit_NAM, denVit_SiGA, denVit_SiNA, den_SiGA, den_SiNA, den_Sim, den_GAM, den_NAM
+from core3 import densenet_ACB_VIT_GA, densenet_ACB_VIT_GB, densenet_ACB_VIT_G_TBCC, densenet_ACB_VIT_G_TBCT, densenet_ACB_VIT_G_TBCTA, Trans_TBC
+from core4 import densenetVit_XCA, denVit, denVit_Sim, denVit_GAM, denVit_NAM, denVit_SiGA, denVit_SiNA, den_SiGA, den_SiNA, den_Sim, den_GAM, den_NAM
 import core
 import core3
 import core5
@@ -47,7 +47,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         # return bulid_model_YXY.alexnet()
         # return models_32.vision.alexnet(num_classes=2)
         return models_32.vision.alexnet(num_classes=num_classes)
-    # 如果使用预训练的还是不行，因为尺寸还是不行， size mismatch for classifier.6.bias: copying a param with shape torch.Size([1000]) from .checkpoint, the shape in current model is torch.Size([2])
+    # 如果使用预训练的还是不行，因为尺寸还是不行， size mismatch for classifier.6.bias: copying a param with shape torch.Size([1000]) from checkpoint, the shape in current model is torch.Size([2])
     elif model_index == 111:
         return models_32.vision.alexnet(num_classes=2)
     elif model_index == 11199:
@@ -61,63 +61,63 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         return models_32.model_YXY.alexnet.alexnet(num_classes=1000, pretrained=True)
 
     elif model_index == 4801:         #     是40553
-        from .core.den_ince_crop import se_densenet121
+        from core.den_ince_crop import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4802:         #     基于40553,减少密集块层数
-        from .core.den_ince_crop_S import se_densenet121
+        from core.den_ince_crop_S import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4803:         #     基于40553，减少Inception
-        from .core.den_inceS_crop import se_densenet121
+        from core.den_inceS_crop import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4804:         #     基于40553，减少密集块层数, 减少Inception
-        from .core.den_inceS_crop_S import se_densenet121
+        from core.den_inceS_crop_S import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4805:         #     基于40553，减少密集块层数, 减少Inception
-        from .core.den_inceS_crop_SA import se_densenet121
+        from core.den_inceS_crop_SA import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4806:         #     基于40553，减少密集块层数, 减少Inception       解决运行很慢的问题        通过crop减半，直接5MB
-        from .core.den_inceS_crop_SB import se_densenet121
+        from core.den_inceS_crop_SB import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4807:         #     基于40553，减少密集块层数, 减少Inception       解决运行很慢的问题        但是效果不好
-        from .core.cropS_S_trans import se_densenet121
+        from core.cropS_S_trans import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4808:         #     基于40553，减少密集块层数, 减少Inception       解决运行很慢的问题
-        from .core.cropS_S_trans_D import se_densenet121
+        from core.cropS_S_trans_D import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4809:         #     基于40553，减少密集块层数, 减少Inception       解决运行很慢的问题
-        from .core.cropS_S_trans_DA import se_densenet121
+        from core.cropS_S_trans_DA import se_densenet121
         return se_densenet121(drop_rate=0.2)
 
     elif model_index == 4810:         #     使用4410的架构对4807改写
-        from .core4.Crop_MHSA import se_densenet121
+        from core4.Crop_MHSA import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4811:         #     使用4410的架构对4809改写
-        from .core4.Crop_MHSAA import se_densenet121
+        from core4.Crop_MHSAA import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4812:         #     对4811，不进行分2边，直接分开计算再合并      把通道数减半
-        from .core4.Crop_MHSAB import se_densenet121
+        from core4.Crop_MHSAB import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4813:         #     对4811，只保留MHSA
-        from .core4.Crop_MHSAC import se_densenet121
+        from core4.Crop_MHSAC import se_densenet121
         return se_densenet121(drop_rate=0.2)
 
     elif model_index == 4814:         #     先基于4813     快速找到MLP架构
-        from .core4.Crop_MLP import se_densenet121
+        from core4.Crop_MLP import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4815:         #     先基于4813     快速找到MLP架构
-        from .core4.Crop_MLPA import se_densenet121
+        from core4.Crop_MLPA import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4816:         #     先基于4811     对MLP架构进行双分支     采用8分之一  4分之一       2分之一
-        from .core4.Crop_MLPB import se_densenet121
+        from core4.Crop_MLPB import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4817:         #     先基于4811     对MLP架构进行双分支 这里采用1X1进行分开     采用8分之一  4分之一       2分之一
-        from .core4.Crop_MLPC import se_densenet121
+        from core4.Crop_MLPC import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4818:         #     基于4817，采用Conv+BN+ReLU
-        from .core4.Crop_MLPD import se_densenet121
+        from core4.Crop_MLPD import se_densenet121
         return se_densenet121(drop_rate=0.2)
     elif model_index == 4819:         #    基于4817，采用BN+。。。
-        from .core4.Crop_MLPE import se_densenet121
+        from core4.Crop_MLPE import se_densenet121
         return se_densenet121(drop_rate=0.2)
 
 
@@ -153,105 +153,105 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 4701:
-        from .core5.repchoice import repchoice
+        from core5.repchoice import repchoice
         return repchoice(model='repvgg')
     elif model_index == 4702:
-        from .core5.repchoice import repchoice
+        from core5.repchoice import repchoice
         return repchoice(model='DBB_VGG')
     elif model_index == 4703:
-        from .core5.repchoice import repchoice
+        from core5.repchoice import repchoice
         return repchoice(model='OREPA_VGG')
     elif model_index == 4704:
-        from .core5.repchoice import repchoice
+        from core5.repchoice import repchoice
         return repchoice(model='DBB_Res18')
     elif model_index == 4705:
-        from .core5.repchoice import repchoice
+        from core5.repchoice import repchoice
         return repchoice(model='OREPA_Res18')
 
 
     elif model_index == 4710:           #
-        from .core5.repdensenet import repchoice
+        from core5.repdensenet import repchoice
         return repchoice(model='OREPA_den')
     elif model_index == 4711:
-        from .core5.densenet_2C_B_R import se_densenet121
+        from core5.densenet_2C_B_R import se_densenet121
         return se_densenet121(num_classes=2)
         # return repchoice(model='OREPA_den')
     elif model_index == 4712:               # 4711和4712都是对DenseNet稍微变换，效果都还是不错
-        from .core5.densenet_1C_B_R import se_densenet121
+        from core5.densenet_1C_B_R import se_densenet121
         return se_densenet121(num_classes=2)
     elif model_index == 4713:           # 将错误代码修改准确，nonlinear=nn.ReLU(inplace=True))，但是base效果不太好，DBB倒是不错
-        from .core5.repdensenet import repchoice
+        from core5.repdensenet import repchoice
         return repchoice(model='DBB_den_A')
     elif model_index == 4714:           # 再测试orep
-        from .core5.repdensenet import repchoice
+        from core5.repdensenet import repchoice
         return repchoice(model='OREPA_den_A')
 
 
 
 
     elif model_index == 4720:
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_denNAT')
     elif model_index == 4721:
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_den2res')
     elif model_index == 4725:
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_den2den')
     elif model_index == 4730:       # res2net里面4个全部卷积
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_den2OCA')
     elif model_index == 4731:       # res2net里面3个进行卷积
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_denre2OCA')
     elif model_index == 4732:       # res2net里面3个进行卷积，去掉残差连接
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_2denOCA')
     elif model_index == 4733:       # res2net里面4个全部进行卷积，去掉残差连接
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_den2SOCA')
 
     elif model_index == 4734:       # res2net里面4个全部卷积
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='LOREPA_den2OCA')
     elif model_index == 4735:       # res2net里面3个进行卷积
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='LOREPA_denre2OCA')
     elif model_index == 4736:       # res2net里面3个进行卷积，去掉残差连接
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='LOREPA_2denOCA')
     elif model_index == 4737:       # res2net里面4个全部进行卷积，去掉残差连接
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='LOREPA_den2SOCA')
 
     # “F” 是添加normLN
     elif model_index == 4738:       # res2net里面4个全部卷积
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='FOREPA_den2OCA')
     elif model_index == 4739:       # res2net里面3个进行卷积
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='FOREPA_denre2OCA')
     elif model_index == 4740:       # res2net里面3个进行卷积，去掉残差连接
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='FOREPA_2denOCA')
     elif model_index == 4741:       # res2net里面4个全部进行卷积，去掉残差连接
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='FOREPA_den2SOCA')
 
     elif model_index == 4742:       # res2net里面4个全部进行卷积，去掉残差连接,去掉MLP
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='FOREPA_den2SOCA_MLP')
     elif model_index == 4743:       # res2net里面4个全部进行卷积，去掉残差连接,去掉MLP,再添加LN
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='FOREPA_den2SOCA_MLPL')
 
     elif model_index == 47211:       # res2net里面3个进行卷积，去掉残差连接，在4721的基础上添加Shuffle
-        from .core5.repdenNAT import repchoice
+        from core5.repdenNAT import repchoice
         return repchoice(model='OREPA_den2res1')
 
 
     elif model_index == 4790:
-        from .core5.denseNAT import se_densenet121
+        from core5.denseNAT import se_densenet121
         return se_densenet121()
 
 
@@ -259,31 +259,31 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 9802:           # ([16, 1008, 7, 7])
-        from .core5.regnetLFZ import regnetx_032
+        from core5.regnetLFZ import regnetx_032
         return regnetx_032()
     elif model_index == 9803:           # ([16, 1008, 7, 7])
-        from .core5.repmodels.regnet_b import regnetx_032
+        from core5.repmodels.regnet_b import regnetx_032
         return regnetx_032()
     elif model_index == 9804:
-        from .core5.repreg import repchoice
+        from core5.repreg import repchoice
         return repchoice(model='OREPA_reg')
     elif model_index == 9805:              # 和densenet一样的架构
-        from .core5.repreg import repchoice
+        from core5.repreg import repchoice
         return repchoice(model='OREPA_reg2OCA')
     elif model_index == 9806:
-        from .core5.repreg import repchoice
+        from core5.repreg import repchoice
         return repchoice(model='OREPA_regNAT')
     # elif model_index == 9807:           # ([16, 1008, 7, 7])
-    #     from .coreA.regnetLFZ import regnetx_032
+    #     from coreA.regnetLFZ import regnetx_032
     #     return regnetx_032()
     # elif model_index == 9808:
-    #     from .coreA.repreg import repchoice
+    #     from coreA.repreg import repchoice
     #     return repchoice(model='OREPA_reg')
     # elif model_index == 9809:
-    #     from .coreA.repreg import repchoice
+    #     from coreA.repreg import repchoice
     #     return repchoice(model='OREPA_reg2OCA')
     elif model_index == 9810:
-        from .core5.repreg import repchoice
+        from core5.repreg import repchoice
         return repchoice(model='OREPA_regENAT')
 
 
@@ -366,22 +366,22 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 4240:               # 基于4023
-        from .core5.densenet_base import se_densenet121
+        from core5.densenet_base import se_densenet121
         return se_densenet121(num_classes=num_classes, drop_rate=0.2)
     elif model_index == 4241:               # 基于4023
-        from .core5.densenet_base_YXY_ECA import se_densenet121
+        from core5.densenet_base_YXY_ECA import se_densenet121
         return se_densenet121(num_classes=num_classes, drop_rate=0.2)
     elif model_index == 4242:               # 基于4023
-        from .core5.densenet_base_YXY_SRM import se_densenet121
+        from core5.densenet_base_YXY_SRM import se_densenet121
         return se_densenet121(num_classes=num_classes, drop_rate=0.2)
     elif model_index == 4243:               # 基于4023
-        from .core5.densenet_base_YXY_SE import se_densenet121
+        from core5.densenet_base_YXY_SE import se_densenet121
         return se_densenet121(num_classes=num_classes, drop_rate=0.2)
     elif model_index == 4244:               # 基于4023
-        from .core5.densenet_base_YXY_GCT import se_densenet121
+        from core5.densenet_base_YXY_GCT import se_densenet121
         return se_densenet121(num_classes=num_classes, drop_rate=0.2)
     elif model_index == 4245:               # 基于4023
-        from .core5.densenet_base_YXY_CA import se_densenet121
+        from core5.densenet_base_YXY_CA import se_densenet121
         return se_densenet121(num_classes=num_classes, drop_rate=0.2)
 
 
@@ -626,46 +626,46 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
     # repvgg_a2
     elif model_index == 131:                #
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_a2
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_a2
         return repvgg_a2()
     elif model_index == 132:                # 预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_a2
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_a2
         return repvgg_a2(pretrained=True)
     elif model_index == 133:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b0
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b0
         return repvgg_b0()
     elif model_index == 134:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b0
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b0
         return repvgg_b0(pretrained=True)
     elif model_index == 135:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1
         return repvgg_b1()
     elif model_index == 136:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1
         return repvgg_b1(pretrained=True)
     elif model_index == 137:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1g4
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1g4
         return repvgg_b1g4()
     elif model_index == 138:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1g4
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b1g4
         return repvgg_b1g4(pretrained=True)
     elif model_index == 139:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2
         return repvgg_b2()
     elif model_index == 141:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2
         return repvgg_b2(pretrained=True)
     elif model_index == 142:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2g4
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2g4
         return repvgg_b2g4()
     elif model_index == 143:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2g4
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b2g4
         return repvgg_b2g4(pretrained=True)
     elif model_index == 144:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b3g4
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b3g4
         return repvgg_b3g4()
     elif model_index == 145:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b3g4
+        from models_32.model_YXY_fullgood_13.models.byobnet import repvgg_b3g4
         return repvgg_b3g4(pretrained=True)
 
 
@@ -735,41 +735,41 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 2510:
-        from .model_YXY_densenet.DyReLU_resnet.src.models.resnet_dy import ResNet50_dy
+        from model_YXY_densenet.DyReLU_resnet.src.models.resnet_dy import ResNet50_dy
         return ResNet50_dy()
 
 
 
     elif model_index == 2512:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn18
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn18
         return resnetv1sn18()
     elif model_index == 2513:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn34
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn34
         return resnetv1sn34()
     elif model_index == 2514:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn50
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn50
         return resnetv1sn50()
     elif model_index == 2515:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn101
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn101
         return resnetv1sn101()
     elif model_index == 2516:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn152
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v1_sn import resnetv1sn152
         return resnetv1sn152()
 
     elif model_index == 2522:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn18
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn18
         return resnetv2sn18()
     elif model_index == 2523:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn34
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn34
         return resnetv2sn34()
     elif model_index == 2524:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn50
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn50
         return resnetv2sn50()
     elif model_index == 2525:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn101
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn101
         return resnetv2sn101()
     elif model_index == 2526:
-        from .model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn152
+        from model_YXY_densenet.Switchable_Normalization.imagenet.models.resnet_v2_sn import resnetv2sn152
         return resnetv2sn152()
 
 
@@ -777,85 +777,85 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
     # stochastic_depth_resnet
     # 这个模型会出现stochastic_depth_resnet18() got an unexpected keyword argument 'pretrained'        也就是没有定义这个写法
     elif model_index == 240:
-        from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet18
+        from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet18
         return stochastic_depth_resnet18(num_classes=2)
     # elif model_index == 241:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet18
+    #     from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet18
     #     return stochastic_depth_resnet18(pretrained=True, num_classes=2)
     elif model_index == 242:
-        from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet34
+        from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet34
         return stochastic_depth_resnet34(num_classes=2)
     # elif model_index == 243:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet34
+    #     from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet34
     #     return stochastic_depth_resnet34(pretrained=True, num_classes=2)
     elif model_index == 244:
-        from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet50
+        from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet50
         return stochastic_depth_resnet50(num_classes=2)
     # elif model_index == 245:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet50
+    #     from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet50
     #     return stochastic_depth_resnet50(pretrained=True, num_classes=2)
     elif model_index == 246:
-        from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet101
+        from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet101
         return stochastic_depth_resnet101(num_classes=2)
     # elif model_index == 247:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet101
+    #     from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet101
     #     return stochastic_depth_resnet101(pretrained=True, num_classes=2)
     elif model_index == 248:
-        from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet152
+        from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet152
         return stochastic_depth_resnet152(num_classes=2)
     # elif model_index == 249:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet152
+    #     from model_DualT.model_YXY_google2_11.stochasticdepth import stochastic_depth_resnet152
     #     return stochastic_depth_resnet152(pretrained=True, num_classes=2)
 
 
     # Table 9: Best WRN performance over various datasets, single run results.
     elif model_index == 251:
-        from .model_DualT.model_YXY_google2_11.wideresidual import wideresnet
+        from model_DualT.model_YXY_google2_11.wideresidual import wideresnet
         return wideresnet(num_classes=2)
     # elif model_index == 252:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.wideresidual import wideresnet
+    #     from model_DualT.model_YXY_google2_11.wideresidual import wideresnet
     #     return wideresnet(pretrained=True, num_classes=2)
 
     elif model_index == 253:            #不能运行   原因：UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
         # size mismatch, m1: [8 x 1458], m2: [900 x 450] at /pytorch/aten/src/THC/generic/THCTensorMathBlas.cu:273
-        from .model_DualT.model_YXY_google2_11.rir import resnet_in_resnet
+        from model_DualT.model_YXY_google2_11.rir import resnet_in_resnet
         return resnet_in_resnet(num_classes=2)
     # elif model_index == 254:          #也不能运行      #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-    #     from .model_DualT.model_YXY_google2_11.rir import resnet_in_resnet
+    #     from model_DualT.model_YXY_google2_11.rir import resnet_in_resnet
     #     return resnet_in_resnet(pretrained=True, num_classes=2)
 
 
 
     # PreActResNet其实只是将Conv-BN-ReLU的顺序换了一下，使得存在一条通路从第一个ResNet Block到最后一个ResNet Block，中间不经过非线性变换ReLU，提高模型的准确率。
     elif model_index == 261:
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet18
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet18
         return preactresnet18()
     elif model_index == 262:                #没有找到预训练模型，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet18
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet18
         return preactresnet18()
     elif model_index == 263:
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet34
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet34
         return preactresnet34()
     elif model_index == 264:                #没有找到预训练模型，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet34
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet34
         return preactresnet34()
     elif model_index == 265:
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet50
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet50
         return preactresnet50()
     elif model_index == 266:                #没有找到预训练模型，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet50
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet50
         return preactresnet50()
     elif model_index == 267:
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet101
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet101
         return preactresnet101()
     elif model_index == 268:               #没有找到预训练模型，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet101
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet101
         return preactresnet101()
     elif model_index == 269:
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet152
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet152
         return preactresnet152()
     elif model_index == 260:                #没有找到预训练模型，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.preactresnet import preactresnet152
+        from model_DualT.model_YXY_google2_11.preactresnet import preactresnet152
         return preactresnet152()
 
 
@@ -863,112 +863,112 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
     # 这是torchvision的版本问题：pip install torchvision==0.4.1     安装新版torch：  https://blog.csdn.net/jacke121/article/details/104783579/   pip install torch===1.4.0 torchvision===0.5.0 -f https://download.pytorch.org/whl/torch_stable.html
     # 必须安装torchvision=0.5.0     已经编写好环境yxy1，对于这个model_YXY_fullgood_13里面的模型都必须要使用yxy1的环境
     elif model_index == 271:                #
-        from .models_32.model_YXY_fullgood_13.models.byobnet import gernet_l
+        from models_32.model_YXY_fullgood_13.models.byobnet import gernet_l
         return gernet_l()
     elif model_index == 272:                # 预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import gernet_l
+        from models_32.model_YXY_fullgood_13.models.byobnet import gernet_l
         return gernet_l(pretrained=True)
     elif model_index == 273:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import gernet_m
+        from models_32.model_YXY_fullgood_13.models.byobnet import gernet_m
         return gernet_m()
     elif model_index == 274:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import gernet_m
+        from models_32.model_YXY_fullgood_13.models.byobnet import gernet_m
         return gernet_m(pretrained=True)
     elif model_index == 275:
-        from .models_32.model_YXY_fullgood_13.models.byobnet import gernet_s
+        from models_32.model_YXY_fullgood_13.models.byobnet import gernet_s
         return gernet_s()
     elif model_index == 276:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.byobnet import gernet_s
+        from models_32.model_YXY_fullgood_13.models.byobnet import gernet_s
         return gernet_s(pretrained=True)
 
     # CSPNet——PyTorch实现CSPDenseNet和CSPResNeXt         / YOLOv4特征提取网络——CSPDarkNet结构解析及PyTorch实现      开源项目YOLOv5相比YOLOv4有了比较夸张的突破，成为了全方位吊打EfficientDet的存在，其特征提取网络也是CSP-DarkNet。
     # torchvision==0.4.1        # cspresnet
     elif model_index == 281:                #
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50
         return cspresnet50()
     elif model_index == 282:                # 预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50
         return cspresnet50(pretrained=True)
     elif model_index == 283:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50d
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50d
         return cspresnet50d()
     elif model_index == 284:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50d
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50d
         return cspresnet50d(pretrained=True)
     elif model_index == 285:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50w
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50w
         return cspresnet50w()
     elif model_index == 286:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50w
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnet50w
         return cspresnet50w(pretrained=True)
     elif model_index == 287:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50
         return cspresnext50()
     elif model_index == 288:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50
         return cspresnext50(pretrained=True)
     elif model_index == 289:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50_iabn
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50_iabn
         return cspresnext50_iabn()
     elif model_index == 291:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50_iabn
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspresnext50_iabn
         return cspresnext50_iabn(pretrained=True)
     elif model_index == 292:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53
         return cspdarknet53()
     elif model_index == 293:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53
         return cspdarknet53(pretrained=True)
     elif model_index == 294:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53_iabn
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53_iabn
         return cspdarknet53_iabn()
     elif model_index == 295:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53_iabn
+        from models_32.model_YXY_fullgood_13.models.cspnet import cspdarknet53_iabn
         return cspdarknet53_iabn(pretrained=True)
     #YOLOv4特征提取网络——CSPDarkNet结构解析及PyTorch实现 ，但是也可以用作分类
     elif model_index == 296:
-        from .models_32.model_YXY_fullgood_13.models.cspnet import darknet53
+        from models_32.model_YXY_fullgood_13.models.cspnet import darknet53
         return darknet53()
     elif model_index == 297:                #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.cspnet import darknet53
+        from models_32.model_YXY_fullgood_13.models.cspnet import darknet53
         return darknet53(pretrained=True)
 
 
     elif model_index == 299:
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn68
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn68
         return dpn68()
     elif model_index == 200:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn68
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn68
         return dpn68(pretrained=True)
     elif model_index == 201:
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn68b
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn68b
         return dpn68b()
     elif model_index == 202:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn68b
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn68b
         return dpn68b(pretrained=True)
     elif model_index == 203:
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn92
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn92
         return dpn92()
     elif model_index == 204:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn92
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn92
         return dpn92(pretrained=True)
     elif model_index == 205:
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn98
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn98
         return dpn98()
     elif model_index == 206:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn98
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn98
         return dpn98(pretrained=True)
     elif model_index == 207:
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn131
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn131
         return dpn131()
     elif model_index == 208:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn131
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn131
         return dpn131(pretrained=True)
     elif model_index == 209:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn107
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn107
         return dpn107()
     elif model_index == 210:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dpn import dpn107
+        from models_32.model_YXY_fullgood_13.models.dpn import dpn107
         return dpn107(pretrained=True)
 
 
@@ -989,36 +989,36 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
     #GoogleNet其他网络不能预训练很大程度上是和辅助分类器相关
 
     elif model_index == 331:       # 'googlenet'    可以使用    这个代码是100类别的
-        from .model_DualT.model_YXY_google2_11.googlenet import googlenet
+        from model_DualT.model_YXY_google2_11.googlenet import googlenet
         return googlenet(num_class=num_classes)              #这样不使用预训练是可以进行训练的
     elif model_index == 332:       # 'googlenet'       这个不能使用
-        from .model_DualT.model_YXY_google2_11.googlenet import googlenet
+        from model_DualT.model_YXY_google2_11.googlenet import googlenet
         return googlenet(num_class=2, pretrained=True)       #不能使用，因为预训练了的
     elif model_index == 333:               #'inceptionv3':
-        from .model_DualT.model_YXY_google2_11.inceptionv3 import inceptionv3
+        from model_DualT.model_YXY_google2_11.inceptionv3 import inceptionv3
         return inceptionv3(num_classes=2)
     elif model_index == 334:                #不能使用，因为预训练了的
-        from .model_DualT.model_YXY_google2_11.inceptionv3 import inceptionv3_YXY
+        from model_DualT.model_YXY_google2_11.inceptionv3 import inceptionv3_YXY
         return inceptionv3_YXY(num_classes=2, pretrained=True)
     # 下面这2个模型预训练还没找，以后再说，先这样放着------占用显存太大，batch=4的时候显存都超过了24G，以至于没法判断是否不使用预训练可以正常使用，但是猜测可以使用
     elif model_index == 335:                #'inceptionv4':
-        from .model_DualT.model_YXY_google2_11.inceptionv4 import inceptionv4
+        from model_DualT.model_YXY_google2_11.inceptionv4 import inceptionv4
         return inceptionv4(class_nums=2)
     elif model_index == 336:                #'inception_resnet_v2':
-        from .model_DualT.model_YXY_google2_11.inceptionv4 import inception_resnet_v2
+        from model_DualT.model_YXY_google2_11.inceptionv4 import inception_resnet_v2
         return inception_resnet_v2(class_nums=2)
     elif model_index == 337:                #'inception_resnet_v2':
-        from .model_DualT.model_YXY_google2_11.inceptionv4 import inception_resnet_v2
+        from model_DualT.model_YXY_google2_11.inceptionv4 import inception_resnet_v2
         return inception_resnet_v2(class_nums=2, pretrained=True)
 
     elif model_index == 338:                #'xception':
-        from .model_DualT.model_YXY_google2_11.xception import xception
+        from model_DualT.model_YXY_google2_11.xception import xception
         return xception()
     elif model_index == 339:                #'xception':#这种写法是错误的，但是这个的最后一层是fc层，也就是可以和buildmodel文件一样添加或者是修改最后一层使得classes_num=2
-        from .model_DualT.model_YXY_google2_11.xception import xception_YXY
+        from model_DualT.model_YXY_google2_11.xception import xception_YXY
         return xception_YXY()
     elif model_index == 340:                #'xception':
-        from .model_DualT.model_YXY_google2_11.model_YXY_Google.xception import xception
+        from model_DualT.model_YXY_google2_11.model_YXY_Google.xception import xception
         return xception()
 
 
@@ -1085,7 +1085,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 4600:
-        from .model_YXY_densenet.efficient_densenet_pytorch_master.models.densenet import efficientdensenet
+        from model_YXY_densenet.efficient_densenet_pytorch_master.models.densenet import efficientdensenet
         return efficientdensenet(num_classes = 2)
 
     # 这个代码也几乎不要
@@ -1256,7 +1256,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         return models_32.vision.googlenet()
 
     # elif model_index == 331:       # 'googlenet'    可以使用    这个代码是100类别的
-    #     from .model_DualT.model_YXY_google2_11.googlenet import googlenet
+    #     from model_DualT.model_YXY_google2_11.googlenet import googlenet
     #     return googlenet(num_class=2)              #这样不使用预训练是可以进行训练的
 
     elif model_index == 2310:
@@ -1434,28 +1434,28 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 4100:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68
         return hardnet68()
     elif model_index == 4101:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68
         return hardnet68(pretrained=True)
     elif model_index == 4102:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet85
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet85
         return hardnet85()
     elif model_index == 4103:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet85
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet85
         return hardnet85(pretrained=True)
     elif model_index == 4104:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68ds
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68ds
         return hardnet68ds()
     elif model_index == 4105:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68ds
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet68ds
         return hardnet68ds(pretrained=True)
     elif model_index == 4106:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet39ds
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet39ds
         return hardnet39ds()
     elif model_index == 4107:
-        from .model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet39ds
+        from model_YXY_densenet.Pytorch_HarDNet.hubconf import hardnet39ds
         return hardnet39ds(pretrained=True)
 
 
@@ -1490,29 +1490,29 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
     elif model_index == 64:
         return models_32.Mobilenetv2(pretrained=True)
     elif model_index == 65:
-        from .model_DualT.model_YXY_google2_11.mobilenet import mobilenet
+        from model_DualT.model_YXY_google2_11.mobilenet import mobilenet
         return mobilenet(alpha=1, class_num=2)
     elif model_index == 66:            # 没有找到预训练模型，也就不写预训练的了，而且也没有fc层，不好进行更改
-        from .model_DualT.model_YXY_google2_11.mobilenet import mobilenet
+        from model_DualT.model_YXY_google2_11.mobilenet import mobilenet
         return mobilenet(alpha=1, class_num=2)
     elif model_index == 661:
-        from .model_DualT.model_YXY_google2_11.mobilenetv3 import mobilenetv3
+        from model_DualT.model_YXY_google2_11.mobilenetv3 import mobilenetv3
         return mobilenetv3(n_class=2)
     elif model_index == 662:                #没有找到预训练模型，FileNotFoundError: [Errno 2] No such file or directory: 'mobilenetv3_small_67.4.pth.tar'
         #  装载模型进去也还是不能预训练   Unexpected key(s) in state_dict: "epoch", "state_dict", "best_prec1", "best_prec5", "optimizer".
-        from .model_DualT.model_YXY_google2_11.mobilenetv3 import mobilenetv3
+        from model_DualT.model_YXY_google2_11.mobilenetv3 import mobilenetv3
         return mobilenetv3(pretrained=True, n_class=2)
     elif model_index == 663:                #没有找到预训练模型，也就不写预训练的了
-        from .model_DualT.model_YXY_google2_11.mobilenetv3 import mobilenetv3
+        from model_DualT.model_YXY_google2_11.mobilenetv3 import mobilenetv3
         return mobilenetv3(pretrained=True, n_class=1000)
     elif model_index == 664:        # GoogLeNet
-        from .model_DualT.model_YXY_google2_11.mobilenetv3_2 import mobilenetv3_2
+        from model_DualT.model_YXY_google2_11.mobilenetv3_2 import mobilenetv3_2
         return mobilenetv3_2(num_classes=2)
     elif model_index == 665:                #没有找到预训练模型，FileNotFoundError: [Errno 2] No such file or directory: 'mobilenetv3_small_67.4.pth.tar'
-        from .model_DualT.model_YXY_google2_11.mobilenetv3_2 import mobilenetv3_2
+        from model_DualT.model_YXY_google2_11.mobilenetv3_2 import mobilenetv3_2
         return mobilenetv3_2(pretrained=True, num_classes=2)
     elif model_index == 666:                #没有找到预训练模型，也就不写预训练的了
-        from .model_DualT.model_YXY_google2_11.mobilenetv3_2 import mobilenetv3_2
+        from model_DualT.model_YXY_google2_11.mobilenetv3_2 import mobilenetv3_2
         return mobilenetv3_2(pretrained=True, num_classes=1000)
 
 
@@ -1576,253 +1576,253 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
     # SEnet
     elif model_index == 91:
-        from .model_DualT.model_YXY_google2_11.senet import seresnet18
+        from model_DualT.model_YXY_google2_11.senet import seresnet18
         return seresnet18(class_num=2)
     elif model_index == 9101:
-        from .model_DualT.model_YXY_google2_11.senet_T import seresnet18
+        from model_DualT.model_YXY_google2_11.senet_T import seresnet18
         return seresnet18(class_num=2)
     elif model_index == 92:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.senet import seresnet18
+        from model_DualT.model_YXY_google2_11.senet import seresnet18
         return seresnet18(pretrained=True, class_num=2)
     elif model_index == 93:
-        from .model_DualT.model_YXY_google2_11.senet import seresnet34
+        from model_DualT.model_YXY_google2_11.senet import seresnet34
         return seresnet34(class_num=2)
     elif model_index == 94:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.senet import seresnet34
+        from model_DualT.model_YXY_google2_11.senet import seresnet34
         return seresnet34(pretrained=True, class_num=2)
     elif model_index == 95:
-        from .model_DualT.model_YXY_google2_11.senet import seresnet50
+        from model_DualT.model_YXY_google2_11.senet import seresnet50
         return seresnet50(class_num=2)
     elif model_index == 96:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.senet import seresnet50
+        from model_DualT.model_YXY_google2_11.senet import seresnet50
         return seresnet50(pretrained=True, class_num=2)
     elif model_index == 97:
-        from .model_DualT.model_YXY_google2_11.senet import seresnet101
+        from model_DualT.model_YXY_google2_11.senet import seresnet101
         return seresnet101(class_num=2)
     elif model_index == 98:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.senet import seresnet101
+        from model_DualT.model_YXY_google2_11.senet import seresnet101
         return seresnet101(pretrained=True, class_num=2)
     elif model_index == 99:
-        from .model_DualT.model_YXY_google2_11.senet import seresnet152
+        from model_DualT.model_YXY_google2_11.senet import seresnet152
         return seresnet152(class_num=2)
     elif model_index == 90:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .model_DualT.model_YXY_google2_11.senet import seresnet152
+        from model_DualT.model_YXY_google2_11.senet import seresnet152
         return seresnet152(pretrained=True, class_num=2)
 
 
     # 两种深层聚合(DLA)的结构:迭代深层聚合(IDA)和分层深层聚合(HDA)
     elif model_index == 911:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60_res2net
+        from models_32.model_YXY_fullgood_13.models.dla import dla60_res2net
         return dla60_res2net()
     elif model_index == 912:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60_res2net
+        from models_32.model_YXY_fullgood_13.models.dla import dla60_res2net
         return dla60_res2net(pretrained=True)
     elif model_index == 913:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60_res2next
+        from models_32.model_YXY_fullgood_13.models.dla import dla60_res2next
         return dla60_res2next()
     elif model_index == 914:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60_res2next
+        from models_32.model_YXY_fullgood_13.models.dla import dla60_res2next
         return dla60_res2next(pretrained=True)
     elif model_index == 915:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla34
+        from models_32.model_YXY_fullgood_13.models.dla import dla34
         return dla34()
     elif model_index == 916:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla34
+        from models_32.model_YXY_fullgood_13.models.dla import dla34
         return dla34(pretrained=True)
     elif model_index == 917:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla46_c
+        from models_32.model_YXY_fullgood_13.models.dla import dla46_c
         return dla46_c()
     elif model_index == 918:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla46_c
+        from models_32.model_YXY_fullgood_13.models.dla import dla46_c
         return dla46_c(pretrained=True)
     elif model_index == 919:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla46x_c
+        from models_32.model_YXY_fullgood_13.models.dla import dla46x_c
         return dla46x_c()
     elif model_index == 920:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla46x_c
+        from models_32.model_YXY_fullgood_13.models.dla import dla46x_c
         return dla46x_c(pretrained=True)
     elif model_index == 921:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60x_c
+        from models_32.model_YXY_fullgood_13.models.dla import dla60x_c
         return dla60x_c()
     elif model_index == 922:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60x_c
+        from models_32.model_YXY_fullgood_13.models.dla import dla60x_c
         return dla60x_c(pretrained=True)
     elif model_index == 923:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60
+        from models_32.model_YXY_fullgood_13.models.dla import dla60
         return dla60()
     elif model_index == 924:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60
+        from models_32.model_YXY_fullgood_13.models.dla import dla60
         return dla60(pretrained=True)
     elif model_index == 925:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60x
+        from models_32.model_YXY_fullgood_13.models.dla import dla60x
         return dla60x()
     elif model_index == 926:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla60x
+        from models_32.model_YXY_fullgood_13.models.dla import dla60x
         return dla60x(pretrained=True)
     elif model_index == 927:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla102
+        from models_32.model_YXY_fullgood_13.models.dla import dla102
         return dla102()
     elif model_index == 928:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla102
+        from models_32.model_YXY_fullgood_13.models.dla import dla102
         return dla102(pretrained=True)
     elif model_index == 929:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla102x
+        from models_32.model_YXY_fullgood_13.models.dla import dla102x
         return dla102x()
     elif model_index == 930:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla102x
+        from models_32.model_YXY_fullgood_13.models.dla import dla102x
         return dla102x(pretrained=True)
     elif model_index == 931:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla102x2
+        from models_32.model_YXY_fullgood_13.models.dla import dla102x2
         return dla102x2()
     elif model_index == 932:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla102x2
+        from models_32.model_YXY_fullgood_13.models.dla import dla102x2
         return dla102x2(pretrained=True)
     elif model_index == 933:
-        from .models_32.model_YXY_fullgood_13.models.dla import dla169
+        from models_32.model_YXY_fullgood_13.models.dla import dla169
         return dla169()
     elif model_index == 934:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.dla import dla169
+        from models_32.model_YXY_fullgood_13.models.dla import dla169
         return dla169(pretrained=True)
 
 
     # SEResNext
     elif model_index == 941:
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet50
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet50
         return se_resnet50()
     elif model_index == 942:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet50
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet50
         return se_resnet50(pretrained=True)
     elif model_index == 943:
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet101
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet101
         return se_resnet101(num_classes=num_classes)
     elif model_index == 944:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet101
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnet101
         return se_resnet101(pretrained=True)
     # resnet 152略
     elif model_index == 945:
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext50
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext50
         return se_resnext50()
     elif model_index == 946:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext50
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext50
         return se_resnext50(pretrained=True)
     elif model_index == 947:
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext101
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext101
         return se_resnext101(num_classes=num_classes)
     elif model_index == 948:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext101
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext101
         return se_resnext101(pretrained=True)
     elif model_index == 949:
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext152
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext152
         return se_resnext152()
     elif model_index == 940:                #没有找到预训练模型，因此不能使用True，也就是不能运行，也就不写预训练的了，但是有fc层可以进行修改
-        from .models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext152
+        from models_32.model_YXY_se_resnet.PyTorch_SE_ResNext_master.model.model import se_resnext152
         return se_resnext152(pretrained=True)
 
 
     # CondenseNet
     elif model_index == 951:
-        from .model_YXY_densenet.condense_net2.models.condensenet import CondenseNet
+        from model_YXY_densenet.condense_net2.models.condensenet import CondenseNet
         return CondenseNet()
     elif model_index == 952:
-        from .model_YXY_densenet.condense_net2.models.condensenet_converted import CondenseNet
+        from model_YXY_densenet.condense_net2.models.condensenet_converted import CondenseNet
         return CondenseNet()
     elif model_index == 953:
-        from .model_YXY_densenet.condense_net2.models.densenet import DenseNet
+        from model_YXY_densenet.condense_net2.models.densenet import DenseNet
         return DenseNet()
     elif model_index == 954:
-        from .model_YXY_densenet.condense_net2.models.densenet_LGC import DenseNet_LGC
+        from model_YXY_densenet.condense_net2.models.densenet_LGC import DenseNet_LGC
         return DenseNet_LGC()
 
     # # 3D Densenet in 4-way Classification of Alzheimer's Disease
     elif model_index == 955:
-        from .model_YXY_densenet.Densenet_3D.model1 import generate_model
+        from model_YXY_densenet.Densenet_3D.model1 import generate_model
         return generate_model(121, num_classes=4, drop_rate=0.5, growth_rate=32)
     elif model_index == 956:
-        from .model_YXY_densenet.Densenet_3D.model2 import generate_model
+        from model_YXY_densenet.Densenet_3D.model2 import generate_model
         return generate_model(121, num_classes=4, drop_rate=0.5, growth_rate=22)
     elif model_index == 957:
-        from .model_YXY_densenet.Densenet_3D.model3 import generate_model
+        from model_YXY_densenet.Densenet_3D.model3 import generate_model
         return generate_model(121, num_classes=4, drop_rate=0.5, growth_rate=28)
 
     # HCGNets: Gated Convolutional Networks with Hybrid Connectivity for Image Classification
     elif model_index == 958:
-        from .model_YXY_densenet.HCGNet.models.HCGNet_CIFAR import HCGNet_A1
+        from model_YXY_densenet.HCGNet.models.HCGNet_CIFAR import HCGNet_A1
         return HCGNet_A1()
     elif model_index == 959:
-        from .model_YXY_densenet.HCGNet.models.HCGNet_CIFAR import HCGNet_A2
+        from model_YXY_densenet.HCGNet.models.HCGNet_CIFAR import HCGNet_A2
         return HCGNet_A2()
     elif model_index == 960:
-        from .model_YXY_densenet.HCGNet.models.HCGNet_CIFAR import HCGNet_A3
+        from model_YXY_densenet.HCGNet.models.HCGNet_CIFAR import HCGNet_A3
         return HCGNet_A3()
     elif model_index == 961:
-        from .model_YXY_densenet.HCGNet.models.HCGNet_ImageNet import HCGNet_B
+        from model_YXY_densenet.HCGNet.models.HCGNet_ImageNet import HCGNet_B
         return HCGNet_B()
     elif model_index == 962:
-        from .model_YXY_densenet.HCGNet.models.HCGNet_ImageNet import HCGNet_C
+        from model_YXY_densenet.HCGNet.models.HCGNet_ImageNet import HCGNet_C
         return HCGNet_C()
 
     # Attention is all you need: A Pytorch Implementation
     # elif model_index == 963:
-        # from .model_YXY_densenet.pytorch_implementation_of_dense_net_attention_is_all_you_need import
+        # from model_YXY_densenet.pytorch_implementation_of_dense_net_attention_is_all_you_need import
         # return
     # 由于这个位置不是DenseNet，暂时不作处理
 
     elif model_index == 964:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_002
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_002
         return regnetx_002(pretrained=True)
     elif model_index == 965:
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_002
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_002
         return regnetx_002()
     elif model_index == 966:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_320
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_320
         return regnetx_320(pretrained=True)
     elif model_index == 967:
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_320
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_320
         return regnetx_320()
     elif model_index == 968:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnety_002
+        from models_32.model_YXY_fullgood_13.models.regnet import regnety_002
         return regnety_002(pretrained=True)
     elif model_index == 969:
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnety_002
+        from models_32.model_YXY_fullgood_13.models.regnet import regnety_002
         return regnety_002()
     elif model_index == 970:
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnety_320
+        from models_32.model_YXY_fullgood_13.models.regnet import regnety_320
         return regnety_320()
     elif model_index == 971:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnety_320
+        from models_32.model_YXY_fullgood_13.models.regnet import regnety_320
         return regnety_320(pretrained=True)
 
     elif model_index == 9610:
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_008
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_008
         return regnetx_008()
     elif model_index == 9611:           # ([16, 896, 14, 14])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_120
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_120
         return regnetx_120()
     elif model_index == 9612:           # [16, 896, 14, 14])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_160
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_160
         return regnetx_160()
     elif model_index == 9613:           # ([16, 720, 14, 14])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_080
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_080
         return regnetx_080()
     elif model_index == 9614:           # ([16, 1008, 7, 7])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_032
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_032
         return regnetx_032()
     elif model_index == 9615:           # ([16, 1360, 7, 7])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_040
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_040
         return regnetx_040()
     elif model_index == 9616:           # ([16, 912, 7, 7])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_016
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_016
         return regnetx_016()
 
 
     elif model_index == 988:           # ([16, 1008, 7, 7])
-        from .models_32.model_YXY_fullgood_13.models.regnet import regnetx_032
+        from models_32.model_YXY_fullgood_13.models.regnet import regnetx_032
         return regnetx_032()
     elif model_index == 9801:           # ([16, 1008, 7, 7])
-        from .models_32.model_YXY_fullgood_13.models.regnetLFZ import regnetx_032
+        from models_32.model_YXY_fullgood_13.models.regnetLFZ import regnetx_032
         return regnetx_032()
     elif model_index == 980199:           # ([16, 1008, 7, 7])
-        from .models_32.model_YXY_fullgood_13.models.regnetLFZ import regnetx_032
+        from models_32.model_YXY_fullgood_13.models.regnetLFZ import regnetx_032
         return regnetx_032(pretrained=True)
 
 
@@ -1831,7 +1831,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 972:
-        from .models_32.nfnets.nfnets_pytorch.nfnets import NFNet
+        from models_32.nfnets.nfnets_pytorch.nfnets import NFNet
         return NFNet(num_classes=1000, variant='F0', stochdepth_rate=0.25, alpha=0.2, se_ratio=0.5, activation='gelu')
             # num_classes=config['num_classes'],    # variant=config['variant'],# F0 - F7      # stochdepth_rate=config['stochdepth_rate'],# 0-1, the probability that a layer is dropped during one step
             # alpha=config['alpha'],# Scaling factor at the end of each block            # se_ratio=config['se_ratio'],# Squeeze-Excite expansion ratio            # activation=config['activation']# or 'relu'
@@ -1839,84 +1839,84 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
     #  这两个不同位置下载的，都运行的结果为固定0.5不动
     elif model_index == 973:
-        from .models_32.nfnets.deepmind_research.nfnets.nfnet import NFNet
+        from models_32.nfnets.deepmind_research.nfnets.nfnet import NFNet
         return NFNet(2)
     elif model_index == 974:              #   default='F0', type=str, choices=['F0', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7'], help='NFNet variants')
-        from .models_32.nfnets.simple_nfnet.model import NFNet
+        from models_32.nfnets.simple_nfnet.model import NFNet
         return NFNet(num_classes=10, variant='F0', stochdepth_rate=0.25, alpha=0.2, se_ratio=0.5, activation='gelu')
 
 
 
     elif model_index == 975:               # 这个还是0.5
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0
+        from models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0
         return nfnet_f0()
     elif model_index == 976:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0
+        from models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0
         return nfnet_f0(pretrained=True)
     elif model_index == 977:               # 这个还是0.5
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0s
+        from models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0s
         return nfnet_f0s()
     elif model_index == 978:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0s
+        from models_32.model_YXY_fullgood_13.models.nfnet import nfnet_f0s
         return nfnet_f0s(pretrained=True)
     elif model_index == 979:               # 这个还是0.5
-        from .models_32.model_YXY_fullgood_13.models.nfnet import dm_nfnet_f0
+        from models_32.model_YXY_fullgood_13.models.nfnet import dm_nfnet_f0
         return dm_nfnet_f0()
     elif model_index == 980:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.nfnet import dm_nfnet_f0
+        from models_32.model_YXY_fullgood_13.models.nfnet import dm_nfnet_f0
         return dm_nfnet_f0(pretrained=True)
     elif model_index == 981:               # 这个还是0.5
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nf_regnet_b0
+        from models_32.model_YXY_fullgood_13.models.nfnet import nf_regnet_b0
         return nf_regnet_b0()
     elif model_index == 982:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nf_regnet_b0
+        from models_32.model_YXY_fullgood_13.models.nfnet import nf_regnet_b0
         return nf_regnet_b0(pretrained=True)
     elif model_index == 983:            # 准确率可以提升
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nf_resnet26
+        from models_32.model_YXY_fullgood_13.models.nfnet import nf_resnet26
         return nf_resnet26()
     elif model_index == 984:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nf_resnet26
+        from models_32.model_YXY_fullgood_13.models.nfnet import nf_resnet26
         return nf_resnet26(pretrained=True)
     elif model_index == 985:            # 准确率可以提升
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nf_seresnet26
+        from models_32.model_YXY_fullgood_13.models.nfnet import nf_seresnet26
         return nf_seresnet26()
     elif model_index == 986:              #   预测模型是github上的，加载特别慢
-        from .models_32.model_YXY_fullgood_13.models.nfnet import nf_seresnet26
+        from models_32.model_YXY_fullgood_13.models.nfnet import nf_seresnet26
         return nf_seresnet26(pretrained=True)
 
 
     elif model_index == 987:
-        from .models_32.nfnets.CV_Backbones.tinynet_pytorch.tinynet import tinynet
+        from models_32.nfnets.CV_Backbones.tinynet_pytorch.tinynet import tinynet
         return tinynet()
 
 
     elif model_index == 101:
-        from .models_32.twotwo.EffNet.effnet import EffNet
+        from models_32.twotwo.EffNet.effnet import EffNet
         return EffNet(nb_classes=num_classes)
 
     elif model_index == 102:
-        from .models_32.twotwo.CV_Backbones_master.ghostnet_pytorch.ghostnet import ghostnet
+        from models_32.twotwo.CV_Backbones_master.ghostnet_pytorch.ghostnet import ghostnet
         return ghostnet()
 
     elif model_index == 103:                # 无法计算计算量
-        from .models_32.twotwo.skipnet_master.imagenet.models import imagenet_rnn_gate_101
+        from models_32.twotwo.skipnet_master.imagenet.models import imagenet_rnn_gate_101
         return imagenet_rnn_gate_101()
 
     elif model_index == 104:
-        from .models_32.twotwo.Swin_Transformer_main.models.swin_transformer import SwinTransformer
+        from models_32.twotwo.Swin_Transformer_main.models.swin_transformer import SwinTransformer
         return SwinTransformer()
 
     elif model_index == 1040:
-        from .models_32.twotwo.Swin_Transformer_main.models.swin_transformer import SwinTransformer_b
+        from models_32.twotwo.Swin_Transformer_main.models.swin_transformer import SwinTransformer_b
         return SwinTransformer_b(num_classes=num_classes)
 
     elif model_index == 1041:
-        from .models_32.twotwo.Swin_Transformer_main.models.swin_transformer import SwinTransformer_b_pre
+        from models_32.twotwo.Swin_Transformer_main.models.swin_transformer import SwinTransformer_b_pre
         return SwinTransformer_b_pre(pretrained=True, num_classes=num_classes)
 
     elif model_index == 105:
         model_type = "b"        # 超出8g显存
-        from .models_32.twotwo.Swin_Transformer_V2.swin_transformer_v2.model import swin_transformer_v2_t, swin_transformer_v2_s, \
+        from models_32.twotwo.Swin_Transformer_V2.swin_transformer_v2.model import swin_transformer_v2_t, swin_transformer_v2_s, \
             swin_transformer_v2_b,swin_transformer_v2_l,swin_transformer_v2_h,swin_transformer_v2_g, ClassificationModelWrapper
         # Init model
         if model_type == "t":
@@ -1942,7 +1942,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         return model
 
     elif model_index == 1051:
-        from .models_32.twotwo.Swin_Transformer_V2.swin_transformer_v2.model import swin_transformer_v2_t, swin_transformer_v2_s, \
+        from models_32.twotwo.Swin_Transformer_V2.swin_transformer_v2.model import swin_transformer_v2_t, swin_transformer_v2_s, \
             swin_transformer_v2_b,swin_transformer_v2_l,swin_transformer_v2_h,swin_transformer_v2_g, ClassificationModelWrapper
         model_type = "s"        # 超出8g显存
         # Init model
@@ -1970,203 +1970,203 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 106:
-        from .models_32.twotwo.RepLKNet.replknet import create_RepLKNet31B
+        from models_32.twotwo.RepLKNet.replknet import create_RepLKNet31B
         # return create_RepLKNet31B(num_classes=num_classes, out_indices=(0, 1, 2, 3))
         return create_RepLKNet31B(num_classes=2, out_indices=None)
 
     elif model_index == 1070:
-        from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_tiny
+        from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_tiny
         return convnext_tiny()
     elif model_index == 1071:
-        from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_small
+        from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_small
         return convnext_small()
     elif model_index == 107:
-        from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_base
+        from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_base
         return convnext_base()
     elif model_index == 1071:
-        from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_base_pre
+        from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_base_pre
         return convnext_base_pre(pretrained=True, num_classes=num_classes)
 
 
     elif model_index == 108:
-        from .models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_small
+        from models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_small
         return nat_small()
 
     elif model_index == 1080:
-        from .models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_mini
+        from models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_mini
         return nat_mini()
 
     elif model_index == 1081:
-        from .models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_tiny
+        from models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_tiny
         return nat_tiny()
 
     elif model_index == 1082:
-        from .models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_small
+        from models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_small
         return nat_small()
 
     elif model_index == 1083:
-        from .models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_base
+        from models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_base
         return nat_base()
 
     elif model_index == 1084:
-        from .models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_small
+        from models_32.twotwo.Neighborhood_Attention_Transformer.classification.nat import nat_small
         return nat_small(pretrained=True)
 
     elif model_index == 109:
-        from .models_32.model_YXY_se_resnet.res2net.res2net import res2net101
+        from models_32.model_YXY_se_resnet.res2net.res2net import res2net101
         return res2net101()
 
     elif model_index == 110:
-        from .models_32.twotwo.ELSA_Swin.elsa_swin import elsa_swin_tiny
+        from models_32.twotwo.ELSA_Swin.elsa_swin import elsa_swin_tiny
         return elsa_swin_tiny()
 
     elif model_index == 1001:
-        from .models_32.twotwo.DAT.dat import DAT_tiny
+        from models_32.twotwo.DAT.dat import DAT_tiny
         return DAT_tiny()
 
     elif model_index == 1002:
-        from .models_32.twothree.EdgeNeXt.models.model import edgenext_base
+        from models_32.twothree.EdgeNeXt.models.model import edgenext_base
         return edgenext_base()
     elif model_index == 1003:
-        from .models_32.twothree.EdgeNeXt.models.model import edgenext_small
+        from models_32.twothree.EdgeNeXt.models.model import edgenext_small
         return edgenext_small()
     elif model_index == 100399:
-        from .models_32.twothree.EdgeNeXt.models.model import edgenext_small
+        from models_32.twothree.EdgeNeXt.models.model import edgenext_small
         return edgenext_small(pretrained=True)
 
     elif model_index == 1004:
-        from .models_32.twothree.Conformer.models import Conformer_small_patch16
+        from models_32.twothree.Conformer.models import Conformer_small_patch16
         return Conformer_small_patch16()
     elif model_index == 1005:
-        from .models_32.twothree.Conformer.models import Conformer_base_patch16
+        from models_32.twothree.Conformer.models import Conformer_base_patch16
         return Conformer_base_patch16()
 
     elif model_index == 1006:
-        from .models_32.twothree.Vit_Slim import deit_tiny_distilled_patch16_224
+        from models_32.twothree.Vit_Slim import deit_tiny_distilled_patch16_224
         return deit_tiny_distilled_patch16_224()
     elif model_index == 1007:       # 提高输出可读性Params(M)是 86.377M提高输出可读性MACs(G)是 16.849G
-        from .models_32.twothree.Vit_Slim import deit_base_patch16_224
+        from models_32.twothree.Vit_Slim import deit_base_patch16_224
         return deit_base_patch16_224()
     elif model_index == 1008:       # 提高输出可读性Params(M)是 86.377M提高输出可读性MACs(G)是 16.849G
-        from .models_32.twothree.Vit_Slim.vision_transformer import vit_base_patch16_224
+        from models_32.twothree.Vit_Slim.vision_transformer import vit_base_patch16_224
         return vit_base_patch16_224()
     elif model_index == 1009:       #提高输出可读性Params(M)是 87.146M提高输出可读性MACs(G)是 16.934G
-        from .models_32.twothree.Vit_Slim import deit_base_distilled_patch16_224
+        from models_32.twothree.Vit_Slim import deit_base_distilled_patch16_224
         return deit_base_distilled_patch16_224()
 
     elif model_index == 1010:       #提高输出可读性Params(M)是 102.405M提高输出可读性MACs(G)是 16.865G
-        from .models_32.twothree.SSF.vision_transformer import vit_base_patch16_224_in21k
+        from models_32.twothree.SSF.vision_transformer import vit_base_patch16_224_in21k
         return vit_base_patch16_224_in21k()
 
     # https://mp.weixin.qq.com/s/atmDSep4h2eC7vQlYILQtw
     # https://m.thepaper.cn/baijiahao_17927341
     # 这个代码是VPT，上面那个是SSF，这两个才是微调的代码，实现很复杂，且效果没看到在哪里
     elif model_index == 1011:       #提高输出可读性Params(M)是 85.762M提高输出可读性MACs(G)是 17.273G
-        from .models_32.twothree.vpt.vit_models import ViT
+        from models_32.twothree.vpt.vit_models import ViT
         return ViT()
 
     elif model_index == 1013:       # 提高输出可读性Params(M)是 13.992M提高输出可读性MACs(G)是 1.922G
-        from .model_DualT.two_d.metaformer import metaformer_pppa_s12_224
+        from model_DualT.two_d.metaformer import metaformer_pppa_s12_224
         return metaformer_pppa_s12_224()
 
     elif model_index == 1015:       # 提高输出可读性Params(M)是 11.894M提高输出可读性MACs(G)是 1.819G
-        from .model_DualT.two_d.poolformer import poolformer_s12
+        from model_DualT.two_d.poolformer import poolformer_s12
         return poolformer_s12()
     elif model_index == 1016:       # 提高输出可读性Params(M)是 21.348M提高输出可读性MACs(G)是 3.405G
-        from .model_DualT.two_d.poolformer import poolformer_s24
+        from model_DualT.two_d.poolformer import poolformer_s24
         return poolformer_s24()
     elif model_index == 1017:       # 提高输出可读性Params(M)是 13.992M提高输出可读性MACs(G)是 1.922G
-        from .model_DualT.two_d.poolformer import poolformer_s36
+        from model_DualT.two_d.poolformer import poolformer_s36
         return poolformer_s36()
     elif model_index == 1018:       # 提高输出可读性Params(M)是 13.992M提高输出可读性MACs(G)是 1.922G
-        from .model_DualT.two_d.poolformer import poolformer_m48
+        from model_DualT.two_d.poolformer import poolformer_m48
         return poolformer_m48()
 
     elif model_index == 1019:       # 提高输出可读性Params(M)是 21.926M提高输出可读性MACs(G)是 19.365G
-        from .model_DualT.two_d.coat import coat_small
+        from model_DualT.two_d.coat import coat_small
         return coat_small()
 
     elif model_index == 1021:       # 提高输出可读性Params(M)是 19.594M提高输出可读性MACs(G)是 4.062G
-        from .model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
+        from model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
         return ConvolutionalVisionTransformer(in_chans=3, num_classes=num_classes, choice='cvt13')
     elif model_index == 1022:       # 提高输出可读性Params(M)是 31.208M提高输出可读性MACs(G)是 6.512G
-        from .model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
+        from model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
         return ConvolutionalVisionTransformer(in_chans=3, num_classes=num_classes, choice='cvt21')
 
     elif model_index == 1023:       # 提高输出可读性Params(M)是 9.405M提高输出可读性MACs(G)是 1.233G
-        from .model_DualT.two_d.cmt import cmt_ti
+        from model_DualT.two_d.cmt import cmt_ti
         return cmt_ti()
     elif model_index == 1024:       # 提高输出可读性Params(M)是 15.073M提高输出可读性MACs(G)是 2.050G
-        from .model_DualT.two_d.cmt import cmt_xs
+        from model_DualT.two_d.cmt import cmt_xs
         return cmt_xs()
     elif model_index == 1025:       # 提高输出可读性Params(M)是 25.941M提高输出可读性MACs(G)是 3.912G
-        from .model_DualT.two_d.cmt import cmt_s
+        from model_DualT.two_d.cmt import cmt_s
         return cmt_s()
     elif model_index == 1026:       # 提高输出可读性Params(M)是 45.184M提高输出可读性MACs(G)是 6.866G
-        from .model_DualT.two_d.cmt import cmt_b
+        from model_DualT.two_d.cmt import cmt_b
         return cmt_b()
 
 
 
     elif model_index == 1031:       # 提高输出可读性Params(M)是 45.184M提高输出可读性MACs(G)是 6.866G
-        from .models_32.oldtwo.VGNetG import VGNetG
+        from models_32.oldtwo.VGNetG import VGNetG
         return VGNetG(num_classes=num_classes)
     elif model_index == 1033:       #
-        from .models_32.oldtwo.capsules import capsules          # A, B, C, D = 64, 8, 16, 16
+        from models_32.oldtwo.capsules import capsules          # A, B, C, D = 64, 8, 16, 16
         # return capsules(A=64, B=8, C=16, D=16, E=num_classes, iters_routings=[2, 2, 2])     # 32-》16-》8
         return capsules(A=56, B=7, C=14, D=14, E=num_classes, iters_routings=[2, 2, 2])     # 32-》14-》7
 
 
     elif model_index == 1035:       # 提高输出可读性Params(M)是 84.277M提高输出可读性MACs(G)是 15.890G
-        from .model_DualT.two_d.xcit import xcit_medium_24_p16
+        from model_DualT.two_d.xcit import xcit_medium_24_p16
         return xcit_medium_24_p16()
     elif model_index == 1036:       #  47.582M 8.954G
-        from .model_DualT.two_d.xcit import xcit_small_24_p16
+        from model_DualT.two_d.xcit import xcit_small_24_p16
         return xcit_small_24_p16()
     elif model_index == 1037:       # 3.037M 539.988M
-        from .model_DualT.two_d.xcit import xcit_nano_12_p16
+        from model_DualT.two_d.xcit import xcit_nano_12_p16
         return xcit_nano_12_p16()
     elif model_index == 1038:       # 26.166M MACs(G)是 18.521G
-        from .model_DualT.two_d.xcit import xcit_small_12_p8
+        from model_DualT.two_d.xcit import xcit_small_12_p8
         return xcit_small_12_p8()
     elif model_index == 1039:       #  12.063M 8.866G
-        from .model_DualT.two_d.xcit import xcit_tiny_24_p8
+        from model_DualT.two_d.xcit import xcit_tiny_24_p8
         return xcit_tiny_24_p8()
     elif model_index == 1043:       # 47.542M 35.248G
-        from .model_DualT.two_d.xcit import xcit_small_24_p8
+        from model_DualT.two_d.xcit import xcit_small_24_p8
         return xcit_small_24_p8()
 
     elif model_index == 1045:       #  39.048M 7.787G
-        from .model_DualT.two_d.t2t_vit import t2t_vit_19
+        from model_DualT.two_d.t2t_vit import t2t_vit_19
         return t2t_vit_19()
     elif model_index == 1046:       # 21.441M 4.334G
-        from .model_DualT.two_d.t2t_vit import t2t_vit_14
+        from model_DualT.two_d.t2t_vit import t2t_vit_14
         return t2t_vit_14()
 
     elif model_index == 1047:       # 21.955M 4.241G
-        from .model_DualT.two_d.deiT import deit_small_patch16_224
+        from model_DualT.two_d.deiT import deit_small_patch16_224
         return deit_small_patch16_224()
     elif model_index == 1048:       # 5.670M 1.075G
-        from .model_DualT.two_d.deiT import deit_tiny_patch16_224
+        from model_DualT.two_d.deiT import deit_tiny_patch16_224
         return deit_tiny_patch16_224()
 
     elif model_index == 1049:       # 5.670M 1.075G
-        from .model_DualT.two_d.xformer import Xformer_YXY
+        from model_DualT.two_d.xformer import Xformer_YXY
         return Xformer_YXY()
 
 
     elif model_index == 1052:       # 5.670M 1.075G
-        from .model_DualT.two_d.ml_mobileViT.cvnets.models.classification.mobilevit import MobileViT
+        from model_DualT.two_d.ml_mobileViT.cvnets.models.classification.mobilevit import MobileViT
         return MobileViT()
     elif model_index == 1053:       # 5.670M 1.075G
-        # from .options.opts import get_training_arguments
-        from .model_DualT.two_d.cvnets.models.classification.mobilevit import MobileViT
+        # from options.opts import get_training_arguments
+        from model_DualT.two_d.cvnets.models.classification.mobilevit import MobileViT
         return MobileViT(opts=None)
     # 这个原始代码的复现框架太复杂了，我们采用原文竞赛使用的Pytorch代码了
 
     elif model_index == 1055:       # 1.328M 333.053M
-        from .model_DualT.two_d.mobileVIT import MobileViT
-        # from .module_opt import InvertedResidual, MobileVitBlock
+        from model_DualT.two_d.mobileVIT import MobileViT
+        # from module_opt import InvertedResidual, MobileVitBlock
         model_cfg = {
             "xxs":{
                 "features": [16, 16, 24, 24, 48, 48, 64, 64, 80, 80, 320],
@@ -2179,8 +2179,8 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         return MobileViT(256, cfg_xxs["features"], cfg_xxs["d"], cfg_xxs["layers"], cfg_xxs["expansion_ratio"])
 
     elif model_index == 1056:       # 2.378M 2.378M
-        from .model_DualT.two_d.mobileVIT import MobileViT
-        # from .module_opt import InvertedResidual, MobileVitBlock
+        from model_DualT.two_d.mobileVIT import MobileViT
+        # from module_opt import InvertedResidual, MobileVitBlock
         model_cfg = {
             "xs":{
                 "features": [16, 32, 48, 48, 64, 64, 80, 80, 96, 96, 384],
@@ -2193,8 +2193,8 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         return MobileViT(256, cfg_xs["features"], cfg_xs["d"], cfg_xs["layers"], cfg_xs["expansion_ratio"])
 
     elif model_index == 1057:       # 5.627M 1.748G
-        from .model_DualT.two_d.mobileVIT import MobileViT
-        # from .module_opt import InvertedResidual, MobileVitBlock
+        from model_DualT.two_d.mobileVIT import MobileViT
+        # from module_opt import InvertedResidual, MobileVitBlock
         model_cfg = {
             "s":{
                 "features": [16, 32, 64, 64, 96, 96, 128, 128, 160, 160, 640],
@@ -2209,61 +2209,61 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
 
 
     elif model_index == 1059:       # 3.462M  63.846M
-        from .model_DualT.two_d.mobile_former import mobile_former_52m
+        from model_DualT.two_d.mobile_former import mobile_former_52m
         return mobile_former_52m()
     elif model_index == 1060:       # 4.578M 118.622M
-        from .model_DualT.two_d.mobile_former import mobile_former_96m
+        from model_DualT.two_d.mobile_former import mobile_former_96m
         return mobile_former_96m()
     elif model_index == 1061:       # 7.582M  144.365M
-        from .model_DualT.two_d.mobile_former import mobile_former_151m
+        from model_DualT.two_d.mobile_former import mobile_former_151m
         return mobile_former_151m()
 
     elif model_index == 1063:       #  421.304K 76.976M
-        from .model_DualT.two_d.convit import convit_tiny
+        from model_DualT.two_d.convit import convit_tiny
         return convit_tiny()
     elif model_index == 1064:       # 421.464K 81.586M
-        from .model_DualT.two_d.convit import convit_small
+        from model_DualT.two_d.convit import convit_small
         return convit_small()
     elif model_index == 1065:       # 421.784K 90.806M
-        from .model_DualT.two_d.convit import convit_base
+        from model_DualT.two_d.convit import convit_base
         return convit_base()
 
 
 
 
     elif model_index == 1301:
-        from .model_DualT.three_d.arch import COVID19CT3D
+        from model_DualT.three_d.arch import COVID19CT3D
         return COVID19CT3D()
     elif model_index == 1302:
-        from .model_DualT.three_d.densenet import DenseNet
+        from model_DualT.three_d.densenet import DenseNet
         return DenseNet(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 1303:
-        from .model_DualT.three_d.resnet import resnet18
+        from model_DualT.three_d.resnet import resnet18
         return resnet18(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 13031:
-        from .model_DualT.three_d.resnet import resnet34
+        from model_DualT.three_d.resnet import resnet34
         return resnet34(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 13032:
-        from .model_DualT.three_d.resnet import resnet50
+        from model_DualT.three_d.resnet import resnet50
         return resnet50(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 13033:
-        from .model_DualT.three_d.resnet import resnet101
+        from model_DualT.three_d.resnet import resnet101
         return resnet101(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 1304:
-        from .model_DualT.three_d.pre_act_resnet import resnet18
+        from model_DualT.three_d.pre_act_resnet import resnet18
         return resnet18(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 1305:
-        from .model_DualT.three_d.resnext import resnet50
+        from model_DualT.three_d.resnext import resnet50
         return resnet50(sample_size=224, sample_duration=16,  num_classes=num_classes)
     elif model_index == 1306:
-        from .model_DualT.three_d.wide_resnet import resnet50
+        from model_DualT.three_d.wide_resnet import resnet50
         return resnet50(sample_size=224, sample_duration=16,  num_classes=num_classes)
 
     elif model_index == 1310:
-        from .model_DualT.three_d.cox3d.x3d import CoX3D        # 这个使用的不是torch，是continual
+        from model_DualT.three_d.cox3d.x3d import CoX3D        # 这个使用的不是torch，是continual
         return CoX3D()
     elif model_index == 1311:       # base
-        from .model_DualT.three_d.omnivision.models.swin_transformer import SwinTransformer3D
+        from model_DualT.three_d.omnivision.models.swin_transformer import SwinTransformer3D
         return SwinTransformer3D(
         pretrained2d=False,
         patch_size=(2, 4, 4),
@@ -2274,7 +2274,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         drop_path_rate=0.4,
         patch_norm=True)
     elif model_index == 1312:       # small     提高输出可读性Params(M)是 48.751M提高输出可读性MACs(G)是 68.210G
-        from .model_DualT.three_d.omnivision.models.swin_transformer import SwinTransformer3D
+        from model_DualT.three_d.omnivision.models.swin_transformer import SwinTransformer3D
         return SwinTransformer3D(
         pretrained2d=False,
         patch_size=(2, 4, 4),
@@ -2286,14 +2286,14 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         patch_norm=True,
         depth_mode="summed_rgb_d_tokens")
     elif model_index == 1313:       # 这是一个2D的
-        from .model_DualT.three_d.omnivision.models.vision_transformer import VisionTransformer
-        from .model_DualT.three_d.omnivision.models.vision_transformer import (
+        from model_DualT.three_d.omnivision.models.vision_transformer import VisionTransformer
+        from model_DualT.three_d.omnivision.models.vision_transformer import (
             Attention,
             Decoder,
             PadIm2Video,
             VisionTransformer,
         )
-        from .functools import partial
+        from functools import partial
         return VisionTransformer(
         img_size=[3, 16, 224, 224],
         patch_size=[2, 16, 16],
@@ -2311,13 +2311,13 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         ))
 
     elif model_index == 1315:
-        from .model_DualT.three_d.omnivision.omnivore_model import omnivore_swinS
+        from model_DualT.three_d.omnivision.omnivore_model import omnivore_swinS
         return omnivore_swinS()
     elif model_index == 1316:       # 提高输出可读性Params(M)是 27.783M提高输出可读性MACs(G)是 34.916G
-        from .model_DualT.three_d.omnivision.omnivore_model import omnivore_swinT
+        from model_DualT.three_d.omnivision.omnivore_model import omnivore_swinT
         return omnivore_swinT()
     elif model_index == 1317:
-        from .model_DualT.three_d.omnivision.models.swin_transformer import SwinTransformer3D       # tiny
+        from model_DualT.three_d.omnivision.models.swin_transformer import SwinTransformer3D       # tiny
         return SwinTransformer3D(
         pretrained2d=False,
         patch_size=(2, 4, 4),
@@ -2330,203 +2330,203 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         depth_mode="summed_rgb_d_tokens")
 
     elif model_index == 1318:   #提高输出可读性Params(M)是 33.905M提高输出可读性MACs(G)是 32.902G
-        from .model_DualT.three_d.omnivision.omni import omnivore_swinT
+        from model_DualT.three_d.omnivision.omni import omnivore_swinT
         return omnivore_swinT()
 
     elif model_index == 1319:   #Dual_steam     two_d
-        from .model_DualT.two_d.Dual_steam import ds_net_tiny
+        from model_DualT.two_d.Dual_steam import ds_net_tiny
         return ds_net_tiny()
     elif model_index == 1320:   #Dual_steam     three_d
-        from .model_DualT.three_d.Dual_steam import ds_net_tiny
+        from model_DualT.three_d.Dual_steam import ds_net_tiny
         return ds_net_tiny()
     elif model_index == 1328:   #Dual_steam     three_d
-        from .model_DualT.three_d.Dual_steam import ds_net_small
+        from model_DualT.three_d.Dual_steam import ds_net_small
         return ds_net_small()
 
     elif model_index == 1321:   #Dual_steam     two_d
-        from .model_DualT.two_d.nextvit import nextvit_small
+        from model_DualT.two_d.nextvit import nextvit_small
         return nextvit_small()
     elif model_index == 1322:   #Dual_steam     three_d
-        from .model_DualT.three_d.nextvit import nextvit_small
+        from model_DualT.three_d.nextvit import nextvit_small
         return nextvit_small()
     elif model_index == 1323:   #1322 改进，优化小结构
-        from .model_DualT.three_d.nextvitA import nextvit_small
+        from model_DualT.three_d.nextvitA import nextvit_small
         return nextvit_small()
     elif model_index == 1324:   #1323改进， 之前组卷积让参数量少到四分之一，这里使用SC自校正卷积优化全部卷积  9.422M和11.239G
         # 因此可以偷懒，只修改MHCA            这里的结构为NCB之后添加NTB，然后NTB的后面部分是MHCA。
-        from .model_DualT.three_d.nextvitB import nextvit_small
+        from model_DualT.three_d.nextvitB import nextvit_small
         return nextvit_small()
     elif model_index == 1325:   #1324       这里的下采样在NCB模块前面，因此需要挪动到NTB末端。，这个只是方便写下一个交互模块
         # 但现在，我们不挪动这个位置，这个代码，还是单模态的，只是把这部分内容已经添加进去， 9.853M和11.798G
-        from .model_DualT.three_d.nextvitC import nextvit_small
+        from model_DualT.three_d.nextvitC import nextvit_small
         return nextvit_small()
     # 下面的代码这个电脑，显存带不动，暂时先调试好即可
     elif model_index == 1326:   #1324       三个模态，还不采用多模态交互,但代码基于1325     9.422M和 33.716G
-        from .model_DualT.three_d.nextvitD import nextvit_small
+        from model_DualT.three_d.nextvitD import nextvit_small
         return nextvit_small()
     elif model_index == 1327:   #1326       三个模+多模态交互,      11.199M和36.094G
-        from .model_DualT.three_d.nextvitE import nextvit_small
+        from model_DualT.three_d.nextvitE import nextvit_small
         return nextvit_small()
 
     elif model_index == 1330:   #Dual_steam     two_d
-        from .model_DualT.two_d.nextvit import nextvit_small
+        from model_DualT.two_d.nextvit import nextvit_small
         return nextvit_small()
     elif model_index == 1331:   #Dual_steam     two_d
-        from .model_DualT.two_d.nextvit import nextvit_base
+        from model_DualT.two_d.nextvit import nextvit_base
         return nextvit_base()
     elif model_index == 1332:   #Dual_steam     two_d
-        from .model_DualT.two_d.nextvit import nextvit_large
+        from model_DualT.two_d.nextvit import nextvit_large
         return nextvit_large()
 
     # https://github.com/ubamba98/EfficientNet-PyTorch_3DConv
     elif model_index == 1340:   #1326       三个模+多模态交互,      11.199M和36.094G
-        from .model_DualT.three_d.Efficientnet3D import EfficientNet
+        from model_DualT.three_d.Efficientnet3D import EfficientNet
         # model = EfficientNet.from_pretrained('efficientnet-b1', num_classes=23)
         # return EfficientNet.from_name('efficientnet-b0')
         return EfficientNet.from_name('efficientnet-b3')
 
     # elif model_index == 1070:
-    #     from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_tiny
+    #     from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_tiny
     #     return convnext_tiny()
     # elif model_index == 1071:
-    #     from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_small
+    #     from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_small
     #     return convnext_small()
     # elif model_index == 107:
-    #     from .models_32.twotwo.ConvNeXt_main.models.convnext import convnext_base
+    #     from models_32.twotwo.ConvNeXt_main.models.convnext import convnext_base
     #     return convnext_base()        # 改进3D
     elif model_index == 1342:
-        from .model_DualT.three_d.ConvNeXt.models.convnext import convnext_small
+        from model_DualT.three_d.ConvNeXt.models.convnext import convnext_small
         return convnext_small()
     elif model_index == 1343:
-        from .model_DualT.three_d.ConvNeXt.models.convnext import convnext_base
+        from model_DualT.three_d.ConvNeXt.models.convnext import convnext_base
         return convnext_base()
 
     # elif model_index == 1015:       # 提高输出可读性Params(M)是 11.894M提高输出可读性MACs(G)是 1.819G
-    #     from .model_DualT.two_d.poolformer import poolformer_s12
+    #     from model_DualT.two_d.poolformer import poolformer_s12
     #     return poolformer_s12()
     # elif model_index == 1016:       # 提高输出可读性Params(M)是 21.348M提高输出可读性MACs(G)是 3.405G
-    #     from .model_DualT.two_d.poolformer import poolformer_s24
+    #     from model_DualT.two_d.poolformer import poolformer_s24
     #     return poolformer_s24()
     elif model_index == 1346:
-        from .model_DualT.three_d.poolformer import poolformer_s24
+        from model_DualT.three_d.poolformer import poolformer_s24
         return poolformer_s24()
     elif model_index == 1347:
-        from .model_DualT.three_d.poolformer import poolformer_s36
+        from model_DualT.three_d.poolformer import poolformer_s36
         return poolformer_s36()
 
     # elif model_index == 1019:       # 提高输出可读性Params(M)是 21.926M提高输出可读性MACs(G)是 19.365G
-    #     from .model_DualT.two_d.coat import coat_small
+    #     from model_DualT.two_d.coat import coat_small
     #     return coat_small()
     elif model_index == 1350:       # 提高输出可读性Params(M)是 24.385M提高输出可读性MACs(G)是 407.177G
-        from .model_DualT.three_d.coat import coat_small
+        from model_DualT.three_d.coat import coat_small
         return coat_small()
     elif model_index == 1351:       # 提高输出可读性Params(M)是 6.619M提高输出可读性MACs(G)是 205.713G
-        from .model_DualT.three_d.coat import coat_tiny
+        from model_DualT.three_d.coat import coat_tiny
         return coat_tiny()
     elif model_index == 1352:       #
-        from .model_DualT.three_d.coat import coat_mini
+        from model_DualT.three_d.coat import coat_mini
         return coat_mini()
 
     # elif model_index == 1021:       # 提高输出可读性Params(M)是 19.594M提高输出可读性MACs(G)是 4.062G
-    #     from .model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
+    #     from model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
     #     return ConvolutionalVisionTransformer(in_chans=3, num_classes=num_classes, choice='cvt13')
     # elif model_index == 1022:       # 提高输出可读性Params(M)是 31.208M提高输出可读性MACs(G)是 6.512G
-    #     from .model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
+    #     from model_DualT.two_d.cls_cvt import ConvolutionalVisionTransformer
     #     return ConvolutionalVisionTransformer(in_chans=3, num_classes=num_classes, choice='cvt21')
     elif model_index == 1354:       # 提高输出可读性Params(M)是 19.594M提高输出可读性MACs(G)是 4.062G
-        from .model_DualT.three_d.cls_cvt import ConvolutionalVisionTransformer
+        from model_DualT.three_d.cls_cvt import ConvolutionalVisionTransformer
         return ConvolutionalVisionTransformer(in_chans=3, num_classes=num_classes, choice='cvt13')
     elif model_index == 1355:       # 提高输出可读性Params(M)是 31.208M提高输出可读性MACs(G)是 6.512G
-        from .model_DualT.three_d.cls_cvt import ConvolutionalVisionTransformer
+        from model_DualT.three_d.cls_cvt import ConvolutionalVisionTransformer
         return ConvolutionalVisionTransformer(in_chans=3, num_classes=num_classes, choice='cvt21')
 
     # elif model_index == 1023:       # 提高输出可读性Params(M)是 9.405M提高输出可读性MACs(G)是 1.233G
-    #     from .model_DualT.two_d.cmt import cmt_ti
+    #     from model_DualT.two_d.cmt import cmt_ti
     #     return cmt_ti()
     # elif model_index == 1025:       # 提高输出可读性Params(M)是 25.941M提高输出可读性MACs(G)是 3.912G
-    #     from .model_DualT.two_d.cmt import cmt_s
+    #     from model_DualT.two_d.cmt import cmt_s
     #     return cmt_s()
     # elif model_index == 1026:       # 提高输出可读性Params(M)是 45.184M提高输出可读性MACs(G)是 6.866G
-    #     from .model_DualT.two_d.cmt import cmt_b
+    #     from model_DualT.two_d.cmt import cmt_b
     #     return cmt_b()
     elif model_index == 1356:       #
-        from .model_DualT.three_d.cmt import cmt_ti
+        from model_DualT.three_d.cmt import cmt_ti
         return cmt_ti()
     elif model_index == 1357:       # 提高输出可读性Params(M)是 15.934M提高输出可读性MACs(G)是 16.016G
-        from .model_DualT.three_d.cmt import cmt_xs
+        from model_DualT.three_d.cmt import cmt_xs
         return cmt_xs()
     elif model_index == 1358:       # 提高输出可读性Params(M)是 27.278M提高输出可读性MACs(G)是 23.048G
-        from .model_DualT.three_d.cmt import cmt_s
+        from model_DualT.three_d.cmt import cmt_s
         return cmt_s()
     elif model_index == 1359:       # 提高输出可读性Params(M)是 45.184M提高输出可读性MACs(G)是 6.866G
-        from .model_DualT.three_d.cmt import cmt_b
+        from model_DualT.three_d.cmt import cmt_b
         return cmt_b()
 
 
     elif model_index == 1362:
-        from .model_DualT.threeL_d.mobilenetv3 import mobilenetv3
+        from model_DualT.threeL_d.mobilenetv3 import mobilenetv3
         return mobilenetv3(n_class=2)
 
     elif model_index == 1364:
-        from .model_DualT.threeL_d.ghostnet import ghostnet
+        from model_DualT.threeL_d.ghostnet import ghostnet
         return ghostnet()
 
     elif model_index == 1366:
-        from .model_DualT.threeL_d.mobileVIT import MobileViT_XXS
+        from model_DualT.threeL_d.mobileVIT import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1368:
         # 提高输出可读性Params(M)是        #  2.028M
         # 提高输出可读性MACs(G)是        #  1.082G
-        from .model_DualT.threeL_d.mobileVIT3D import MobileViT_XXS
+        from model_DualT.threeL_d.mobileVIT3D import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1369:
-        from .model_DualT.threeL_d.mobileVIT3D import MobileViT_XS
+        from model_DualT.threeL_d.mobileVIT3D import MobileViT_XS
         return MobileViT_XS()
     elif model_index == 1370:
-        from .model_DualT.threeL_d.mobileVIT3D import MobileViT_S
+        from model_DualT.threeL_d.mobileVIT3D import MobileViT_S
         return MobileViT_S()
 
 
     elif model_index == 1372:
-        from .model_DualT.threeL_d.mobileV import MobileViT_XXS
+        from model_DualT.threeL_d.mobileV import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1374:
-        from .model_DualT.threeL_d.mobileV3 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileV3 import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1376:
-        from .model_DualT.threeL_d.mobileV5 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileV5 import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1377:       # 第一个结构
         # 提高输出可读性Params(M)是        #  140.020K
         # 提高输出可读性MACs(G)是        #  69.852M
-        from .model_DualT.threeL_d.mobileV6 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileV6 import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1384:       # 按Swin改
         # 1131
         # 提高输出可读性Params(M)是        #  668.592K
         # 提高输出可读性MACs(G)是        #  131.773M
-        from .model_DualT.threeL_d.mobileSwin import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwin import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1385:       # 按Swin改
         # 2262
         # 提高输出可读性Params(M)是        #  774.672K
         # 提高输出可读性MACs(G)是        #  175.450M
-        from .model_DualT.threeL_d.mobileSwin1 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwin1 import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1386:       # 按Swin改
         # 2242
         # 提高输出可读性Params(M)是        #  752.592K
         # 提高输出可读性MACs(G)是        #  171.122M
-        from .model_DualT.threeL_d.mobileSwin2 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwin2 import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1387:       # 按Swin改
         # 22-10-2
         # 提高输出可读性Params(M)是        #  818.832K
         # 提高输出可读性MACs(G)是        #  184.105M
-        from .model_DualT.threeL_d.mobileSwin3 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwin3 import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1390:       # 第一个结构按Swin改
         # 22-18-2
@@ -2535,26 +2535,26 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         # 去掉3*3卷积以后       AAAAAAAAAAA
         # 提高输出可读性Params(M)是        #  858.768K
         # 提高输出可读性MACs(G)是        #  186.928M
-        from .model_DualT.threeL_d.mobileSwinA import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinA import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1378:       # 第二个，加注意力机制
         # 提高输出可读性Params(M)是        #  140.020K
         # 提高输出可读性MACs(G)是        #  69.931M
-        from .model_DualT.threeL_d.mobileV6A import MobileViT_XXS
+        from model_DualT.threeL_d.mobileV6A import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1392:       # 按Swin改    第二个，加注意力机制
         # 22-18-2
         # 提高输出可读性Params(M)是        #  907.152K
         # 提高输出可读性MACs(G)是        #  202.039M
-        from .model_DualT.threeL_d.mobileSwinAA import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinAA import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1394:       # 改自1392
         # 22-18-2
         # 提高输出可读性Params(M)是        #  962.880K
         # 提高输出可读性MACs(G)是        #  502.389M
-        from .model_DualT.threeL_d.mobileSwinB import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinB import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1395:       # 改自1394        通道数采用四分之一，比1392小太多
@@ -2564,7 +2564,7 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         # 22-18-2
         # 提高输出可读性Params(M)是        #  570.076K
         # 提高输出可读性MACs(G)是        #  200.704M
-        from .model_DualT.threeL_d.mobileSwinBA import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinBA import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1396:       # 改自1394        将输入切开一半
         # 22-18-2                      BBBBBBBBBBBB         # 没有注意力机制
@@ -2573,63 +2573,63 @@ def get_model(model_index=0, weight_path=None, Config = None, num_classes=1000):
         # 22-18-2                       CCCCCCCCC
         # 提高输出可读性Params(M)是        #  574.828K
         # 提高输出可读性MACs(G)是        #  206.311M
-        from .model_DualT.threeL_d.mobileSwinC import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinC import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1380:
-        from .model_DualT.threeL_d.mobileV8 import MobileViT_XXS
+        from model_DualT.threeL_d.mobileV8 import MobileViT_XXS
         return MobileViT_XXS()
 
 
     elif model_index == 1382:
-        from .model_DualT.two_d.ghostnetv2 import ghostnetv2_1x
+        from model_DualT.two_d.ghostnetv2 import ghostnetv2_1x
         return ghostnetv2_1x()
 
 
     elif model_index == 1440:
-        from .model_DualT.threeL_d.EdgeNeXt.models.model import edgenext_base
+        from model_DualT.threeL_d.EdgeNeXt.models.model import edgenext_base
         return edgenext_base()
     elif model_index == 1441:
         # 提高输出可读性Params(M)是        #  6.461M
         # 提高输出可读性MACs(G)是        #  2.024G
-        from .model_DualT.threeL_d.EdgeNeXt.models.model import edgenext_small
+        from model_DualT.threeL_d.EdgeNeXt.models.model import edgenext_small
         return edgenext_small()
     elif model_index == 1442:
-        from .model_DualT.threeL_d.EdgeNeXt.models.model import edgenext_small
+        from model_DualT.threeL_d.EdgeNeXt.models.model import edgenext_small
         return edgenext_small(pretrained=True)
 
     elif model_index == 1398:       # 改自1396有注意力机制
         # 22-18-2                      DDDDDDDDD
         # 提高输出可读性Params(M)是        #  958.828K
         # 提高输出可读性MACs(G)是        #  206.695M
-        from .model_DualT.threeL_d.mobileSwinD import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinD import MobileViT_XXS
         return MobileViT_XXS()
 
     elif model_index == 1399:       # 改自1398
         # 22-18-2                      FFFFFFFFFFF
         # 提高输出可读性Params(M)是        #  641.690K
         # 提高输出可读性MACs(G)是        #  381.612M
-        from .model_DualT.threeL_d.mobileSwinF import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinF import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1444:       # 改自1398
         # 22-18-2
-        from .model_DualT.threeL_d.mobileSwinFA import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinFA import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1445:       # 2024.03.18
         # 22-18-2
-        from .model_DualT.threeL_d.mobileSwinFB import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinFB import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1446:       # 2024.04.08
         # 22-18-2
         # 提高输出可读性Params(M)是        #  565.832K
         # 提高输出可读性MACs(G)是        #  152.140M
-        from .model_DualT.threeL_d.mobileSwinFC import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinFC import MobileViT_XXS
         return MobileViT_XXS()
     elif model_index == 1447:       # 2024.04.10
         # 22-18-2
         # 提高输出可读性Params(M)是        #  552.728K
         # 提高输出可读性MACs(G)是        #  146.758M
-        from .model_DualT.threeL_d.mobileSwinFD import MobileViT_XXS
+        from model_DualT.threeL_d.mobileSwinFD import MobileViT_XXS
         return MobileViT_XXS()
 
 
